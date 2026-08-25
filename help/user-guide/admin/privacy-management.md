@@ -46,7 +46,7 @@ ht-degree: 5%
 * **[!UICONTROL Privacy Service 권한]** - `Privacy Read Permission` 및 `Privacy Write Permission`
 * **[!UICONTROL 데이터 거버넌스]** - `View Privacy Console`
 
-자세한 내용은 [!DNL Privacy Service] 안내서의 [_Privacy Service에 대한 권한 관리_](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/permissions){target="_blank"}를 참조하십시오.
+자세한 내용은 [!DNL Privacy Service] 안내서의 [_Privacy Service에 대한 권한 관리_](https://experienceleague.adobe.com/ko/docs/experience-platform/privacy/permissions){target="_blank"}를 참조하십시오.
 
 >[!ENDSHADEBOX]
 

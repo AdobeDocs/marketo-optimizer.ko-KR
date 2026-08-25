@@ -31,7 +31,7 @@ ht-degree: 2%
 
 ## 자산으로서의 웨비나
 
-웨비나는 전자 메일 또는 랜딩 페이지와 같은 방식으로 [program](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/prime/marketing-management/programs/programs)이(가) 소유한 자산입니다. 프로그램에 웨비나를 추가하면 해당 프로그램에 웨비나가 등록되고 해당 프로그램의 모든 여정 및 에셋에서 토큰, 속성 및 활동을 사용할 수 있습니다.
+웨비나는 전자 메일 또는 랜딩 페이지와 같은 방식으로 [program](https://experienceleague.adobe.com/ko/docs/journey-optimizer-b2b/prime/marketing-management/programs/programs)이(가) 소유한 자산입니다. 프로그램에 웨비나를 추가하면 해당 프로그램에 웨비나가 등록되고 해당 프로그램의 모든 여정 및 에셋에서 토큰, 속성 및 활동을 사용할 수 있습니다.
 
 >[!IMPORTANT]
 >
@@ -43,7 +43,7 @@ ht-degree: 2%
 
 | 주 | 소유자 | 값 |
 |---|---|---|
-| 프로그램 구성원 상태 | 프로그램 | [프로그램 유형](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/prime/admin/program-types)별 구성 가능 |
+| 프로그램 구성원 상태 | 프로그램 | [프로그램 유형](https://experienceleague.adobe.com/ko/docs/journey-optimizer-b2b/prime/admin/program-types)별 구성 가능 |
 | 웨비나 상태 | 웨비나 자산 | 초대됨, 등록됨, 참석됨, 표시 안 함, 온디맨드로 참석함 |
 | 여정 상태 | 여정 | 현재 노드, 일시 중지, 완료 및 기타 여정 런타임 상태 |
 

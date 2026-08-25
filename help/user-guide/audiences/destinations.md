@@ -79,7 +79,7 @@ ht-degree: 6%
 
 1. 데이터 거버넌스 및 마케팅 작업 설정을 검토한 다음 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-전체 설정 단계는 [!DNL Experience Platform] 설명서에서 [새 대상 연결 만들기](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/connect-destination){target="_blank"}를 참조하십시오.
+전체 설정 단계는 [!DNL Experience Platform] 설명서에서 [새 대상 연결 만들기](https://experienceleague.adobe.com/ko/docs/experience-platform/destinations/ui/connect-destination){target="_blank"}를 참조하십시오.
 
 구성된 경우 [!DNL Marketo Optimizer]에서 대상을 선택할 수 있는 모든 곳에서 대상을 활성화할 수 있습니다.
 
