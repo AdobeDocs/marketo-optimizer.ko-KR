@@ -1,7 +1,8 @@
 ---
 title: WhatsApp 작성
 description: Marketo Optimizer에서 승인된 Meta 템플릿, 개인화 토큰 및 게재 설정을 사용하여 개인 여정을 위한 WhatsApp 메시지를 만듭니다.
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 source-git-commit: c7d3546d075f5a58923134231217b2fd10fe4aca
 workflow-type: tm+mt
 source-wordcount: 801

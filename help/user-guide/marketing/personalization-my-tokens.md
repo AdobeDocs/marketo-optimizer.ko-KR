@@ -1,7 +1,8 @@
 ---
 title: Personalization용 사용자 지정 토큰
 description: 마케팅 아티팩트의 동적 개인화를 위해 사용자 지정 내 토큰을 만들고 관리합니다. Marketo Optimizer에서 프로그램의 텍스트 및 숫자 변수를 정의합니다.
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: c7d3546d075f5a58923134231217b2fd10fe4aca
 workflow-type: tm+mt
 source-wordcount: 629

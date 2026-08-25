@@ -3,7 +3,8 @@ title: 개인 정보 관리
 description: Marketo Optimizer에서 GDPR, CCPA 및 기타 개인 정보 보호 규정을 준수하고 Adobe Privacy Service을 사용하여 요청을 제출하는 방법을 알아봅니다.
 feature: Setup
 role: Admin
-topic_v2: id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+topic_v2:
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 75b481faf0d66210329f95c8afabdfa59e7bcb79
 workflow-type: tm+mt
 source-wordcount: 630

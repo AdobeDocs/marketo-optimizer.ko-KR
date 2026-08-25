@@ -20,7 +20,7 @@ ht-degree: 0%
 
 <!-- A split based on a people filter is automatically closed with a merge paths node so that all people can move forward to the next step. Split by people paths can include only people actions. These paths cannot be split again and automatically join back. _not currently true_ -->
 
-_**people 노드별 분할 경로가 작동하는 방식**_
+_&#x200B;**people 노드별 분할 경로가 작동하는 방식**&#x200B;_
 
 * 각 경로의 평가는 위에서 아래로 내려옵니다. 한 사람이 첫 번째 및 두 번째 경로에 대해 일치하는 경우 첫 번째 경로만 따라 진행합니다.
 * 노드는 정의된 세그먼트/경로 중 하나와 일치하지 않는 사용자에 대해 작업 또는 이벤트를 추가할 수 있는 _기타 사용자_ 경로의 정의를 지원합니다.

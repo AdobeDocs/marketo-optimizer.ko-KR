@@ -480,7 +480,7 @@ Sales Qualifier에 연결하기 전에 CRM 관리자와 협력합니다. 다음�
 
 #### Salesforce
 
-Salesforce에서 조직의 보안 표준에 따라 ID 및 데이터에 대한 API 액세스를 허용하는 범위와 OAuth가 활성화된 외부 클라이언트 앱](https://help.salesforce.com/s/articleView?id=xcloud.create_a_local_external_client_app.htm&type=5)&#x200B;(또는 _연결된 앱_)을 [만듭니다. 통합 사용자(예: 클라이언트 자격 증명 스타일 구성을 사용하는 경우)는 가망 고객, 계정, 연락처, 작업, 이벤트, 기회 및 관련 기회 객체와 같은 객체에 대한 읽기 액세스 권한을 보유해야 합니다. 관리 작업을 수행하려면 **[!UICONTROL 연결된 앱 관리]**(다른 권한 중)를 가진 사용자가 만든 후 소비자 키와 암호를 확인해야 합니다.
+Salesforce에서 조직의 보안 표준에 따라 ID 및 데이터에 대한 API 액세스를 허용하는 범위와 OAuth가 활성화된 외부 클라이언트 앱[&#128279;](https://help.salesforce.com/s/articleView?id=xcloud.create_a_local_external_client_app.htm&type=5)&#x200B;(또는 _연결된 앱_)을 만듭니다. 통합 사용자(예: 클라이언트 자격 증명 스타일 구성을 사용하는 경우)는 가망 고객, 계정, 연락처, 작업, 이벤트, 기회 및 관련 기회 객체와 같은 객체에 대한 읽기 액세스 권한을 보유해야 합니다. 관리 작업을 수행하려면 **[!UICONTROL 연결된 앱 관리]**(다른 권한 중)를 가진 사용자가 만든 후 소비자 키와 암호를 확인해야 합니다.
 
 >[!PREREQUISITES]
 >

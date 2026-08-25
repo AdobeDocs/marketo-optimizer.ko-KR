@@ -1,7 +1,9 @@
 ---
 title: 양식
 description: Marketo Optimizer에서 필드를 디자인하고, 감사 페이지를 설정하고, 게시하고, 사용을 추적하는 등 비즈니스 데이터 수집을 위해 재사용 가능한 양식을 만들고 관리합니다.
-topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: c7d3546d075f5a58923134231217b2fd10fe4aca
 workflow-type: tm+mt
 source-wordcount: 2434
