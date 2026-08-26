@@ -1,9 +1,9 @@
 ---
 title: 채팅 인터페이스
 description: Marketo Optimizer의 동료 채팅 패널을 사용하여 자연어 또는 슬래시(/) 메뉴를 사용하여 프로그램, 여정 및 목록을 빌드할 수 있습니다.
-source-git-commit: 75b481faf0d66210329f95c8afabdfa59e7bcb79
+source-git-commit: 6264cadee61cb4a9366df655611803214110cccf
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,16 @@ ht-degree: 0%
 
 * 메시지를 추가하고 **Enter**&#x200B;을 눌러 보내세요(**Shift+Enter**&#x200B;이(가) 새 행을 삽입합니다).
 * _첨부_ 아이콘을 사용하여 파일을 첨부합니다(지원되는 형식: `.txt`, `.md`, `.csv`, `.json`, `.xlsx`, `.docx`, `.pdf`). CSV 및 스프레드시트 업로드를 사용하여 리드 가져오기를 시작합니다.
+
+>[!BEGINSHADEBOX]
+
+## 영업 구분자
+
+[!DNL Adobe Sales Qualifier]은(는) [!DNL Marketo Optimizer]에서 사용할 수 있는 AI 기반 애플리케이션입니다. Account Qualification Agent을 구현하고 BDR(비즈니스 개발 담당자)을 위한 워크플로를 간소화하도록 설계되었습니다. [!DNL Sales Qualifier]은(는) 채널 전반에서 잠재 고객 자격, 전달 및 구매자 참여 워크플로를 자동화합니다. 엔터프라이즈 B2B 기업의 수동 BDR 로드를 줄이고 파이프라인 속도를 가속화합니다.
+
+자세한 내용은 [Sales Qualifier 설명서](https://experienceleague.adobe.com/en/docs/sales-qualifier/using/home){target="_blank"}를 참조하세요.
+
+>[!ENDSHADEBOX]
 
 ## 동료에게 묻기
 
