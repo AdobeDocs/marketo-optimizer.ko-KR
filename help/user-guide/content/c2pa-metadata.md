@@ -26,7 +26,7 @@ ht-degree: 0%
 
 C2PA 메타데이터는 이미지 파일과 함께 유지됩니다. 생성 AI로 생성 또는 편집한 이미지를 [!DNL Adobe Marketo Optimizer]에 업로드하거나 내보내면 해당 C2PA 메타데이터가 유지됩니다.
 
-Adobe CX 엔터프라이즈 애플리케이션 전반에 걸쳐 C2PA 메타데이터를 자동으로 첨부하는 방법에 대한 자세한 내용은 CX 엔터프라이즈 안내서의 [_생성 AI 콘텐츠 투명도_](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency){target="_blank"}를 참조하십시오.
+Adobe CX 엔터프라이즈 애플리케이션 전반에 걸쳐 C2PA 메타데이터를 자동으로 첨부하는 방법에 대한 자세한 내용은 CX 엔터프라이즈 안내서의 [_생성 AI 콘텐츠 투명도_](https://experienceleague.adobe.com/ko/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency){target="_blank"}를 참조하십시오.
 
 >[!NOTE]
 >
