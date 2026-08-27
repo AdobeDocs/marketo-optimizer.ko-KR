@@ -136,7 +136,7 @@ _[!UICONTROL 개인 참여 점수]_ 필터는 **[!UICONTROL 개인 특성]** 범
 
 [!DNL Marketo Optimizer]에서 [동료 채팅 인터페이스](../agents/chat-interface.md)에서 직접 참여 점수 가중치를 구성할 수 있습니다.
 
-참여 점수 모델, 가중치 밴드 및 활동 가중치에 대한 배경에 대해서는 [사용자 지정 참여 점수 가중치 구성](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/admin/configurations/engagement-score-weighting)을 참조하십시오.
+참여 점수 모델, 가중치 밴드 및 활동 가중치에 대한 배경에 대해서는 [사용자 지정 참여 점수 가중치 구성](https://experienceleague.adobe.com/ko/docs/journey-optimizer-b2b/user/admin/configurations/engagement-score-weighting)을 참조하십시오.
 
 1. 화면 왼쪽(채팅 아이콘)에서 **[!UICONTROL 동료]** 채팅 패널을 엽니다.
 
