@@ -69,7 +69,7 @@ WhatsApp 메시지를 보내기 전에 Marketo Optimizer 환경을 구성하고 
    * **[!UICONTROL API 토큰]** - API 토큰을 입력하십시오. 자세한 내용은 [Meta 설명서](https://developers.facebook.com/blog/post/2022/12/05/auth-tokens/)를 참조하세요.
    * **[!UICONTROL 비즈니스 계정 ID]** - 비즈니스 포트폴리오와 관련된 고유 번호를 입력합니다. 자세한 내용은 [Meta 설명서](https://www.facebook.com/business/help/1181250022022158?id=180505742745347)를 참조하세요.
 
-   ![WhatsApp 설정 API 자격 증명 &#x200B;](assets/config-whatsapp-channels-api-credentials.png){width="500" zoomable="yes"}
+   ![WhatsApp 설정 API 자격 증명 ](assets/config-whatsapp-channels-api-credentials.png){width="500" zoomable="yes"}
 
 1. **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 
