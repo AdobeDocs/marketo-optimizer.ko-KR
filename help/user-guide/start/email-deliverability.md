@@ -1,7 +1,7 @@
 ---
 title: 이메일 전달성 구성
 description: Marketo Optimizer에 대한 하위 도메인 위임, DMARC, SPF, DKIM 및 IP 풀을 구성합니다.
-source-git-commit: c7d3546d075f5a58923134231217b2fd10fe4aca
+source-git-commit: 81d9880cb37bb60301252b48bd89637b6656a993
 workflow-type: tm+mt
 source-wordcount: '2502'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 1. [하위 도메인용 전자 메일을 보내는 데 사용되는 IP 풀을 확인](#ip-pools)합니다.
 1. 하위 도메인, IP 풀 및 보낸 사람 ID를 바인딩하는 [하나 이상의 전자 메일 채널 구성을 만듭니다](../admin/email-channel-configuration.md#create-email-channel-configuration).
 
-![Marketo Optimizer에 대한 전자 메일 게재 기능 설정](./assets/email-deliverability-diagram.svg){width="550" zoomable="yes"}
+![Marketo Optimizer에 대한 전자 메일 게재 기능 설정](./assets/email-deliverability-diagram.svg){width="600"}
 
 >[!TIP]
 >

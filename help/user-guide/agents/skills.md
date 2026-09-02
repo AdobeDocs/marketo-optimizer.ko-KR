@@ -1,16 +1,16 @@
 ---
 title: 동료 기술
-description: Marketo Optimizer에서 동료 기술을 검토합니다. 프로그램, 여정, 대상, 채점, 콘텐츠 및 전송 시간 최적화를 위한 패키지화된 워크플로우입니다.
-source-git-commit: 75b481faf0d66210329f95c8afabdfa59e7bcb79
+description: Marketo Optimizer에서 프로그램, 여정, 대상, 채점, 콘텐츠 및 전송 시간 최적화를 위한 패키지화된 워크플로우인 CX Enterprise Coworker 기술을 검토합니다.
+source-git-commit: ef30aa7a901c18c7b9b0919d537ad59db9a6c481
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '575'
 ht-degree: 5%
 
 ---
 
 # 동료 기술
 
-_스킬_&#x200B;은(는) 에이전트가 실행하는 방법을 알고 있는 패키지된 워크플로우입니다. `/` 메뉴와 자연어 요청 모두의 뒤에 기본 요소가 있습니다. 각 스킬은 단계별 지침 및 한 작업에 필요한 특정 도구(예: &quot;여정 게시&quot;, &quot;두 사람 목록 비교&quot;, &quot;채점 모델 구축&quot;)를 번들로 제공합니다.
+_스킬_&#x200B;은(는) Coworker가 실행 방법을 알고 있는 패키지된 워크플로우입니다. `/` 메뉴와 자연어 요청 모두의 뒤에 기본 요소가 있습니다. 각 스킬은 단계별 지침 및 한 작업에 필요한 특정 도구(예: &quot;여정 게시&quot;, &quot;두 사람 목록 비교&quot;, &quot;채점 모델 구축&quot;)를 번들로 제공합니다.
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ _스킬_&#x200B;은(는) 에이전트가 실행하는 방법을 알고 있는 �
 
 | 스킬 | 기능 | 액세스 | 제품 표면 | 영향 / 데이터 흐름 |
 |---|---|---|---|---|
-| `falco-program-creation` | 프로그램, 하위 폴더, 토큰, 목록, 여정 등 전체 [!DNL Marketo Optimizer] 프로그램 만들기. | 쓰기 | [!DNL Marketo Optimizer] | [!DNL Marketo Optimizer]을(를) 읽고 씁니다. _[개요에서 프로그램 만들기](./program-from-brief.md)_&#x200B;를 참조하세요. |
+| `falco-program-creation` | 프로그램, 하위 폴더, 토큰, 목록, 여정 등 전체 [!DNL Marketo Optimizer] 프로그램 만들기. <p>_[개요에서 프로그램 만들기](./program-from-brief.md)_&#x200B;를 참조하세요. | 쓰기 | [!DNL Marketo Optimizer] | [!DNL Marketo Optimizer]을(를) 읽고 씁니다. |
 | `adapt-program` | [!DNL Marketo Optimizer] 적응을 위해 [!DNL Marketo Engage] 프로그램에서 마이그레이션 스토리를 생성합니다. | 읽기 | [!DNL Marketo Optimizer] | 읽기 [!DNL Marketo Engage], 쓰기 [!DNL Marketo Optimizer] |
 | `folder-creation` | 자산 트리에 조직 폴더를 만듭니다. | 쓰기 | [!DNL Marketo Optimizer] | 읽기 + 쓰기 [!DNL Marketo Optimizer] |
 | `program-creation` *(프로그램 빌드)* | 캠페인 개요에서 Marketo 프로그램을 만듭니다. | 쓰기 | [!DNL Marketo Engage] | 읽기 + 쓰기 [!DNL Marketo Engage] |
@@ -43,7 +43,7 @@ _스킬_&#x200B;은(는) 에이전트가 실행하는 방법을 알고 있는 �
 
 | 스킬 | 기능 | 액세스 | 제품 | 백엔드(데이터 흐름) |
 |---|---|---|---|---|
-| `audience-creation` | [!DNL Marketo Engage] 스마트 목록을 조정하거나 사람 목록을 만들거나 규칙을 추가/업데이트합니다. | 쓰기 | [!DNL Marketo Optimizer] | 읽기 [!DNL Marketo Engage] + 읽기/쓰기 [!DNL Marketo Optimizer].  _[프로그램에 대한 대상 만들기](./audience-creation.md)_&#x200B;를 참조하십시오. |
+| `audience-creation` | [!DNL Marketo Engage] 스마트 목록을 조정하거나 사람 목록을 만들거나 규칙을 추가/업데이트합니다. <p>_[프로그램에 대한 대상 만들기](./audience-creation.md)_&#x200B;를 참조하십시오. | 쓰기 | [!DNL Marketo Optimizer] | 읽기 [!DNL Marketo Engage] + 읽기/쓰기 [!DNL Marketo Optimizer]. |
 | `people-list-comparison` | 두 사람 목록을 비교하고 중복되는 구성원을 표시합니다. | 읽기 | [!DNL Marketo Optimizer] | [!DNL Marketo Optimizer] 읽기 |
 | `import-leads` | CSV 데이터 품질을 검사하고 [!DNL Marketo Engage]에 가져오기를 커밋합니다. | 읽기+쓰기 | 모두 | 읽기 + 쓰기 [!DNL Marketo Engage] |
 | `lead-investigation` *(리드 조사)* | 잠재 고객의 활동, 점수, 자격, 라이프사이클을 조사합니다. | 읽기 | [!DNL Marketo Engage] | [!DNL Marketo Engage] 읽기 |
@@ -60,7 +60,7 @@ _스킬_&#x200B;은(는) 에이전트가 실행하는 방법을 알고 있는 �
 
 | 스킬 | 기능 | 액세스 | 제품 | 백엔드(데이터 흐름) |
 |---|---|---|---|---|
-| `scoring-studio` | 채점 모델을 나열/가져오고 빌드/게시합니다. | 읽기+쓰기 | [!DNL Marketo Optimizer] | [!DNL Marketo Optimizer]&#x200B;(채점 서비스)을(를) 읽고 씁니다; [!DNL Marketo Engage] 리드 필드/활동 유형을 읽습니다. _[사용자 지정 점수 모델 만들기](./lead-scoring-model.md)_&#x200B;를 참조하십시오. |
+| `scoring-studio` | 채점 모델을 나열/가져오고 빌드/게시합니다. <p>_[사용자 지정 점수 모델 만들기](./lead-scoring-model.md)_&#x200B;를 참조하십시오. | 읽기+쓰기 | [!DNL Marketo Optimizer] | [!DNL Marketo Optimizer]&#x200B;(채점 서비스)을(를) 읽고 씁니다; [!DNL Marketo Engage] 리드 필드/활동 유형을 읽습니다. |
 | `engagementconfiguration` | 참여 구성 및 가중치 편집/업데이트 표시 | 읽기+쓰기 | [!DNL Marketo Optimizer] | 읽기 + 쓰기 [!DNL Marketo Optimizer] |
 | `intentconfiguration` | 의도 구성 및 가중치 설정/업데이트. | 읽기+쓰기 | [!DNL Marketo Optimizer] | 읽기 + 쓰기 [!DNL Marketo Optimizer] |
 | `intent-query` | 개인/세그먼트/목록별로 의도 점수를 쿼리하고 설명합니다. | 읽기 | [!DNL Marketo Optimizer] | [!DNL Marketo Optimizer] 읽기 |
@@ -88,4 +88,3 @@ _스킬_&#x200B;은(는) 에이전트가 실행하는 방법을 알고 있는 �
 - **`scoring-studio`** — [!DNL Marketo Optimizer] 채점 서비스와 함께 [!DNL Marketo Engage] 리드 필드/활동 유형을 읽습니다.
 
 모든 `falco-mcp_*` 및 여정/토큰/채점/STO/FCS 도구는 [!DNL Marketo Optimizer] 서비스를 히트하고 CSV/프로그램/리드 도구는 [!DNL Marketo Engage]을 히트합니다.
-
