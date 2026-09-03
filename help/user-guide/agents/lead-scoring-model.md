@@ -4,7 +4,7 @@ description: 동료 채팅 인터페이스의 Scoring Studio 스킬을 사용하
 source-git-commit: 75b481faf0d66210329f95c8afabdfa59e7bcb79
 workflow-type: tm+mt
 source-wordcount: '468'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo-b2b-prime_scoring_studio"
 >title="Scoring Studio"
->abstract="Scoring Studio 기술을 사용하여 동료 채팅 인터페이스를 통해 사용자 정의 리드 점수 모델을 만들고, 구성하고, 게시합니다."
+>abstract="Scoring Studio 기술을 사용하여 Coworker 채팅 인터페이스를 통해 사용자 정의 리드 점수 모델을 만들고, 구성하고, 게시합니다."
 
 [!DNL Adobe Marketo Optimizer]의 [_Scoring Studio_ 스킬](./skills.md#scoring-signals)은(는) 잠재 고객 스코어링 모델을 만들고, 구성하고, 게시할 수 있도록 하는 AI 기반 잠재 고객 스코어링 솔루션을 제공합니다. Studio는 에이전트 기반 워크플로를 시각적 UI와 결합합니다. [동료 채팅 인터페이스](./chat-interface.md)에서 자연어 프롬프트를 통해 또는 UI 컨트롤과 직접 상호 작용하여 채점 모델을 만들 수 있습니다.
 
