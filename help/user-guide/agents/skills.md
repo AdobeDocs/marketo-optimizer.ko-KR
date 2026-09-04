@@ -1,9 +1,9 @@
 ---
 title: 동료 기술
 description: Marketo Optimizer에서 프로그램, 여정, 대상, 채점, 콘텐츠 및 전송 시간 최적화를 위한 패키지화된 워크플로우인 CX Enterprise Coworker 기술을 검토합니다.
-source-git-commit: ef30aa7a901c18c7b9b0919d537ad59db9a6c481
+source-git-commit: 9db94582512d95f6c07d4e978a0a27291b471900
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '581'
 ht-degree: 5%
 
 ---
@@ -37,7 +37,7 @@ _스킬_&#x200B;은(는) Coworker가 실행 방법을 알고 있는 패키지된
 | `journey-stop` | 여정 중단, 닫기, 중지, 중지 또는 종료 | 쓰기 | [!DNL Marketo Optimizer] | 읽기 + 쓰기 [!DNL Marketo Optimizer] |
 | `journey-reentry` | 재입력 구성: 허용/허용 안 함, 쿨다운, 최대 항목 수. | 쓰기 | [!DNL Marketo Optimizer] | 읽기 + 쓰기 [!DNL Marketo Optimizer] |
 | `journey-trafficcontrol` | 프로필 라우팅을 보여주는 트래픽 제어 시뮬레이션을 실행합니다. | 읽기 | [!DNL Marketo Optimizer] | 읽기 [!DNL Marketo Optimizer]&#x200B;(시뮬레이션) |
-| `journey-observability` | 진행 상황 디버그/모니터링 — 경로, 타이밍, 분할, 정지, 유지 | 읽기 | [!DNL Marketo Optimizer] | [!DNL Marketo Optimizer] + [!DNL Marketo Engage]을(를) 읽습니다(정적 목록 확인). |
+| `journey-observability` | 진행 상황 디버그/모니터링 — 경로, 타이밍, 분할, 정지, 유지 <p>_[여정 진행률 디버그 및 모니터링](./journey-observability.md)_&#x200B;을 참조하세요. | 읽기 | [!DNL Marketo Optimizer] | [!DNL Marketo Optimizer] + [!DNL Marketo Engage]을(를) 읽습니다(정적 목록 확인). |
 
 ## 대상자 및 사람 {#audiences-people}
 
