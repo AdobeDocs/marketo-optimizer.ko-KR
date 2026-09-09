@@ -1,9 +1,14 @@
 ---
 title: 개인 세부 정보
 description: 개인의 AI가 생성한 페르소나, 참여 및 의도 요약, 활동 내역, 프로필 속성 및 회사 세부 정보를 보고 Marketo Optimizer의 레코드에 대한 동료에게 질문합니다.
-source-git-commit: 75b481faf0d66210329f95c8afabdfa59e7bcb79
+TQID: 'https://experienceleague.adobe.com/uEaZcSheX-jfY-IFnVknekph3A-Iya1aEQqygLlxD5s'
+product_v2:
+  - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+feature_v2:
+  - id: 1650dadf-b034-5ac9-a309-77ad1e2f5035
+source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: 690
 ht-degree: 7%
 
 ---
@@ -80,11 +85,11 @@ ht-degree: 7%
 * 가운데 이름
 * 성
 * 이메일
-* 직함
+* 제목
 * 전화
 * 주소
 * 구/군/시
-* 주/도
+* 주
 * 국가
 * 회사
 * 생성됨
@@ -97,7 +102,7 @@ ht-degree: 7%
 **[!UICONTROL 회사]** 탭에는 개인의 회사와 관련된 그래픽 데이터가 표시됩니다.
 
 * 회사
-* 업계
+* 업종
 * 연간 수익
 * 청구지 거리
 * 청구지 시

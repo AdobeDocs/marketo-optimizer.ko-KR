@@ -1,9 +1,14 @@
 ---
 title: 사용자 지정 점수 모델 만들기
 description: 동료 채팅 인터페이스의 Scoring Studio 스킬을 사용하여 Marketo Optimizer에서 사용자 정의 잠재 고객 점수 모델을 만들고, 미리 보고, 게시합니다.
-source-git-commit: 75b481faf0d66210329f95c8afabdfa59e7bcb79
+TQID: 'https://experienceleague.adobe.com/OAY0CzFPTyUi7NCPbRnxGkG6nnndPygbwGlbv9u2oeA'
+product_v2:
+  - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+feature_v2:
+  - id: 1650dadf-b034-5ac9-a309-77ad1e2f5035
+source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: 468
 ht-degree: 5%
 
 ---

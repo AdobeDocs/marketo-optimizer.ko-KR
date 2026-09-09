@@ -1,10 +1,17 @@
 ---
 title: 대상
 description: 필요한 권한, 지원되는 대상 및 Marketo Optimizer에서 대상을 연결하여 광고 및 소셜 플랫폼에 정적 사용자 목록을 활성화하는 방법에 대해 알아봅니다.
-source-git-commit: c7d3546d075f5a58923134231217b2fd10fe4aca
+TQID: 'https://experienceleague.adobe.com/u5sWVDR0JaiX-YvlQ23l7mqoI9G95xS-uiKcqANwsnc'
+product_v2:
+  - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+feature_v2:
+  - id: 3cf5f37e-e87e-5179-812b-53ce05d7eebb
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 6%
+source-wordcount: 643
+ht-degree: 7%
 
 ---
 

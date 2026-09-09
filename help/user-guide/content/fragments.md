@@ -1,9 +1,14 @@
 ---
 title: 조각
 description: 이메일 및 템플릿에 대한 시각적 콘텐츠 조각을 만들고, 관리하고, 재사용할 수 있습니다. Marketo Optimizer에서 재사용 가능한 블록을 빌드하고, 버전을 게시하고, 사용을 추적합니다.
-source-git-commit: c7d3546d075f5a58923134231217b2fd10fe4aca
+TQID: 'https://experienceleague.adobe.com/dxPI12xu0thTB3eYJiyCY3OtLIxX-8IKKeXitH4C0Ws'
+product_v2:
+  - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+feature_v2:
+  - id: 8881ff95-1653-5fea-82af-ce1549c0d99d
+source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
-source-wordcount: '2634'
+source-wordcount: 2634
 ht-degree: 3%
 
 ---

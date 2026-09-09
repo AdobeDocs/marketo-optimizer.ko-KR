@@ -1,9 +1,17 @@
 ---
 title: AI-Decisioning 상태
 description: AI 의사 결정 상태 검사가 Marketo Optimizer의 적용 범위, 성향 분류 및 신호 풍부성을 이끌고 누락된 항목에 플래그를 지정하는 방법을 알아봅니다.
-source-git-commit: 75b481faf0d66210329f95c8afabdfa59e7bcb79
+TQID: 'https://experienceleague.adobe.com/rZy9gOQusGt2mfZ3t0iBS2blVp1PXH-R-TIW5cGWu2Y'
+product_v2:
+  - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+feature_v2:
+  - id: 5229c72e-d79b-574f-a03e-5c4bf48172c3
+  - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: 801
 ht-degree: 0%
 
 ---
