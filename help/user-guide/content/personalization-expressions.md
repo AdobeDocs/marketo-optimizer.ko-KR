@@ -3,9 +3,12 @@ title: Personalization 편집기
 description: Marketo Optimizer에서 개인화 편집기를 사용하여 이메일, WhatsApp 메시지, 랜딩 페이지 및 URL 필드에서 프로필 속성 토큰을 선택, 정렬, 사용자 지정 및 확인하는 방법을 알아봅니다.
 feature: Content Design Tools
 role: User
-source-git-commit: 75b481faf0d66210329f95c8afabdfa59e7bcb79
+TQID: 'https://experienceleague.adobe.com/5aPDp4kMpQo7LtE6CEUQWf2IbyeSMoW6iN5ZR-f-kLI'
+product_v2: id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: 1002
 ht-degree: 12%
 
 ---

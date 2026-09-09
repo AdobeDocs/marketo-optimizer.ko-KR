@@ -1,9 +1,12 @@
 ---
 title: 이메일 콘텐츠의 다크 모드
 description: Marketo Optimizer의 다크 모드 이메일 디자인에 대해 알아봅니다. 이메일 클라이언트 간 렌더링 미리 보기, 설정 사용자 지정 및 테스트.
-source-git-commit: c7d3546d075f5a58923134231217b2fd10fe4aca
+TQID: 'https://experienceleague.adobe.com/IFAOy7HJQ93uT4Mz70dC-RPHPaWhUhE9T0d5dEgJYgk'
+product_v2: id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+topic_v2: id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: 1476
 ht-degree: 7%
 
 ---
@@ -22,7 +25,7 @@ ht-degree: 7%
 
 _어두운 모드_&#x200B;를 사용하면 지원하는 전자 메일 클라이언트 또는 앱에서 텍스트, 단추 및 기타 시각적 요소에 대해 어두운 배경과 밝은 색상의 전자 메일을 표시할 수 있습니다. 이러한 유형의 디스플레이는 눈의 피로를 줄이고, 배터리 수명을 절약하며, 저조도 환경에서 가독성을 향상시켜 보다 편안한 시청 경험을 제공할 수 있다. 주요 운영 체제 및 앱에서 증가하는 추세로서, 이제 모든 사용자가 콘텐츠를 읽을 수 있고 시각적으로 호소력 있게 사용할 수 있도록 하는 것이 최신 이메일 디자인에서 중요한 고려 사항입니다.
 
-[!DNL Marketo Optimizer] 시각적 디자인 공간에서 [이메일 콘텐츠를 만들기](./email-authoring.md)할 때 _&#x200B;**[!UICONTROL 어두운 모드]**&#x200B;_ 보기로 전환할 수 있습니다. 이 보기에서 다크 모드가 활성화되면 이메일 클라이언트 지원을 위한 특정 사용자 지정 설정을 정의할 수도 있습니다.
+[!DNL Marketo Optimizer] 시각적 디자인 공간에서 [이메일 콘텐츠를 만들기](./email-authoring.md)할 때 _**[!UICONTROL 어두운 모드]**_ 보기로 전환할 수 있습니다. 이 보기에서 다크 모드가 활성화되면 이메일 클라이언트 지원을 위한 특정 사용자 지정 설정을 정의할 수도 있습니다.
 
 ## 이메일 클라이언트 고려 사항 {#email-client-considerations}
 
@@ -147,7 +150,7 @@ _어두운 모드_&#x200B;를 사용하면 지원하는 전자 메일 클라이�
    >
    >시뮬레이션은 이메일이 다크 모드로 표시되는 방식과 거의 유사하지만 실제 렌더링은 이메일 서비스 공급자 또는 장치 수준 설정의 변경으로 인해 달라질 수 있습니다.
 
-## 모범 사례 {#best-practices}
+## 우수 사례 {#best-practices}
 
 주요 이메일 클라이언트에서 다크 모드 채택이 증가함에 따라 [사용자 지정 다크 모드](#custom-dark-mode)를 사용하는지 여부에 관계없이 밝은 환경과 어두운 환경 모두에서 이메일이 렌더링되는 방식을 고려해야 합니다.
 

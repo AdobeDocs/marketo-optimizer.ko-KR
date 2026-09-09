@@ -1,9 +1,12 @@
 ---
 title: 여정 진행률 모니터링 및 디버그
 description: 동료 채팅에서 여정 관찰 가능성 기술을 사용하여 사람과 리드가 여정, 분할 경로 결정 및 타이밍을 어떻게 이동하는지 디버깅하고 모니터링하는 방법에 대해 알아봅니다.
-source-git-commit: 9db94582512d95f6c07d4e978a0a27291b471900
+TQID: 'https://experienceleague.adobe.com/Pnd1fVWUZ-g27UDE-y6Pc2Qwjsx-1pDSCaTGxjrBTRc'
+product_v2: id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+feature_v2: id: 1650dadf-b034-5ac9-a309-77ad1e2f5035id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: 634
 ht-degree: 0%
 
 ---

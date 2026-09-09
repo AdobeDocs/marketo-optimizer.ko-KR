@@ -1,9 +1,13 @@
 ---
 title: 홈 페이지
 description: Marketo Optimizer의 홈 페이지를 사용하여 AI 대화를 시작하고 기술을 시작하며, 마케팅, Assets, 보고서 및 대상으로 이동합니다.
-source-git-commit: 75b481faf0d66210329f95c8afabdfa59e7bcb79
+TQID: 'https://experienceleague.adobe.com/QdAQalH-ETbVtJL3O4rPC8z70Yzm1gvnx9DYhJP9Bb0'
+product_v2: id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+feature_v2: id: 46e599c6-e20f-5f67-9824-93415016f66bid: 64b90904-e4f0-5c1b-a871-8c6a40b204a1id: a29661b8-f7a4-53d1-a9ac-fdec08c092e4
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: 371
 ht-degree: 2%
 
 ---
@@ -40,7 +44,7 @@ _홈_ 페이지는 Adobe Marketo Optimizer의 시작 패드입니다. 왼쪽 탐
 | **에셋** | 이메일, 페이지, 템플릿, 토큰. |
 | **보고서** | 성능 및 참여 지표. |
 
-## 스킬
+## 기술
 
 _스킬_ 카드 행은 즉시 시작할 수 있는 고가치 AI 워크플로를 보여 줍니다.
 

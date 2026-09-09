@@ -1,12 +1,15 @@
 ---
 title: 웨비나 만들기 및 디자인
 description: 프로그램에 웨비나 자산을 추가하고,  [!DNL Adobe Connect]에서 디자인하고, 공동 호스트 및 발표자를 추가하고, 테스트 세션을 실행하고,  [!DNL Marketo Optimizer]에서 라이브 웨비나를 편집하세요.
-keywords: null
+keywords: 
 role: User
 feature: Channels
-source-git-commit: c7d3546d075f5a58923134231217b2fd10fe4aca
+TQID: 'https://experienceleague.adobe.com/fFvlOnp8hDF1RNOyohPWkc1whSG3T3deNrJ3RnEDzlo'
+product_v2: id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+feature_v2: id: a29661b8-f7a4-53d1-a9ac-fdec08c092e4id: d4203578-d294-5145-b397-f26f4488a904
+source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: 680
 ht-degree: 0%
 
 ---
@@ -60,8 +63,8 @@ ht-degree: 0%
 
 1. **배달 모드** 선택:
 
-   &#x200B;- **실시간** - 발표자가 실시간으로 세션을 호스팅합니다.
-   &#x200B;- **시뮬레이션된 라이브** - 예약된 시간에 라이브 채팅, 설문 조사 및 Q&amp;A와 함께 사전 녹화된 콘텐츠가 재생됩니다.
+   - **실시간** - 발표자가 실시간으로 세션을 호스팅합니다.
+   - **시뮬레이션된 라이브** - 예약된 시간에 라이브 채팅, 설문 조사 및 Q&amp;A와 함께 사전 녹화된 콘텐츠가 재생됩니다.
 
 1. **웨비나룸**&#x200B;을 선택하세요.
 
@@ -111,5 +114,5 @@ ht-degree: 0%
 
 등록이 시작된 후 웨비나를 편집할 수 있지만, 주의하여 편집할 수 있습니다.
 
-&#x200B;- 일정을 편집하면 이미 등록된 사람에 대한 업데이트 알림이 트리거될 수 있습니다. 예약된 웨비나를 편집하는 기능은 구성할 수 있습니다.
-&#x200B;- 라이브 이메일에서 토큰에 의해 참조되는 필드는 이미 보내기로 예약된 콘텐츠를 중단하므로 제거를 명시적으로 확인해야 합니다.
+- 일정을 편집하면 이미 등록된 사람에 대한 업데이트 알림이 트리거될 수 있습니다. 예약된 웨비나를 편집하는 기능은 구성할 수 있습니다.
+- 라이브 이메일에서 토큰에 의해 참조되는 필드는 이미 보내기로 예약된 콘텐츠를 중단하므로 제거를 명시적으로 확인해야 합니다.

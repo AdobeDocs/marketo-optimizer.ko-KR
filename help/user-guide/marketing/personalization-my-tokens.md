@@ -1,9 +1,11 @@
 ---
 title: Personalization용 사용자 지정 토큰
 description: 마케팅 아티팩트의 동적 개인화를 위해 사용자 지정 내 토큰을 만들고 관리합니다. Marketo Optimizer에서 프로그램의 텍스트 및 숫자 변수를 정의합니다.
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: c7d3546d075f5a58923134231217b2fd10fe4aca
+TQID: 'https://experienceleague.adobe.com/utVM69g7aQSuF-V3XQIdVBqvBXyiDz1ZWr0WtE67UCg'
+product_v2: id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+feature_v2: id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1id: a29661b8-f7a4-53d1-a9ac-fdec08c092e4
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
 source-wordcount: 629
 ht-degree: 3%
@@ -43,7 +45,7 @@ _내 토큰_&#x200B;은(는) 프로그램 또는 폴더에 대해 만들거나 �
 | 토큰 유형 | 설명 |
 | ---------- | ----------- |
 | 텍스트 | 이 유형은 표준 텍스트 문자열을 포함합니다. 텍스트 토큰의 크기 제한은 524,288자(UTF-8) 또는 2MB입니다. |
-| 날짜 | 이 유형에는 날짜 값이 있습니다. 날짜는 월-일-년(예: 09-23-2026)으로 표시됩니다. |
+| 일자 | 이 유형에는 날짜 값이 있습니다. 날짜는 월-일-년(예: 09-23-2026)으로 표시됩니다. |
 | 날짜 및 시간 | 이 유형에는 날짜 및 시간 값이 있습니다. |
 | 숫자 | 이 유형은 표준 정수 값을 보유합니다. |
 | 이메일 | 이 유형에는 유효한 이메일 주소가 있습니다. |

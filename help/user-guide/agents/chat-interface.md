@@ -1,9 +1,13 @@
 ---
 title: 채팅 인터페이스
 description: Marketo Optimizer의 동료 채팅 패널을 사용하여 자연어 또는 슬래시(/) 메뉴를 사용하여 프로그램, 여정 및 목록을 빌드할 수 있습니다.
-source-git-commit: 6264cadee61cb4a9366df655611803214110cccf
+TQID: 'https://experienceleague.adobe.com/5oj0glKEbJuzQFem-jxL4qjnzxVG4tlOaiHKM5SuiWQ'
+product_v2: id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+feature_v2: id: 1650dadf-b034-5ac9-a309-77ad1e2f5035id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1id: a29661b8-f7a4-53d1-a9ac-fdec08c092e4id: d4203578-d294-5145-b397-f26f4488a904
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: 928
 ht-degree: 0%
 
 ---
@@ -32,7 +36,7 @@ ht-degree: 0%
 
 [!DNL Adobe Sales Qualifier]은(는) [!DNL Marketo Optimizer]에서 사용할 수 있는 AI 기반 애플리케이션입니다. Account Qualification Agent을 구현하고 BDR(비즈니스 개발 담당자)을 위한 워크플로를 간소화하도록 설계되었습니다. [!DNL Sales Qualifier]은(는) 채널 전반에서 잠재 고객 자격, 전달 및 구매자 참여 워크플로를 자동화합니다. 엔터프라이즈 B2B 기업의 수동 BDR 로드를 줄이고 파이프라인 속도를 가속화합니다.
 
-자세한 내용은 [Sales Qualifier 설명서](https://experienceleague.adobe.com/ko/docs/sales-qualifier/using/home){target="_blank"}를 참조하세요.
+자세한 내용은 [Sales Qualifier 설명서](https://experienceleague.adobe.com/en/docs/sales-qualifier/using/home){target="_blank"}를 참조하세요.
 
 >[!ENDSHADEBOX]
 
@@ -78,7 +82,7 @@ ht-degree: 0%
 >
 >일부 명령이 회색으로 표시되고 _준비 중_(으)로 표시됩니다. 기능 플래그로 제어되며 계정에서 아직 활성화되지 않았습니다. 기능 플래그를 선택하면 아무 작업도 수행되지 않습니다. 사용 가능한 세트는 사용할 수 있는 기능에 따라 다릅니다.
 
-## 스킬
+## 기술
 
 스킬은 에이전트가 실행 방법을 알고 있는 패키지화된 워크플로우로서, `/` 메뉴와 자연어 요청 모두의 뒤에 기본 요소가 있습니다. 각 스킬은 단계별 지침 및 한 작업에 필요한 특정 도구(예: &quot;여정 게시&quot;, &quot;두 사람 목록 비교&quot;, &quot;채점 모델 구축&quot;)를 번들로 제공합니다.
 

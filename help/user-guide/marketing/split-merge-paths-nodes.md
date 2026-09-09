@@ -1,9 +1,12 @@
 ---
 title: 경로 노드 분할 및 병합
 description: 개인 여정에서 분할 및 병합 경로 노드를 사용하여 정의된 조건을 기반으로 개인을 개별 경로로 세그먼트화한 다음 공통 지점 다운스트림에서 다시 통합하는 방법에 대해 알아봅니다.
-source-git-commit: c7d3546d075f5a58923134231217b2fd10fe4aca
+TQID: 'https://experienceleague.adobe.com/XMN7lgb77bFlJkNXrmPf9ZSCV-GgIuybtr-O3AsqT2U'
+product_v2: id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+feature_v2: id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: 660
 ht-degree: 0%
 
 ---
@@ -20,7 +23,7 @@ ht-degree: 0%
 
 <!-- A split based on a people filter is automatically closed with a merge paths node so that all people can move forward to the next step. Split by people paths can include only people actions. These paths cannot be split again and automatically join back. _not currently true_ -->
 
-_&#x200B;**people 노드별 분할 경로가 작동하는 방식**&#x200B;_
+_**people 노드별 분할 경로가 작동하는 방식**_
 
 * 각 경로의 평가는 위에서 아래로 내려옵니다. 한 사람이 첫 번째 및 두 번째 경로에 대해 일치하는 경우 첫 번째 경로만 따라 진행합니다.
 * 노드는 정의된 세그먼트/경로 중 하나와 일치하지 않는 사용자에 대해 작업 또는 이벤트를 추가할 수 있는 _기타 사용자_ 경로의 정의를 지원합니다.

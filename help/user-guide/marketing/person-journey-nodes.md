@@ -1,9 +1,12 @@
 ---
 title: 개인 여정 노드
 description: Marketo Optimizer의 개인 여정 노드(대상, 작업, 이벤트, 대기, 경로 분할 및 AI 기반 다음 최적 경로 라우팅)에 대해 알아봅니다.
-source-git-commit: c7d3546d075f5a58923134231217b2fd10fe4aca
+TQID: 'https://experienceleague.adobe.com/DXva-JytBjj7MHwYeeYfsR2GYomHdj5NZWZk0kgdv1M'
+product_v2: id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+feature_v2: id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: 317
 ht-degree: 0%
 
 ---
@@ -17,7 +20,7 @@ _[!UICONTROL 개인 대상]_ 노드는 자동으로 여정의 첫 번째 노드�
 :::: landing-cards-container
 
 :::
-<!-- ![Person audience node](https://cdn.experienceleague.adobe.com/icons/users.svg?lang=ko) -->
+<!-- ![Person audience node](https://cdn.experienceleague.adobe.com/icons/users.svg) -->
 
 개인 대상 노드
 
@@ -27,7 +30,7 @@ _[!UICONTROL 개인 대상]_ 노드는 자동으로 여정의 첫 번째 노드�
 :::
 
 :::
-<!-- ![Action nodes](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=ko) -->
+<!-- ![Action nodes](https://cdn.experienceleague.adobe.com/icons/circle-play.svg) -->
 
 작업 노드
 
@@ -37,7 +40,7 @@ _[!UICONTROL 개인 대상]_ 노드는 자동으로 여정의 첫 번째 노드�
 :::
 
 :::
-<!-- ![Event nodes](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=ko) -->
+<!-- ![Event nodes](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg) -->
 
 이벤트 노드
 
@@ -47,7 +50,7 @@ _[!UICONTROL 개인 대상]_ 노드는 자동으로 여정의 첫 번째 노드�
 :::
 
 :::
-<!-- ![Wait nodes](https://cdn.experienceleague.adobe.com/icons/clock.svg?lang=ko) -->
+<!-- ![Wait nodes](https://cdn.experienceleague.adobe.com/icons/clock.svg) -->
 
 대기 노드
 
@@ -57,7 +60,7 @@ _[!UICONTROL 개인 대상]_ 노드는 자동으로 여정의 첫 번째 노드�
 :::
 
 :::
-<!-- ![Split and merge paths nodes](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=ko) -->
+<!-- ![Split and merge paths nodes](https://cdn.experienceleague.adobe.com/icons/code-branch.svg) -->
 
 경로 노드 분할 및 병합
 
@@ -67,7 +70,7 @@ _[!UICONTROL 개인 대상]_ 노드는 자동으로 여정의 첫 번째 노드�
 :::
 
 :::
-<!-- ![Next best path node](https://cdn.experienceleague.adobe.com/icons/lightbulb.svg?lang=ko) -->
+<!-- ![Next best path node](https://cdn.experienceleague.adobe.com/icons/lightbulb.svg) -->
 
 다음 최적 경로 노드
 

@@ -4,10 +4,11 @@ description: 웨비나 자산 모델, 멤버 상태, 토큰 및 활동을 포함
 keywords: 
 role: User
 feature: Channels
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 75b481faf0d66210329f95c8afabdfa59e7bcb79
+TQID: 'https://experienceleague.adobe.com/rcaoljHUnCghXxc-W0LY5DYM-46-9jc5mz39208eMxE'
+product_v2: id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+feature_v2: id: 3c1de303-7a7c-59a6-abca-8c534730e19cid: 3cf5f37e-e87e-5179-812b-53ce05d7eebbid: 46e599c6-e20f-5f67-9824-93415016f66bid: 64b90904-e4f0-5c1b-a871-8c6a40b204a1id: a29661b8-f7a4-53d1-a9ac-fdec08c092e4id: d4203578-d294-5145-b397-f26f4488a904
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
 source-wordcount: 1085
 ht-degree: 2%
@@ -31,7 +32,7 @@ ht-degree: 2%
 
 ## 자산으로서의 웨비나
 
-웨비나는 전자 메일 또는 랜딩 페이지와 같은 방식으로 [program](https://experienceleague.adobe.com/ko/docs/journey-optimizer-b2b/prime/marketing-management/programs/programs)이(가) 소유한 자산입니다. 프로그램에 웨비나를 추가하면 해당 프로그램에 웨비나가 등록되고 해당 프로그램의 모든 여정 및 에셋에서 토큰, 속성 및 활동을 사용할 수 있습니다.
+웨비나는 전자 메일 또는 랜딩 페이지와 같은 방식으로 [program](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/prime/marketing-management/programs/programs)이(가) 소유한 자산입니다. 프로그램에 웨비나를 추가하면 해당 프로그램에 웨비나가 등록되고 해당 프로그램의 모든 여정 및 에셋에서 토큰, 속성 및 활동을 사용할 수 있습니다.
 
 >[!IMPORTANT]
 >
@@ -43,7 +44,7 @@ ht-degree: 2%
 
 | 주 | 소유자 | 값 |
 |---|---|---|
-| 프로그램 구성원 상태 | 프로그램 | [프로그램 유형](https://experienceleague.adobe.com/ko/docs/journey-optimizer-b2b/prime/admin/program-types)별 구성 가능 |
+| 프로그램 구성원 상태 | 프로그램 | [프로그램 유형](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/prime/admin/program-types)별 구성 가능 |
 | 웨비나 상태 | 웨비나 자산 | 초대됨, 등록됨, 참석됨, 표시 안 함, 온디맨드로 참석함 |
 | 여정 상태 | 여정 | 현재 노드, 일시 중지, 완료 및 기타 여정 런타임 상태 |
 
@@ -71,13 +72,13 @@ ht-degree: 2%
 
 자산 수준 토큰은 웨비나 폴더에 직접 배치됩니다.
 
-&#x200B;- 직함
-&#x200B;- 설명
-&#x200B;- 시작 날짜/시간, 종료 날짜/시간
-&#x200B;- 기간
-&#x200B;- 시간대
-&#x200B;- 발표자
-&#x200B;- 레코딩 URL
+- 제목
+- 설명
+- 시작 날짜/시간, 종료 날짜/시간
+- 기간
+- 시간대
+- 발표자
+- 레코딩 URL
 
 >[!NOTE]
 >
@@ -85,9 +86,9 @@ ht-degree: 2%
 
 **구성원** 하위 폴더에 있는 받는 사람당 토큰:
 
-&#x200B;- **상태** - 받는 사람의 현재 웨비나 상태(초대됨, 등록됨, 참석함, 표시 안 함 또는 요청 시 참석함)입니다. [웨비나 상태](#webinar-status)를 참조하세요.
-&#x200B;- **URL 가입** - 수신자의 개인 [!DNL Adobe Connect] 링크입니다. 수신자의 웨비나 상태가 등록됨 또는 이후 버전인 경우에만 확인됩니다. 이전 단계에서 모든 사용자가 비어 있게 해결됩니다.
-&#x200B;- **녹화 URL** - 라이브 세션 후에 녹화가 게시된 후 확인되며, 그 때까지 비어 있습니다. 표시할 녹화가 있기 전에 링크가 표시되지 않도록 포스트 웨비나 이메일에서 조건부로 사용하십시오.
+- **상태** - 받는 사람의 현재 웨비나 상태(초대됨, 등록됨, 참석함, 표시 안 함 또는 요청 시 참석함)입니다. [웨비나 상태](#webinar-status)를 참조하세요.
+- **URL 가입** - 수신자의 개인 [!DNL Adobe Connect] 링크입니다. 수신자의 웨비나 상태가 등록됨 또는 이후 버전인 경우에만 확인됩니다. 이전 단계에서 모든 사용자가 비어 있게 해결됩니다.
+- **녹화 URL** - 라이브 세션 후에 녹화가 게시된 후 확인되며, 그 때까지 비어 있습니다. 표시할 녹화가 있기 전에 링크가 표시되지 않도록 포스트 웨비나 이메일에서 조건부로 사용하십시오.
 
 >[!NOTE]
 >
