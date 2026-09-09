@@ -2,7 +2,8 @@
 title: 콘텐츠 작성 - 탐색
 description: 콘텐츠 작성에 탐색 트리 사용에 대한 섹션 재사용
 TQID: 'https://experienceleague.adobe.com/Loy7s-hTsh4eYrYdrxVPj0bjKy2bpHXjK-TGbilEcDo'
-product_v2: id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+product_v2:
+  - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
 source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
 source-wordcount: 277

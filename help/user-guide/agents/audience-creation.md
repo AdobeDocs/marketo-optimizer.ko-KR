@@ -2,9 +2,15 @@
 title: 프로그램에 대한 대상 만들기
 description: Marketo Optimizer의 대상 만들기 기술을 사용하여 채팅에서 사람 목록을 만들고, Marketo Engage 스마트 목록을 조정하고, 목록 규칙을 편집할 수 있습니다.
 TQID: 'https://experienceleague.adobe.com/WFfKcQ3zfJmVDGstLmpPbC9iDF5JtBX67-izCC-CNds'
-product_v2: id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
-feature_v2: id: 1650dadf-b034-5ac9-a309-77ad1e2f5035id: 46e599c6-e20f-5f67-9824-93415016f66bid: 64b90904-e4f0-5c1b-a871-8c6a40b204a1id: a29661b8-f7a4-53d1-a9ac-fdec08c092e4
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+feature_v2:
+  - id: 1650dadf-b034-5ac9-a309-77ad1e2f5035
+  - id: 46e599c6-e20f-5f67-9824-93415016f66b
+  - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+  - id: a29661b8-f7a4-53d1-a9ac-fdec08c092e4
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
 source-wordcount: 1464
@@ -145,7 +151,7 @@ _전환 요약_&#x200B;에는 _N개의 높은 신뢰도_ 및 _N개의 낮은 신
 
 | 제한 사항 | 세부 정보 |
 |---|---|
-| [!DNL Marketo Engage]**에서**&#x200B;정적 목록 적응 | [!DNL Marketo Engage] 정적 목록(또는 전자 메일 또는 기타 필터가 아닌 자산)을 사람 목록으로 조정할 수 없습니다. 정적 목록은 명시적 멤버 ID이며 필터로 표현할 수 없습니다. Coworker는 Smart List 또는 Smart Campaign을 대신 요청합니다. |
+| [!DNL Marketo Engage]&#x200B;**에서**&#x200B;정적 목록 적응 | [!DNL Marketo Engage] 정적 목록(또는 전자 메일 또는 기타 필터가 아닌 자산)을 사람 목록으로 조정할 수 없습니다. 정적 목록은 명시적 멤버 ID이며 필터로 표현할 수 없습니다. Coworker는 Smart List 또는 Smart Campaign을 대신 요청합니다. |
 | **활동 및 멤버십 기반 필터** | [!DNL Marketo Engage]에서 조정할 때 _전자 메일이 열림_, _웹 페이지를 방문함_, _양식이 작성됨_, _목록의 구성원_, _Smart Campaign의 구성원_&#x200B;과 같은 필터에 사람 목록에 해당하는 사람이 없으며 &quot;해당하는 사람을 찾을 수 없습니다&quot;로 돌아옵니다. |
 | **회사 수준 조건** | 가능한 경우 가장 가까운 개인 수준 속성으로 번역되고(사용자 목록은 개인 속성에 대해 작동함) 적합성이 느슨할 경우 낮은 신뢰도로 플래그가 지정됩니다. |
 | **깊게 중첩된 AND/OR 논리** | 복잡한 중첩 논리는 최상위 AND/OR로 축소될 수 있습니다. 동료는 중첩 논리가 발생할 때 이에 대해 주목합니다. |

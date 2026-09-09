@@ -2,9 +2,13 @@
 title: AI-Decisioning 상태
 description: AI 의사 결정 상태 검사가 Marketo Optimizer의 적용 범위, 성향 분류 및 신호 풍부성을 이끌고 누락된 항목에 플래그를 지정하는 방법을 알아봅니다.
 TQID: 'https://experienceleague.adobe.com/rZy9gOQusGt2mfZ3t0iBS2blVp1PXH-R-TIW5cGWu2Y'
-product_v2: id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
-feature_v2: id: 5229c72e-d79b-574f-a03e-5c4bf48172c3id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+feature_v2:
+  - id: 5229c72e-d79b-574f-a03e-5c4bf48172c3
+  - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
 source-wordcount: 801
@@ -46,7 +50,7 @@ AI 의사 결정 상태를 사용하여 [!DNL Marketo Engage]에서 유입되는
 
 ## 사용자 분류 {#persona-classification}
 
-**[!UICONTROL 성향 분류]** 섹션은 성향 분류로 분류된 스토리 수를 보여줍니다. 예를 들어, _929개 스토리 중 {300개 · 32.3% 분류 · 67.7% 미분류_. 스택 막대는 사용자별로 분류된 스토리를 나누며, 각 스토리의 수와 백분율을 보여주는 범례가 있습니다.
+**[!UICONTROL 성향 분류]** 섹션은 성향 분류로 분류된 스토리 수를 보여줍니다. 예를 들어, _929개 스토리 중 &lbrace;300개 · 32.3% 분류 · 67.7% 미분류_. 스택 막대는 사용자별로 분류된 스토리를 나누며, 각 스토리의 수와 백분율을 보여주는 범례가 있습니다.
 
 성향 세그먼트를 선택하여 해당 성향의 직함 예제가 포함된 세부 사항 카드를 엽니다. 예를 들어, **[!UICONTROL 기타]** 세그먼트는 업계 전문가, 독립 고문, 프리랜스 컨설턴트, 주제전문가 등의 예와 함께 _272개 사례 / 29.3%_&#x200B;을(를) 보여줄 수 있습니다.
 

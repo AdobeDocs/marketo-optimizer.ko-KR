@@ -2,8 +2,12 @@
 title: 마케팅 관리
 description: Marketo Optimizer의 마케팅 관리를 사용하여 프로그램을 계획하고, 여정을 작성하고, 사용자 목록을 관리하고, 채팅 패널, 작업 공간 및 프로그램 트리에서 콘텐츠를 만들 수 있습니다.
 TQID: 'https://experienceleague.adobe.com/HKSGz4kBif1W4RIXjI4QIaZCdafNrdS79c-AUdpv6Ls'
-product_v2: id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
-feature_v2: id: 46e599c6-e20f-5f67-9824-93415016f66bid: 64b90904-e4f0-5c1b-a871-8c6a40b204a1id: a29661b8-f7a4-53d1-a9ac-fdec08c092e4
+product_v2:
+  - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+feature_v2:
+  - id: 46e599c6-e20f-5f67-9824-93415016f66b
+  - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+  - id: a29661b8-f7a4-53d1-a9ac-fdec08c092e4
 source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
 source-wordcount: 401

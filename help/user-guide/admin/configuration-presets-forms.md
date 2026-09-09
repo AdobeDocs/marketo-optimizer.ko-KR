@@ -2,9 +2,13 @@
 title: Forms 구성
 description: 플레이스홀더
 TQID: 'https://experienceleague.adobe.com/7X5-67hfrjRjWbGjq9duLu7mVjgfCs7tpAQLV8u6YKE'
-product_v2: id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
-feature_v2: id: a659ad61-de21-559d-a901-02e2fb329ff5id: d4203578-d294-5145-b397-f26f4488a904
-topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+feature_v2:
+  - id: a659ad61-de21-559d-a901-02e2fb329ff5
+  - id: d4203578-d294-5145-b397-f26f4488a904
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
 source-wordcount: 541
@@ -22,7 +26,7 @@ ht-degree: 16%
 
 ## 사전 요구 사항
 
-웹 양식을 사용하려면 Adobe Experience Platform에 하나 이상의 _**HTTP API 스트리밍 연결**_&#x200B;이 정의되어 있어야 합니다. 사용하려는 각 연결이 다음 요구 사항을 충족하는지 확인하십시오.
+웹 양식을 사용하려면 Adobe Experience Platform에 하나 이상의 _&#x200B;**HTTP API 스트리밍 연결**&#x200B;_&#x200B;이 정의되어 있어야 합니다. 사용하려는 각 연결이 다음 요구 사항을 충족하는지 확인하십시오.
 
 * 데이터 유형은 원시 데이터가 아닌 XDM으로 설정되어야 합니다.
 * 인증을 사용하지 않도록 설정해야 합니다(인증되지 않은 연결).

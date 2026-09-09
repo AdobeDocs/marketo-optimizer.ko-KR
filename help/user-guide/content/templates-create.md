@@ -2,9 +2,14 @@
 title: 이메일 템플릿 만들기
 description: Marketo Optimizer에서 이메일 템플릿을 만드는 방법 - 새로 만들기, 여정의 이메일을 템플릿으로 저장 또는 디자인 이미지를 이메일 템플릿으로 변환하는 방법에 대해 알아봅니다.
 TQID: 'https://experienceleague.adobe.com/Hag-o6Hu-82rqnWHnDBgPD-dKApy5JGsPMD5cGFOCfA'
-product_v2: id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
-feature_v2: id: 8881ff95-1653-5fea-82af-ce1549c0d99d
-topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+feature_v2:
+  - id: 8881ff95-1653-5fea-82af-ce1549c0d99d
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
 source-wordcount: 873

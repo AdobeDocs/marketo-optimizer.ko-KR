@@ -2,9 +2,15 @@
 title: WhatsApp 채널 구성
 description: Meta의 Cloud API를 통해 WhatsApp 비즈니스 계정을 연결하여 Marketo Optimizer 사용자 여정에서 WhatsApp 메시지를 사용하도록 설정합니다.
 TQID: 'https://experienceleague.adobe.com/y7rOywtyZ-OlupwLS-Fsjx72EVlaT7Vy-O1NEMwMO5E'
-product_v2: id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
-feature_v2: id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1id: a659ad61-de21-559d-a901-02e2fb329ff5id: d4203578-d294-5145-b397-f26f4488a904
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+feature_v2:
+  - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+  - id: a659ad61-de21-559d-a901-02e2fb329ff5
+  - id: d4203578-d294-5145-b397-f26f4488a904
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
 source-wordcount: 1469
@@ -73,7 +79,7 @@ WhatsApp 메시지를 보내기 전에 Marketo Optimizer 환경을 구성하고 
    * **[!UICONTROL API 토큰]** - API 토큰을 입력하십시오. 자세한 내용은 [Meta 설명서](https://developers.facebook.com/blog/post/2022/12/05/auth-tokens/)를 참조하세요.
    * **[!UICONTROL 비즈니스 계정 ID]** - 비즈니스 포트폴리오와 관련된 고유 번호를 입력합니다. 자세한 내용은 [Meta 설명서](https://www.facebook.com/business/help/1181250022022158?id=180505742745347)를 참조하세요.
 
-   ![WhatsApp 설정 API 자격 증명 ](assets/config-whatsapp-channels-api-credentials.png){width="500" zoomable="yes"}
+   ![WhatsApp 설정 API 자격 증명 &#x200B;](assets/config-whatsapp-channels-api-credentials.png){width="500" zoomable="yes"}
 
 1. **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 
