@@ -2,11 +2,9 @@
 title: 사용자 지정 점수 모델 만들기
 description: 동료 채팅 인터페이스의 Scoring Studio 스킬을 사용하여 Marketo Optimizer에서 사용자 정의 잠재 고객 점수 모델을 만들고, 미리 보고, 게시합니다.
 TQID: 'https://experienceleague.adobe.com/OAY0CzFPTyUi7NCPbRnxGkG6nnndPygbwGlbv9u2oeA'
-product_v2:
-  - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
-feature_v2:
-  - id: 1650dadf-b034-5ac9-a309-77ad1e2f5035
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+product_v2: id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+feature_v2: id: 1650dadf-b034-5ac9-a309-77ad1e2f5035
+source-git-commit: 96a923c923a6290b9d90e4ffc8e161d78f029c47
 workflow-type: tm+mt
 source-wordcount: 468
 ht-degree: 5%
@@ -60,7 +58,7 @@ Scoring Studio를 열면 Coworker는 정적 목록과 채점된 활동 세트로
 모델이 완성되면 Coworker에 게시하도록 지시합니다. 게시 프로세스는 다음을 자동으로 처리합니다.
 
 | 단계 | 다음 단계 |
-|---|---|
+| --- | --- |
 | **규칙 컴파일** | 모든 채점 규칙이 컴파일되고 검증됩니다 |
 | **점수 작업 만들기** | 예약된 점수 작업이 매일 실행되도록 생성되고 구성됩니다. |
 

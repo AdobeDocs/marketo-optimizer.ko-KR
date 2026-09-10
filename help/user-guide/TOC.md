@@ -3,9 +3,9 @@ user-guide-title: Marketo Optimizer 설명서
 user-guide-description: Adobe Marketo Optimizer에 대해 알아보고 이를 사용하여 B2B 리드 및 계정을 위한 개인화된 AI 기반 콘텐츠로 마케팅 및 판매 협력을 실행하는 방법에 대해 알아봅니다.
 hide: true
 nudge: red
-source-git-commit: 8b3ea5f52fc50ea6c995ace44dece90247deff8b
+source-git-commit: 96a923c923a6290b9d90e4ffc8e161d78f029c47
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '233'
 ht-degree: 43%
 
 ---
@@ -90,6 +90,7 @@ ht-degree: 43%
     + [구조 구성 요소](./content/structure-components.md)
     + [콘텐츠 구성 요소](./content/content-components.md)
     + [사용자 정의 CSS](./content/design-custom-css.md)
++ [Scoring Studio](./labs/scoring-studio.md)
 + [개인 정보 관리](./admin/privacy-management.md)
 + 관리 {#admin}
   + 채널 {#channels}
