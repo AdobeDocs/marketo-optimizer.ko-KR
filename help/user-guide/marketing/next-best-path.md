@@ -4,18 +4,20 @@ description: 자연어 프롬프트, 경로 시뮬레이션, 신뢰도 점수 �
 TQID: 'https://experienceleague.adobe.com/F-pxiABk7vHAktfmBUjZ8BYnxYIwQp--WutG6mvxiY0'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 5229c72e-d79b-574f-a03e-5c4bf48172c3
+    internal-label: AI Decisioning
   - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+    internal-label: Journeys
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
 workflow-type: tm+mt
-source-wordcount: 1514
+source-wordcount: '1514'
 ht-degree: 0%
-
 ---
-
 # 다음 최적 경로 노드
 
 Marketo Optimizer에서 *다음 최적 경로* 노드는 AI 기반 분할 경로 결정을 여정 캔버스로 직접 가져옵니다. [분할된 경로](./split-merge-paths-nodes.md) 노드에서 필터 조건을 구성하는 대신, 자연어로 의도를 설명하고 시스템에서 각 사용자에 대해 가장 관련성이 높은 경로를 결정하도록 합니다.
