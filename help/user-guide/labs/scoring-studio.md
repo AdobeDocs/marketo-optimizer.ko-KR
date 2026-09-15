@@ -3,15 +3,15 @@ title: Scoring Studio
 description: 모델 목록, 캔버스, 차원 열, 신호 카드, 리드 세그먼트 및 게시를 포함하여 Adobe Marketo Optimizer의 Scoring Studio에 대해 알아봅니다.
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 1650dadf-b034-5ac9-a309-77ad1e2f5035
-source-git-commit: 96a923c923a6290b9d90e4ffc8e161d78f029c47
+    internal-label: Chat Interface
+source-git-commit: cc6a908809cfb91bf03157935737f4869761a7db
 workflow-type: tm+mt
-source-wordcount: 897
+source-wordcount: '897'
 ht-degree: 2%
-
 ---
-
 
 # Scoring Studio
 
@@ -20,6 +20,8 @@ Scoring Studio에는 모델 목록, 각 모델에 대해 편집 가능한 캔버
 ## 모델 목록 {#model-list}
 
 모델 목록은 Scoring Studio의 랜딩 보기입니다. [!DNL Marketo Optimizer] 인스턴스의 모든 채점 모델을 테이블의 행으로 표시하거나, 그리드 보기로 전환하는 경우 카드로 표시합니다.
+
+![채점 스튜디오 모델 목록에 차원, 신호 및 마지막으로 수정한 세부 정보가 있는 활성 채점 모델이 표시됩니다.](./assets/scoring-studio-ui.png){width="800" zoomable="yes"}
 
 | 열 | 설명 |
 | --- | --- |
@@ -31,8 +33,6 @@ Scoring Studio에는 모델 목록, 각 모델에 대해 편집 가능한 캔버
 | 마지막 수정자 | 모델을 마지막으로 변경한 사람입니다. |
 | 제작일 | 모델이 생성된 날짜입니다. |
 | 제작자 | 모델을 만든 사람입니다. |
-
-![채점 스튜디오 모델 목록에 차원, 신호 및 마지막으로 수정한 세부 정보가 있는 활성 채점 모델이 표시됩니다.](./assets/scoring-studio-ui.png){width="800" zoomable="yes"}
 
 검색 필드를 사용하여 이름별로 모델을 찾거나 상태별로 목록을 필터링합니다. **[!UICONTROL 편집]**, **[!UICONTROL 복제]**, **[!UICONTROL 보관]** 또는 **[!UICONTROL 삭제]**&#x200B;하려면 행의 **[!UICONTROL 추가 메뉴]**&#x200B;를 선택하세요.
 

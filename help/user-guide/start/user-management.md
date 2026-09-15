@@ -4,39 +4,38 @@ description: 'Adobe Admin Console에서 사용자 액세스 관리: Marketo Opti
 TQID: 'https://experienceleague.adobe.com/IY7Fvbk8GG2Xudh6vC4N9Bwk-sejvh-MMRIHHxvS-nc'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 3cf5f37e-e87e-5179-812b-53ce05d7eebb
+    internal-label: Setup
   - id: 46e599c6-e20f-5f67-9824-93415016f66b
-  - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
-  - id: 8881ff95-1653-5fea-82af-ce1549c0d99d
-  - id: a659ad61-de21-559d-a901-02e2fb329ff5
-  - id: d4203578-d294-5145-b397-f26f4488a904
+    internal-label: Administration
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Administration
+source-git-commit: 98214f502bba0efea89c7f36ac46e634e65cd0c9
 workflow-type: tm+mt
-source-wordcount: 2279
-ht-degree: 43%
-
+source-wordcount: '2474'
+ht-degree: 36%
 ---
-
 # 사용자 액세스 및 권한
 
 프로비저닝이 완료되고 샌드박스가 바인딩되면 다음 단계를 완료하여 팀 및 사용자에게 [!DNL Marketo Optimizer] 액세스 권한을 제공하십시오.
 
-1. Admin Console에서 [제품 프로필 만들기 [!DNL Journey Optimizer B2B Edition] 제품 프로필 만들기](#create-profile)(1회/초기 설정만 해당).
+1. Admin Console에서 [제품 프로필 만들기 [!DNL Marketo Optimizer] 제품 프로필 만들기](#create-profile)(1회/초기 설정만 해당).
 1. Admin Console에서 [사용자 그룹 추가](#add-user-group).
 1. Admin Console의 사용자 그룹에 [제품 프로필을 할당](#assign-profile)합니다.
 1. Admin Console에서 [사용자를 새 그룹에 추가](#add-users)합니다.
-1. Adobe Experience Platform에서 [기본 제공 역할을 편집](#edit-role-permissions) 또는 [사용자 지정 역할을 만들기](#create-a-custom-role) 권한을 사용하여 [!DNL Journey Optimizer B2B Edition].
+1. [기본 제공 역할을 편집](#edit-role-permissions) 또는 [사용자 지정 역할을 만들기](#create-a-custom-role) 제품 권한과 Experience Platform에서 필요한 [!DNL Marketo Optimizer] 샌드박스를 사용합니다.
 1. Adobe Experience Platform의 역할에 [사용자 추가](#add-users-to-a-role) 또는 [그룹](#add-user-groups-to-a-role).
 
 ## 제품 프로필 구성 {#config-profile}
 
-관리자는 Adobe 제품 라이선스 및 사용자를 관리하고 관리하는 중앙 위치인 [!DNL Adobe Admin Console]에서 이러한 작업을 완료할 수 있습니다. Admin Console에서는 다양한 개별 솔루션 내부가 아닌 단일 위치에서 사용자를 만들고 관리할 수 있습니다. 기능 및 기능에 대한 자세한 내용은 [Admin Console 개요](https://helpx.adobe.com/kr/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html) 페이지를 참조하세요.
+관리자는 Adobe 제품 라이선스 및 사용자를 관리하고 관리하는 중앙 위치인 [!DNL Adobe Admin Console]에서 이러한 작업을 완료할 수 있습니다. Admin Console에서는 다양한 개별 솔루션 내부가 아닌 단일 위치에서 사용자를 만들고 관리할 수 있습니다. 기능 및 기능에 대한 자세한 내용은 [Admin Console 개요](https://helpx.adobe.com/kr/business/enterprise/deploy-apps-updates.html) 페이지를 참조하세요.
 
 ### Admin Console 액세스 {#admin-console}
 
@@ -60,7 +59,7 @@ Admin Console을 사용하여 팀 내의 사용자를 관리하려면 먼저 Adm
 
 1. 시스템 관리자인지 확인하려면 _[!UICONTROL 사용자]_ 카드에서 **[!UICONTROL 관리자]**&#x200B;를 선택하십시오.
 
-   ![Admin Console 개요 - 관리자 클릭](./assets/admin-console-overview-administrators.png){width="800" zoomable="yes"}
+   ![사용자 카드에서 관리자가 선택된 Admin Console 개요 페이지](./assets/admin-console-overview-administrators.png){width="800" zoomable="yes"}
 
 1. Adobe ID 이메일, 사용자 이름, 이름 또는 성을 입력하여 검색합니다.
 
@@ -68,21 +67,19 @@ Admin Console을 사용하여 팀 내의 사용자를 관리하려면 먼저 Adm
 
    * **[!UICONTROL 관리자 역할]** 열의 값에 `System`이(가) 표시되면 사용자(또는 표시된 사용자)가 시스템 관리자임을 알 수 있습니다.
 
-### [!DNL Journey Optimizer B2B Edition] 제품 프로필 만들기 {#create-profile}
+### [!DNL Marketo Optimizer] 제품 프로필 만들기 {#create-profile}
 
 사용자에게 Adobe 솔루션에 대한 액세스 권한을 부여할 때 반드시 전체 액세스 권한을 부여할 필요는 없습니다. 제품 프로필을 사용하면 각 솔루션이 고유한 사용자 권한 집합을 가질 수 있습니다. Admin Console을 사용하여 제품 프로필을 할당합니다.
 
-사용자 자격에 제품 프로필을 사용하는 방법에 대한 자세한 내용은 Admin Console 설명서에서 [_기업 사용자에 대한 제품 프로필 관리_](https://helpx.adobe.com/kr/business/enterprise/manage-products-and-entitlements/manage-products-and-product-profiles/manage-product-profiles.html){target="_blank"}를 참조하십시오.
+사용자 자격에 제품 프로필을 사용하는 방법에 대한 자세한 내용은 Admin Console 설명서에서 [_기업 사용자에 대한 제품 프로필 관리_](https://helpx.adobe.com/kr/business/enterprise/products-entitlements/manage-product-profiles/product-profiles.html){target="_blank"}를 참조하십시오.
 
-![관리자 역할 요구 사항](../assets/do-not-localize/icon-admin-user.svg){width="30"} 시스템 관리자 또는 [!DNL Experience Platform] 제품 관리자는 [https://adminconsole.adobe.com](https://adminconsole.adobe.com)에서 다음 단계를 수행할 수 있습니다.
+![이 절차를 완료하려면 관리자 액세스 권한이 필요함을 나타내는 아이콘입니다.](../assets/do-not-localize/icon-admin-user.svg){width="30"} 시스템 관리자 또는 [!DNL Experience Platform] 제품 관리자는 [https://adminconsole.adobe.com](https://adminconsole.adobe.com)에서 다음 단계를 수행할 수 있습니다.
 
 1. **[!UICONTROL 제품]** 탭을 선택합니다.
 
-1. 프로필을 추가할 [!DNL Journey Optimizer B2B Edition] 인스턴스를 열고 **[!UICONTROL 새 프로필]**&#x200B;을 클릭합니다.
+1. 프로필을 추가할 [!DNL Marketo Optimizer] 인스턴스를 열고 **[!UICONTROL 새 프로필]**&#x200B;을 클릭합니다.
 
-   ![Experience Platform - 사용자 그룹의 제품 프로필](./assets/admin-console-product-profiles.png){width="600" zoomable="yes"}
-
-1. _B2B 사용자_&#x200B;와 같은 제품 프로필 이름을 입력하십시오.
+1. 제품 프로필 이름(예: _액세스_)을 입력하십시오.
 
 1. **[!UICONTROL 다음]**&#x200B;을 클릭한 다음 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
@@ -90,9 +87,9 @@ Admin Console을 사용하여 팀 내의 사용자를 관리하려면 먼저 Adm
 
 사용자 그룹은 공유 사용 권한 집합이 부여된 사용자 컬렉션입니다. 사용자 그룹의 사용자를 추가하거나 제거할 수 있습니다. 그룹 내의 사용자가 변경되는 동안 그룹 권한은 동일하게 유지됩니다.
 
-사용자 그룹을 사용하여 권한을 관리하는 방법에 대한 자세한 내용은 Admin Console 설명서에서 [사용자 그룹 관리](https://helpx.adobe.com/kr/business/enterprise/manage-users/user-groups.html){target="_blank"}를 참조하십시오.
+사용자 그룹을 사용하여 권한을 관리하는 방법에 대한 자세한 내용은 Admin Console 설명서에서 [사용자 그룹 관리](https://helpx.adobe.com/kr/business/enterprise/users/users-and-groups/user-groups.html){target="_blank"}를 참조하십시오.
 
-![관리자 역할 요구 사항](../assets/do-not-localize/icon-admin-user.svg){width="30"} 시스템 관리자는 [https://adminconsole.adobe.com](https://adminconsole.adobe.com)에서 다음 단계를 수행할 수 있습니다.
+![이 절차를 완료하려면 관리자 액세스 권한이 필요함을 나타내는 아이콘입니다.](../assets/do-not-localize/icon-admin-user.svg){width="30"} 시스템 관리자는 [https://adminconsole.adobe.com](https://adminconsole.adobe.com)에서 다음 단계를 수행할 수 있습니다.
 
 1. **[!UICONTROL 사용자]** 탭을 선택합니다.
 
@@ -100,13 +97,13 @@ Admin Console을 사용하여 팀 내의 사용자를 관리하려면 먼저 Adm
 
 1. 오른쪽 상단의 **[!UICONTROL 새 사용자 그룹]**&#x200B;을 클릭합니다.
 
-1. _B2B 사용자_&#x200B;와 같은 사용자 그룹의 이름을 입력하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+1. _최적화 프로그램 사용자_&#x200B;와 같은 사용자 그룹의 이름을 입력하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-   ![관리 콘솔 - 사용자 그룹 추가](./assets/admin-console-new-user-group.png){width="600" zoomable="yes"}
+   ![Admin Console의 새 사용자 그룹 대화 상자에 그룹 이름을 입력했습니다.](./assets/admin-console-new-user-group.png){width="600" zoomable="yes"}
 
 ### 제품 프로필 할당 {#assign-profile}
 
-![관리자 역할 요구 사항](../assets/do-not-localize/icon-admin-user.svg){width="30"} 제품 관리자는 [https://adminconsole.adobe.com](https://adminconsole.adobe.com)에서 다음 단계를 수행할 수 있습니다.
+![이 절차를 완료하려면 관리자 액세스 권한이 필요함을 나타내는 아이콘입니다.](../assets/do-not-localize/icon-admin-user.svg){width="30"} 제품 관리자는 [https://adminconsole.adobe.com](https://adminconsole.adobe.com)에서 다음 단계를 수행할 수 있습니다.
 
 1. 생성한 사용자 그룹을 클릭합니다.
 
@@ -114,20 +111,20 @@ Admin Console을 사용하여 팀 내의 사용자를 관리하려면 먼저 Adm
 
 1. **+**&#x200B;을(를) 클릭하고 다음 제품의 각 인스턴스를 추가합니다.
 
-   * [!UICONTROL Adobe Journey Optimizer B2B edition - 사용자 프로필]
+   * [!UICONTROL Adobe Marketo Optimizer - 액세스]
    * [!UICONTROL Adobe Experience Platform - AEP-Default-All-Users]
    * [!UICONTROL Adobe Experience Platform 데이터 수집 - 기본 데이터 수집 모든 액세스]
    * [!UICONTROL Adobe Experience Platform - 기본 프로덕션 모든 액세스]
 
-   ![Admin Console - 사용자 그룹의 제품 프로필](./assets/admin-console-product-profiles.png){width="600" zoomable="yes"}
+   ![Admin Console의 할당된 제품 프로필 탭에서 사용자 그룹에 추가된 프로필을 표시합니다.](./assets/admin-console-product-profiles.png){width="600" zoomable="yes"}
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 ### 새 그룹에 사용자 추가 {#add-users}
 
-사용자 관리에 대한 자세한 내용은 Admin Console 설명서에서 [_Adobe Admin Console 사용자_](https://helpx.adobe.com/kr/business/enterprise/manage-users/users.html){target="_blank"}를 참조하십시오.
+사용자 관리에 대한 자세한 내용은 Admin Console 설명서에서 [_Adobe Admin Console 사용자_](https://helpx.adobe.com/kr/business/enterprise/users/understand-user-management/user-management-overview.html){target="_blank"}를 참조하십시오.
 
-![관리자 역할 요구 사항](../assets/do-not-localize/icon-admin-user.svg){width="30"} 시스템 관리자 또는 제품 관리자는 [https://adminconsole.adobe.com](https://adminconsole.adobe.com)에서 다음 단계를 수행할 수 있습니다. 제품 관리자는 해당 조직에 이미 존재하는 사용자만 추가할 수 있습니다.
+![이 절차를 완료하려면 관리자 액세스 권한이 필요함을 나타내는 아이콘입니다.](../assets/do-not-localize/icon-admin-user.svg){width="30"} 시스템 관리자 또는 제품 관리자는 [https://adminconsole.adobe.com](https://adminconsole.adobe.com)에서 다음 단계를 수행할 수 있습니다. 제품 관리자는 해당 조직에 이미 존재하는 사용자만 추가할 수 있습니다.
 
 1. 사용자가 아직 조직의 멤버가 아닌 경우 각 사용자를 추가합니다.
 
@@ -135,7 +132,7 @@ Admin Console을 사용하여 팀 내의 사용자를 관리하려면 먼저 Adm
 
    * 사용자의 전자 메일 주소를 입력하고 **[!UICONTROL 새 사용자로 추가]**&#x200B;를 클릭합니다.
 
-     ![관리 콘솔 - 새 그룹에 대한 사용자 프로필 추가](./assets/admin-console-user-group-add-users.png){width="600" zoomable="yes"}
+     ![전자 메일 주소를 입력하고 Admin Console에서 새 사용자 추가 대화 상자를 엽니다.](./assets/admin-console-user-group-add-users.png){width="600" zoomable="yes"}
 
    * 이름과 성을 입력한 다음 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
@@ -149,7 +146,7 @@ Admin Console을 사용하여 팀 내의 사용자를 관리하려면 먼저 Adm
 
    * **[!UICONTROL 사용자 그룹]** 아래의 _추가_( **+**) 아이콘을 클릭합니다.
 
-     ![관리 콘솔 - 사용자에 대한 사용자 그룹 선택](./assets/admin-console-user-edit-user-groups.png){width="600" zoomable="yes"}
+     ![사용자에 대해 선택한 사용자 그룹이 있는 Admin Console의 사용자 그룹 편집 대화 상자](./assets/admin-console-user-edit-user-groups.png){width="600" zoomable="yes"}
 
    * 이전에 만든 사용자 그룹을 선택하고 **[!UICONTROL 적용]**&#x200B;을 클릭합니다.
 
@@ -171,11 +168,15 @@ Experience Platform의 역할 권한에 대한 자세한 내용은 Experience Pl
    >
    >_[!UICONTROL 권한]_&#x200B;이 표시되지 않으면 **[!UICONTROL 모두 보기]**&#x200B;를 클릭하고 사용 가능한 응용 프로그램에서 선택해야 할 수 있습니다.
 
-   ![Experience Platform - 액세스 권한](./assets/aep-permissions.png){width="700" zoomable="yes"}
+   ![Experience Platform의 빠른 액세스 패널에서 권한 응용 프로그램을 선택했습니다.](./assets/aep-permissions.png){width="700" zoomable="yes"}
 
-### 권한 {#permissions}
+### 권한 리소스 {#permissions}
 
-다음 권한은 [!DNL Marketo Optimizer]의 채널 구성, 콘텐츠 관리 및 개인 여정 기능에 대한 액세스를 제어합니다.
+다음 권한 리소스는 [!DNL Marketo Optimizer]의 채널 구성, 콘텐츠 관리 및 개인 여정 기능에 대한 액세스를 제어합니다.
+
+>[!IMPORTANT]
+>
+>[!DNL Marketo Optimizer] 액세스를 사용하려면 명명 규칙 `Mktoaep` + [!DNL Marketo Engage] 구독 접두사를 사용하여 프로비저닝된 특정 샌드박스를 활성화해야 합니다. 예를 들어 연결된 [!DNL Marketo Engage] 구독 접두사가 _AcmeAssoc_&#x200B;인 경우 [!DNL Marketo Optimizer] 액세스에 필요한 샌드박스는 _MktoaepAcmeAssoc_&#x200B;입니다.
 
 | 카테고리 | 사용 권한 | 설명 |
 | -------- | ----------- | ---------- |
@@ -221,14 +222,13 @@ Experience Platform의 역할 권한에 대한 자세한 내용은 Experience Pl
 
 ### B2B built-in roles {#b2b-built-in-roles}
 
-When your organization has [!DNL Journey Optimizer B2B Edition] provisioned, Experience Platform includes a set of built-in (default) roles that you can use to manage access to the product capabilities:
+When your organization has [!DNL Marketo Optimizer] provisioned, Experience Platform includes a set of built-in (default, read-only) roles that you can use to manage access to the product capabilities:
 
 | Role | Permissions |
 | ---- | ----------- |
 | B2B Journey Manager | <li>Manage B2B Journeys <li>Manage B2B Buying Groups <li>Manage B2B Account Lists <li>View B2B Engagement Dashboard <li>View B2B Insights Dashboard |
 | B2B Channel Manager | <li>Manage B2B Assets <li>Manage B2B Templates <li>Manage B2B Fragments |
 | B2B System Administrator | <li>Manage B2B Channels Configurations <li>Manage B2B Admin Configurations |
-| B2B Sales User | <li>View B2B Engagement Dashboard <li>View B2B Buying Groups <li>Access In-CRM Insights |
 
 -->
 
@@ -238,31 +238,31 @@ When your organization has [!DNL Journey Optimizer B2B Edition] provisioned, Exp
 
 >[!IMPORTANT]
 >
->[!DNL Marketo Optimizer] 액세스를 사용하려면 명명 규칙(Marketo Engage 구독 접두사 + Prime)을 사용하여 프로비저닝된 특정 샌드박스를 활성화해야 합니다. 예를 들어 연결된 Marketo Engage 구독 접두사가 _AcmeAssoc_&#x200B;인 경우 [!DNL Marketo Optimizer] 액세스에 필요한 샌드박스는 _AcmeAssocPrime_&#x200B;입니다.
+>[!DNL Marketo Optimizer] 액세스를 사용하려면 명명 규칙 `Mktoaep` + [!DNL Marketo Engage] 구독 접두사를 사용하여 프로비저닝된 특정 샌드박스를 활성화해야 합니다. 예를 들어 연결된 [!DNL Marketo Engage] 구독 접두사가 _AcmeAssoc_&#x200B;인 경우 [!DNL Marketo Optimizer] 액세스에 필요한 샌드박스는 _MktoaepAcmeAssoc_&#x200B;입니다.
 
 >[!NOTE]
 >
->Admin Console 시스템 관리자는 다음 단계를 수행할 수 있습니다.
+>Experience Platform 권한에 대한 액세스 권한이 있는 제품 관리자는 다음 단계를 수행할 수 있습니다.
 
 :_역할에 대한 권한을 변경하려면(_T)
 
 1. 왼쪽 탐색에서 **[!UICONTROL 역할]**&#x200B;을(를) 선택합니다.
 
-1. **_B2B 채널 관리자_** 역할 이름을 클릭합니다.
+1. **_Optimizer 사용자_** 역할 이름을 클릭합니다.
 
 1. 세부 정보 페이지에서 오른쪽 상단의 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
 
-   ![Experience Platform - 역할 편집](./assets/aep-permissions-role-prime-edit.png){width="800" zoomable="yes"}
+   ![편집이 선택된 Experience Platform 권한의 역할 세부 정보 페이지입니다.](./assets/aep-permissions-role-prime-edit.png){width="800" zoomable="yes"}
 
    역할 편집기에서 _[!UICONTROL 리소스]_ 메뉴에 Experience Cloud - 플랫폼 기반 애플리케이션에 적용되는 리소스 목록이 표시됩니다.
 
-1. [!DNL Marketo Optimizer] 액세스(`<Marketo subscription prefix>Prime`)에 대해 프로비전된 샌드박스를 선택하십시오.
+1. [!DNL Marketo Optimizer] 액세스(`Mktoaep<Marketo subscription prefix>`)에 대해 프로비전된 샌드박스를 선택하십시오.
 
-   ![Experience Platform - 새 역할에 대한 샌드박스 추가](./assets/aep-permissions-role-prime-sandbox.png){width="800" zoomable="yes"}
+   ![추가할 수 있는 Marketo Optimizer 샌드박스를 표시하는 역할 편집기의 샌드박스 선택 목록.](./assets/aep-permissions-optimizer-sandbox.png){width="500" zoomable="yes"}
 
-1. 각 B2B 리소스에 대해 _추가_ 아이콘(**+**)을 클릭합니다.
+1. 각 기능 리소스에 대해 _추가_ 아이콘(**+**)을 클릭합니다.
 
-   ![Experience Platform - B2B 여정 리소스가 채널 관리자 역할에 추가됨](./assets/aep-permissions-b2b-list.png){width="700" zoomable="yes"}
+   ![권한이 나열된 B2B 여정 리소스를 표시하는 Experience Platform의 역할 편집기.](./assets/aep-permissions-b2b-list.png){width="700" zoomable="yes"}
 
 1. 각 리소스에 대한 특정 권한을 추가하거나 **[!UICONTROL 모두 추가]**&#x200B;를 선택합니다.
 
@@ -274,7 +274,7 @@ When your organization has [!DNL Journey Optimizer B2B Edition] provisioned, Exp
 
 ### 역할에 사용자 추가 {#add-users-to-a-role}
 
-![관리자 역할 요구 사항](../assets/do-not-localize/icon-admin-user.svg){width="30"} 시스템 관리자 또는 Experience Platform 관리자는 다음 단계를 수행할 수 있습니다.
+![이 절차를 완료하려면 관리자 액세스 권한이 필요함을 나타내는 아이콘입니다.](../assets/do-not-localize/icon-admin-user.svg){width="30"} 시스템 관리자 또는 Experience Platform 관리자는 다음 단계를 수행할 수 있습니다.
 
 1. 역할 세부 정보를 열고 **[!UICONTROL 사용자]** 탭을 선택합니다.
 
@@ -282,7 +282,7 @@ When your organization has [!DNL Journey Optimizer B2B Edition] provisioned, Exp
 
 1. **[!UICONTROL 사용자 추가]**&#x200B;를 클릭합니다.
 
-   ![Experience Platform - 역할에 사용자 추가](./assets/aep-permissions-role-prime-add-users.png){width="800" zoomable="yes"}
+   ![사용자 추가를 선택한 Experience Platform의 역할 세부 정보 페이지에 있는 사용자 탭](./assets/aep-permissions-role-prime-add-users.png){width="800" zoomable="yes"}
 
 1. _[!UICONTROL 사용자 추가]_ 대화 상자에서 역할에 추가할 사용자를 찾아 선택합니다.
 
@@ -290,15 +290,15 @@ When your organization has [!DNL Journey Optimizer B2B Edition] provisioned, Exp
 
    * 각 사용자에 대한 확인란을 선택합니다.
 
-   ![Experience Platform - 사용자 추가 대화 상자](assets/aep-permissions-role-add-users-dialog.png){width="600" zoomable="yes"}
+   ![역할에 추가하도록 선택한 사용자 확인란이 있는 Experience Platform의 사용자 추가 대화 상자.](assets/aep-permissions-role-add-users-dialog.png){width="600" zoomable="yes"}
 
 1. 추가할 모든 사용자를 선택한 경우 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 ### 역할에 사용자 그룹 추가 {#add-user-groups-to-a-role}
 
-사용자 관리에 대한 자세한 내용은 Admin Console 설명서에서 [_Adobe Admin Console 사용자_](https://helpx.adobe.com/kr/business/enterprise/manage-users/users.html){target="_blank"}를 참조하십시오.
+사용자 관리에 대한 자세한 내용은 Admin Console 설명서에서 [_Adobe Admin Console 사용자_](https://helpx.adobe.com/kr/business/enterprise/users/understand-user-management/user-management-overview.html){target="_blank"}를 참조하십시오.
 
-![관리자 역할 요구 사항](../assets/do-not-localize/icon-admin-user.svg){width="30"} 시스템 관리자 또는 Experience Platform 관리자는 다음 단계를 수행할 수 있습니다.
+![이 절차를 완료하려면 관리자 액세스 권한이 필요함을 나타내는 아이콘입니다.](../assets/do-not-localize/icon-admin-user.svg){width="30"} 시스템 관리자 또는 Experience Platform 관리자는 다음 단계를 수행할 수 있습니다.
 
 1. 역할 세부 정보를 열고 **[!UICONTROL 사용자 그룹]** 탭을 선택합니다.
 
@@ -306,7 +306,7 @@ When your organization has [!DNL Journey Optimizer B2B Edition] provisioned, Exp
 
 1. **[!UICONTROL 그룹 추가]**&#x200B;를 클릭합니다.
 
-   ![Experience Platform - 역할에 그룹 추가](./assets/aep-permissions-role-prime-add-groups.png){width="800" zoomable="yes"}
+   ![그룹 추가를 선택한 Experience Platform의 역할 세부 정보 페이지에 있는 사용자 그룹 탭](./assets/aep-permissions-role-prime-add-groups.png){width="800" zoomable="yes"}
 
 1. _[!UICONTROL 그룹 추가]_ 대화 상자에서 역할에 추가할 그룹을 찾아 선택합니다.
 
@@ -314,13 +314,13 @@ When your organization has [!DNL Journey Optimizer B2B Edition] provisioned, Exp
 
    * 각 사용자 그룹에 대한 확인란을 선택합니다.
 
-   ![Experience Platform - 그룹 추가 대화 상자](assets/aep-permissions-role-add-groups-dialog.png){width="600" zoomable="yes"}
+   ![역할에 추가하도록 선택한 사용자 그룹 확인란이 있는 Experience Platform의 그룹 추가 대화 상자.](assets/aep-permissions-role-add-groups-dialog.png){width="600" zoomable="yes"}
 
 1. 추가할 모든 그룹을 선택한 경우 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 ### 사용자 정의 역할 만들기 {#create-a-custom-role}
 
-![관리자 역할 요구 사항](../assets/do-not-localize/icon-admin-user.svg){width="30"} 시스템 관리자 또는 Experience Platform 관리자는 다음 단계를 수행할 수 있습니다.
+![이 절차를 완료하려면 관리자 액세스 권한이 필요함을 나타내는 아이콘입니다.](../assets/do-not-localize/icon-admin-user.svg){width="30"} 시스템 관리자 또는 Experience Platform 관리자는 다음 단계를 수행할 수 있습니다.
 
 1. 왼쪽 탐색에서 **[!UICONTROL 역할]**&#x200B;을(를) 선택하고 **[!UICONTROL 역할 만들기]**&#x200B;를 선택합니다.
 
@@ -328,19 +328,19 @@ When your organization has [!DNL Journey Optimizer B2B Edition] provisioned, Exp
 
 1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
-1. [!DNL Marketo Optimizer] 액세스(`<Marketo subscription prefix>Prime`)에 대해 프로비전된 샌드박스를 선택하십시오.
+1. [!DNL Marketo Optimizer] 액세스(`Mktoaep<Marketo subscription prefix>`)에 대해 프로비전된 샌드박스를 선택하십시오.
 
-   ![Experience Platform - 새 역할에 대한 샌드박스 추가](./assets/aep-permissions-role-prime-sandbox.png){width="800" zoomable="yes"}
+   ![Marketo Optimizer 샌드박스를 선택한 역할 편집기의 샌드박스 선택 목록입니다.](./assets/aep-permissions-optimizer-sandbox.png){width="500" zoomable="yes"}
 
-1. B2B 제품 권한 추가:
+1. 제품 권한 추가:
 
    역할에 대해 원하는 제품 기능을 확인하려면 [제품 권한](#permissions) 목록을 참조하세요.
 
    왼쪽의 _[!UICONTROL 리소스]_ 목록에서 B2B 항목을 찾은 다음 _추가_(**+**) 아이콘을 클릭하여 역할에 사용할 각 특성을 추가합니다.
 
-   검색 도구에 _B2B_&#x200B;을(를) 입력하여 많은 B2B 제품 권한 목록을 필터링할 수 있습니다.
+   검색 도구에 _B2B_&#x200B;을(를) 입력하여 [!DNL Marketo Optimizer]에 적용되는 많은 B2B 관련 제품 권한 목록을 필터링할 수 있습니다.
 
-   ![Experience Platform - B2B 권한](./assets/aep-permissions-b2b-list.png){width="700" zoomable="yes"}
+   ![검색 필드에서 필터링된 B2B 리소스가 있는 Experience Platform의 역할 편집기.](./assets/aep-permissions-b2b-list.png){width="700" zoomable="yes"}
 
 1. 오른쪽 상단의 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
