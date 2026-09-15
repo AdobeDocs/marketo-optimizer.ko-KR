@@ -4,16 +4,17 @@ description: 사용자 액세스 구성 및 이메일 전달성 인프라를 포
 TQID: 'https://experienceleague.adobe.com/XEPKIa88-L7mdPz1opKegY1pdEF4Qyls0nLVJBQSaJk'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 3cf5f37e-e87e-5179-812b-53ce05d7eebb
+    internal-label: Setup
   - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Journeys
+source-git-commit: cf3d8c71c9301ee038cc1b31968d30aba34d1fc7
 workflow-type: tm+mt
-source-wordcount: 249
+source-wordcount: '265'
 ht-degree: 10%
-
 ---
-
 # 체크리스트 설정
 
 프로비전된 [!DNL Marketo Optimizer] 인스턴스에서 기능을 활성화하려면 다음 작업을 완료하십시오.
@@ -102,5 +103,10 @@ ht-degree: 10%
 <td><img src="../assets/do-not-localize/icon-checkbox.svg" width="25" alt="작업에 대한 확인란"/></td>
 <td>이메일 채널 구성 만들기</td>
 <td><a href="../admin/email-channel-configuration.md#create-email-channel-configuration">이메일 채널 구성</a></td>
+</tr>
+<tr>
+<td><img src="../assets/do-not-localize/icon-checkbox.svg" width="25" alt="작업에 대한 확인란"/></td>
+<td>IT 부서에 IP 주소 전송 허용 목록 요청</td>
+<td><a href="./email-deliverability.md#allowlist-ip-addresses">IP 주소 허용 목록</a></td>
 </tr>
 </tbody>

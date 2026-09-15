@@ -4,24 +4,32 @@ description: Marketo Optimizer에 대한 하위 도메인 위임, DMARC, SPF, DK
 TQID: 'https://experienceleague.adobe.com/-7yEXTaOrGIfCFw-UzanMqA9VJ1Nk-BmdmE2JJJSoB4'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 3c1de303-7a7c-59a6-abca-8c534730e19c
+    internal-label: Reporting
   - id: 3cf5f37e-e87e-5179-812b-53ce05d7eebb
+    internal-label: Setup
   - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+    internal-label: Journeys
   - id: a659ad61-de21-559d-a901-02e2fb329ff5
+    internal-label: Administration
   - id: d4203578-d294-5145-b397-f26f4488a904
+    internal-label: Channels
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Administration
+source-git-commit: cf3d8c71c9301ee038cc1b31968d30aba34d1fc7
 workflow-type: tm+mt
-source-wordcount: 2502
+source-wordcount: '2590'
 ht-degree: 0%
-
 ---
-
 # 이메일 전달성
 
 다음 정보는 마케터 및 이메일 콘텐츠 작성자를 지원하기 위해 전송 인프라를 구성하는 관리자를 위한 것입니다. 게재 기능 및 하위 도메인, 인증 및 IP 풀을 구성하는 방법에 대해 설명합니다.
@@ -34,6 +42,7 @@ ht-degree: 0%
 1. 각 하위 도메인에서 [DMARC, SPF 및 DKIM 레코드를 구성](#dmarc-spf-dkim)합니다.
 1. [하위 도메인용 전자 메일을 보내는 데 사용되는 IP 풀을 확인](#ip-pools)합니다.
 1. 하위 도메인, IP 풀 및 보낸 사람 ID를 바인딩하는 [하나 이상의 전자 메일 채널 구성을 만듭니다](../admin/email-channel-configuration.md#create-email-channel-configuration).
+1. IT 부서에서 IP 주소를 [허용 목록](#allowlist-ip-addresses)하므로 전자 메일이 받은 편지함에 도달합니다.
 
 ![Marketo Optimizer에 대한 전자 메일 게재 기능 설정](./assets/email-deliverability-diagram.svg){width="600"}
 
@@ -361,6 +370,20 @@ IP 풀은 이메일을 보내는 데 사용되는 명명된 IP 주소 그룹입�
 >[!IMPORTANT]
 >
 >공유 풀을 사용할 수 있는 경우에도 동일한 IP 풀에서 마케팅 및 트랜잭션 트래픽을 혼합하지 마십시오. 채널 구성(마케팅 및 트랜잭션)의 이메일 유형 설정이 억제 동작을 제어하지만 채널 구성은 가능한 경우 여전히 개별 풀을 사용해야 합니다.
+
+## IP 주소 허용 목록 {#allowlist-ip-addresses}
+
+회사 스팸 방지 시스템에서 [!DNL Marketo Optimizer]에서 보내는 테스트 전자 메일을 차단하는 경우가 있습니다. 이러한 시스템은 보낸 사람의 IP 주소를 사용하여 이메일이 유효한지 확인합니다. 테스트 이메일이 도착하는지 확인하려면 회사 허용 목록에 [!DNL Marketo Optimizer]을(를) 추가하십시오.
+
+IT 부서에 다음의 기업 IP 주소를 추가하도록 요청하십시오.
+
+* 54.212.167.17
+* 35.165.244.220
+* 44.235.171.179
+
+>[!TIP]
+>
+>귀사의 IT 부서에서 일반적으로 기업 이메일 허용 목록을 관리합니다. 이 IP 주소 목록을 초기 설정 중에 공유합니다.
 
 <!--
 
