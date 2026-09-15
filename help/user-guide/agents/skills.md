@@ -4,25 +4,34 @@ description: Marketo Optimizer에서 프로그램, 여정, 대상, 채점, 콘�
 TQID: 'https://experienceleague.adobe.com/nNFB9UEghfqVvnBrNtTDnpnLUKKKMAU2nY1Pqt0KkUQ'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 3cf5f37e-e87e-5179-812b-53ce05d7eebb
+    internal-label: Setup
   - id: 46e599c6-e20f-5f67-9824-93415016f66b
+    internal-label: Audiences
   - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+    internal-label: Journeys
   - id: a29661b8-f7a4-53d1-a9ac-fdec08c092e4
+    internal-label: Programs
   - id: d4203578-d294-5145-b397-f26f4488a904
+    internal-label: Channels
 topic_v2:
   - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+    internal-label: Data quality
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Personalization
+source-git-commit: 6e03e2dc6abb00d288f5684e9ea9b6489c6517e4
 workflow-type: tm+mt
-source-wordcount: 581
+source-wordcount: '568'
 ht-degree: 5%
-
 ---
-
 # 동료 기술
 
 _스킬_&#x200B;은(는) Coworker가 실행 방법을 알고 있는 패키지된 워크플로우입니다. `/` 메뉴와 자연어 요청 모두의 뒤에 기본 요소가 있습니다. 각 스킬은 단계별 지침 및 한 작업에 필요한 특정 도구(예: &quot;여정 게시&quot;, &quot;두 사람 목록 비교&quot;, &quot;채점 모델 구축&quot;)를 번들로 제공합니다.
@@ -35,10 +44,9 @@ _스킬_&#x200B;은(는) Coworker가 실행 방법을 알고 있는 패키지된
 
 | 스킬 | 기능 | 액세스 | 제품 표면 | 영향 / 데이터 흐름 |
 |---|---|---|---|---|
-| `falco-program-creation` | 프로그램, 하위 폴더, 토큰, 목록, 여정 등 전체 [!DNL Marketo Optimizer] 프로그램 만들기. <p>_[개요에서 프로그램 만들기](./program-from-brief.md)_&#x200B;를 참조하세요. | 쓰기 | [!DNL Marketo Optimizer] | [!DNL Marketo Optimizer]을(를) 읽고 씁니다. |
 | `adapt-program` | [!DNL Marketo Optimizer] 적응을 위해 [!DNL Marketo Engage] 프로그램에서 마이그레이션 스토리를 생성합니다. | 읽기 | [!DNL Marketo Optimizer] | 읽기 [!DNL Marketo Engage], 쓰기 [!DNL Marketo Optimizer] |
 | `folder-creation` | 자산 트리에 조직 폴더를 만듭니다. | 쓰기 | [!DNL Marketo Optimizer] | 읽기 + 쓰기 [!DNL Marketo Optimizer] |
-| `program-creation` *(프로그램 빌드)* | 캠페인 개요에서 Marketo 프로그램을 만듭니다. | 쓰기 | [!DNL Marketo Engage] | 읽기 + 쓰기 [!DNL Marketo Engage] |
+| `program-creation` *(프로그램 빌드)* | 캠페인 개요에서 Marketo 프로그램을 만듭니다.  <p>_[개요에서 프로그램 만들기](./program-from-brief.md)_&#x200B;를 참조하세요. | 쓰기 | [!DNL Marketo Engage] | 읽기 + 쓰기 [!DNL Marketo Engage] |
 | `program-planning` *(플랜 캠페인)* | 브리프를 설정/구현 문서로 변환합니다. | 읽기 | [!DNL Marketo Engage] | [!DNL Marketo Engage] 읽기 |
 | `program-qa` *(프로그램 유효성 검사)* | 프로그램 검증/감사(규칙 전용, 테스트 계획 또는 개요) | 읽기 | [!DNL Marketo Engage] | [!DNL Marketo Engage] 읽기 |
 
