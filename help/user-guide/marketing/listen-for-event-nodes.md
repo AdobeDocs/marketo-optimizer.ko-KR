@@ -4,35 +4,92 @@ description: Marketo Optimizer에서 이벤트 노드 수신 대기를 구성 - 
 TQID: 'https://experienceleague.adobe.com/6v3i6M-Hhr2RAWrS68WaEVb8VJEzJZbD7vXOJOsjgc8'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Marketo Optimizer
+source-git-commit: cc98b02f4273c5df2e27b52acd1239f0f0bf8aa0
 workflow-type: tm+mt
-source-wordcount: 354
-ht-degree: 5%
-
+source-wordcount: '1139'
+ht-degree: 6%
 ---
-
 # 이벤트 노드 수신
 
 이벤트가 발생할 때 대상을 여정의 다음 단계로 이동하려면 _이벤트 수신_ 노드를 추가하십시오.
 
 ## 이벤트 트리거 {#event-triggers}
 
-다음과 같은 [!DNL Marketo Engage]개 활동 주변에 트리거를 만들 수 있습니다.
+여정 노드를 실행하고 대상 구성원을 앞으로 이동하는 이벤트 기준을 정의합니다.
 
-* 양식 작성 - 사용자가 랜딩 페이지에서 [!DNL Marketo Engage] 양식을 제출할 때 실행됩니다.
-* 방문 웹 페이지 - 잠재 고객이 추적된 웹 페이지를 볼 때 실행됩니다(정확한 URL을 지정하거나 와일드카드를 사용할 수 있음).
-* 링크 클릭 - 마케팅 이메일에서 추적된 링크를 클릭할 때 실행됩니다.
-* 데이터 값 변경 - 특정 필드(예: 잠재 고객 상태, 점수 또는 업종)가 개인 레코드에 업데이트될 때 실행됩니다.
-* Campaign이 요청됨 - API 또는 웹후크 통합에 주로 사용되며, 이 트리거는 다른 프로그램 또는 웹 서비스에서 해당 프로그램을 호출하면 캠페인을 시작합니다.
-* 점수가 변경됨 - 개인의 잠재 고객 점수가 특정 임계값을 넘어 증가하거나 감소할 때 실행됩니다.
-* 모바일 푸시 탭 - 푸시 알림이 디바이스에서 와 상호 작용할 때 모바일 마케팅 스마트 캠페인에서 실행됩니다.
+| 트리거 | 설명 |
+| -------- | ----------- |
+| Brand Concierge | [!DNL Brand Concierge]과(와) 관련된 리드에 대한 활동입니다. |
+| 이메일 | 전송, 게재 및 참여를 포함한 잠재 고객의 이메일 활동. |
+| 이벤트 | 등록, 출석 및 상호 작용을 포함한 잠재 고객을 위한 대화형 웨비나 활동. |
+| 기회 | 가망 고객 또는 계정과 연관된 기회 레코드와 관련된 활동. |
+| 판매 앱 | [!DNL Sales Qualifier] 또는 [!DNL Marketo Sales Insights]과(와) 관련된 잠재 고객 활동. |
+| 기타 | 사전 정의된 범주에 속하지 않는 활동으로, 사용자 지정 또는 기타 이벤트 트리거를 유연하게 사용할 수 있습니다. |
+
+>[!BEGINSHADEBOX]
+
+**트리거에 대해 지원되는 Marketo Engage 활동**
+
+이벤트를 트리거할 때 [!DNL Marketo Optimizer]은(는) 데이터 소스로 연결된 [!DNL Marketo Engage] 인스턴스의 활동을 지원합니다.
+
+>[!NOTE]
+>
+>데이터 원본으로 [!DNL Marketo Engage] 인스턴스는 하나만 있을 수 있으며 [!DNL Marketo Optimizer] 인스턴스를 프로비저닝할 때 미리 구성되어 있습니다.
+
+다음 [!DNL Marketo Engage]개 활동에 대해 이벤트 트리거를 만들 수 있습니다.
+
+* [!UICONTROL Marketo Engage 양식을 작성합니다] - 잠재 고객이 지정된 [!DNL Marketo Engage] 양식을 제출할 때 실행됩니다.
+* [!UICONTROL Marketo Engage 웹 페이지 방문] - Munchkin 추적 쿠키를 사용하는 잠재 고객이 지정된 웹 페이지를 방문할 때 실행됩니다.
+* [!UICONTROL Marketo Engage 웹 페이지의 링크 클릭] - 잠재 고객이 [!DNL Marketo Engage] Munchkin 추적 코드가 설치된 웹 페이지에서 추적된 하이퍼링크를 클릭할 때 실행됩니다.
+* [!UICONTROL Marketo Engage 전자 메일이 전달됨] - 잠재 고객의 메일 서버(MX)가 [!DNL Marketo Engage] 전송 서버에 성공 응답(250 OK 메시지)을 반환할 때 실행됩니다.
+* [!UICONTROL Marketo Engage 전자 메일 바운스] - 대상 메일 서버가 보낸 [!DNL Marketo Engage] 전자 메일 메시지를 잘못된 사용자 또는 알 수 없는 도메인과 같은 영구적인 오류로 거부할 때 발생합니다.
+* [!UICONTROL Marketo Engage 전자 메일이 소프트 바운스] - 대상 메일 서버가 보낸 [!DNL Marketo Engage] 전자 메일 메시지를 일시적인 문제(예: 서버 사용 중 또는 사서함 가득 참)로 거부할 때 발생합니다. [!DNL Marketo Engage]에서 소프트 바운스를 MX 서버를 통해 최대 3회까지 자동으로 다시 시도한 후 문제를 플래그 지정합니다.
+* [!UICONTROL Marketo Engage 이메일 구독 취소] - 잠재 고객이 비운영 마케팅 이메일을 거부하면 실행됩니다. 트리거되면 [!DNL Marketo Engage]이(가) 잠재 고객의 `Unsubscribed` 필드 값을 `true`(으)로 자동 업데이트하여 향후 표준 이메일 전송에서 제외합니다.
+* [!UICONTROL Marketo Engage 이메일을 엽니다] - 잠재 고객이 추적된 [!DNL Marketo Engage] 이메일을 열 때 실행됩니다.
+* [!UICONTROL Marketo Engage 전자 메일의 링크 클릭] - 잠재 고객이 [!DNL Marketo Engage] 전자 메일 내의 모든 링크(또는 특정 제한 링크)를 클릭할 때 실행됩니다.
+
+>[!ENDSHADEBOX]
 
 ## 이벤트 필터 {#event-filters}
 
+다양한 기준에 따라 일치하는 이벤트 트리거를 제한하는 필터링을 포함할 수 있습니다.
+
 | 필터 | 설명 |
 | ------- | ----------- |
-| 활동 내역 > 이메일 | 하나 이상의 선택한 이메일 메시지를 사용하여 평가되는 조건에 따른 이메일 활동: <li>이메일 링크 클릭됨 <li>이메일 열람함 |
-| 활동 내역 > 데이터 값 변경됨 | 선택한 개인 속성의 경우 값이 변경되었습니다. 이러한 변경 유형은 다음과 같습니다. <li>새 값 <li>이전 값 <li>이유 <li>소스 <li>활동 날짜 <li> 최소. 횟수 |
+| 활동 기록 | 하나 이상의 선택한 항목을 사용하여 평가되는 조건에 따른 활동 |
+| Brand Concierge | [!DNL Brand Concierge]과(와) 관련된 리드에 대한 활동입니다. |
+| 회사 속성 | 다음을 포함한 회사/계정 프로필의 속성: <li>연간 수익 <li>회사 이름 <li>청구지 국가 <li>업종 <li>직원 수 <li>SIC 코드 <li>주 |
+| 의도 데이터 | 개인 프로필과 연관된 의도 데이터를 기반으로 하는 속성입니다. |
+| 기회 | 개인 프로필과 연관된 기회를 기반으로 하는 속성입니다. |
+| 개인 속성 | 다음을 포함한 B2B 개인 프로필의 속성: <li>도시 <li>국가 <li>생년월일 <li>이메일 주소 <li>잘못된 이메일 <li>이메일 중단됨 <li>이름 <li>추정 주 지역<li>직위 <li>성 <li>휴대폰 번호 <li>개인 참여 점수 <li>전화번호 <li>우편번호 <li>주 <li>구독 취소 <li>구독 취소 이유 |
+| 판매 앱 | [!DNL Sales Qualifier] 또는 [!DNL Marketo Sales Insights]과(와) 관련된 잠재 고객 활동. |
+| 특수 필터 | 사전 정의된 범주에 속하지 않는 필터링 속성으로, 사용자 지정 또는 기타 필터 기준을 유연하게 해 줍니다. |
+
+>[!BEGINSHADEBOX]
+
+**필터에 대해 지원되는 Marketo Engage 활동**
+
+트리거된 이벤트를 필터링할 때 [!DNL Marketo Optimizer]은(는) 데이터 소스로 연결된 [!DNL Marketo Engage] 인스턴스의 활동을 지원합니다.
+
+>[!NOTE]
+>
+>데이터 원본으로 [!DNL Marketo Engage] 인스턴스는 하나만 있을 수 있으며 [!DNL Marketo Optimizer] 인스턴스를 프로비저닝할 때 미리 구성되어 있습니다.
+
+다음 [!DNL Marketo Engage]개 활동에 대해 이벤트 필터를 빌드할 수 있습니다.
+
+* [!UICONTROL Marketo Engage 양식을 채움] - 오래되지 않은 활동 로그의 어느 시점에서든 특정 [!DNL Marketo Engage] 양식을 완료한 잠재 고객과 일치합니다.
+* [!UICONTROL 방문한 Marketo Engage 웹 페이지] - 웹 사이트 또는 [!DNL Marketo Engage] 랜딩 페이지에서 특정 URL을 본 리드와 일치합니다. 사이트에 설치된 Munchkin 추적 코드를 직접 사용합니다.
+* [!UICONTROL Marketo Engage 웹 페이지에서 링크를 클릭함] - 추적된 페이지에서 특정 링크 또는 자산을 클릭한 리드와 일치합니다.
+* [!UICONTROL Marketo Engage 전자 메일을 보냈습니다] - 하드 바운스 또는 서버 수락 전 배포 작업을 고려하여 [!DNL Marketo Engage]에서 특정 전자 메일을 보내려고 시도한 잠재 고객과 일치합니다.
+* [!UICONTROL Marketo Engage 전자 메일이 전달되었습니다] - MX(메일 서버)가 [!DNL Marketo Engage] 전송 서버에 성공 응답(250 OK 메시지)을 반환하는 리드와 일치합니다.
+* [!UICONTROL 반송된 Marketo Engage 이메일] - 특정 이메일 전송 또는 일정 기간 내에 하드 바운스(영구 게재 실패)가 발생한 리드와 일치합니다.
+* [!UICONTROL Marketo Engage 전자 메일이 소프트 바운스됨] - 영구적인 하드 바운스가 아닌 임시 게재 실패(전체 받은 편지함 또는 오프라인 서버 등)가 발생한 리드와 일치합니다.
+* [!UICONTROL Marketo Engage 이메일 구독 취소됨] - 비운영 마케팅 이메일을 옵트아웃한 잠재 고객과 일치합니다. 이 경우 [!DNL Marketo Engage]이(가) 잠재 고객의 `Unsubscribed` 필드 값을 `true`(으)로 자동 업데이트하여 향후 표준 전자 메일 전송에서 제외합니다.
+* [!UICONTROL Marketo Engage 이메일을 열었습니다] - 추적된 [!DNL Marketo Engage] 이메일을 연 리드와 일치합니다.
+* [!UICONTROL Marketo Engage 전자 메일에서 링크를 클릭함] - [!DNL Marketo Engage] 전자 메일 내에서 링크(또는 특정 링크)를 클릭한 리드와 일치합니다.
+
+>[!ENDSHADEBOX]
 
 ## 이벤트 노드 추가 {#add-event-node}
 
@@ -44,33 +101,32 @@ ht-degree: 5%
 
 1. 오른쪽의 노드 속성에서 **[!UICONTROL 이벤트 조건 추가]**&#x200B;를 클릭합니다.
 
-1. _[!UICONTROL 이벤트 편집]_ 대화 상자에서 트리거할 이벤트를 추가합니다.
+1. _[!UICONTROL 이벤트 편집]_ 대화 상자에서 이벤트를 추가하고 트리거에 대해 일치시킬 제약 조건을 설정합니다.
 
-   ![이벤트 편집 - 이벤트 트리거](./assets/edit-event-triggers.png){width="600" zoomable="yes"}
+   이벤트 트리거를 빌더 공간으로 끌어서 놓고 정의를 설정합니다. 이벤트 일치를 구체화하는 데 사용할 각 제약 조건에 대해 **[!UICONTROL 제약 조건 추가]**&#x200B;를 클릭합니다.
 
-1. (선택 사항) 대화 상자에서 **[!UICONTROL 필터]** 탭을 선택하고 트리거에 대한 필터링 기준을 추가합니다.
+   ![이벤트 편집 - 이벤트 트리거](./assets/edit-event-triggers.png){width="700" zoomable="yes"}
 
-1. **[!UICONTROL 이벤트 편집]**&#x200B;을 클릭하고 이벤트에 대한 세부 정보를 정의하십시오.
+   일치시킬 여러 이벤트를 추가할 수 있습니다. 첫 번째 자격 이벤트는 여정에서 개인 프로필을 앞으로 진행합니다.
 
-   ![이벤트 편집 - 이벤트 필터링](./assets/edit-event-filters.png){width="600" zoomable="yes"}
+1. (선택 사항) **[!UICONTROL 필터]** 탭을 선택하고 트리거에 대한 필터링 기준을 추가합니다.
+
+   필터를 빌더 공간으로 끌어서 놓고 정의를 설정합니다. 필터 일치를 구체화하는 데 사용할 각 제약 조건에 대해 **[!UICONTROL 제약 조건 추가]**&#x200B;를 클릭합니다.
+
+   ![이벤트 편집 - 이벤트 필터링](./assets/edit-event-filters.png){width="700" zoomable="yes"}
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-<!--
-1. If needed, set the **[!UICONTROL Timeout]** option to limit the time period to listen for the event.
+   언제든지 **[!UICONTROL 이벤트 편집]**&#x200B;을 클릭하여 노드의 이벤트 조건을 변경할 수 있습니다.
+
+1. 필요한 경우 **[!UICONTROL 시간 초과]** 옵션을 설정하여 이벤트를 수신할 기간을 제한하십시오.
 
    >[!NOTE]
    >
-   >The journey ends after a timeout unless you define a timeout path, where you can add other nodes.
+   >다른 노드를 추가할 수 있는 시간 제한 경로를 정의하지 않는 한 시간 제한 후 여정이 종료됩니다.
 
-   Enable the **[!UICONTROL Timeout]** option and select the duration for which the journey waits for an event to occur before it times out.
+   **[!UICONTROL 시간 초과]** 옵션을 활성화하고 이벤트가 시간 초과되기 전에 발생할 때까지 여정이 대기하는 기간을 선택하십시오.
 
-   You can choose to end the path here or take a different course of action by setting another path. To create a new path in the journey where you can add actions and events applicable to accounts when the event does not occur, select the **[!UICONTROL Set timeout path]** check box.
+   ![이벤트 여정 수신 노드에 대해 시간 제한 옵션이 활성화됨](./assets/person-journey-event-node-timeout.png){width="550" zoomable="yes"}
 
-   ![Journey event node - set timeout path](assets/node-event-timeout-set-path.png){width="700" zoomable="yes"}
--->
-
->[!NOTE]
->
->이벤트 노드 수신에 대한 시간 제한 기능이 현재 작동하지 않습니다. 향후 릴리스로 예정되어 있습니다.
-
+   여기서 경로를 종료하거나 다른 경로를 설정하여 다른 작업을 수행할 수 있습니다. 여정에서 이벤트가 발생하지 않을 때 프로필에 적용할 수 있는 작업 및 이벤트를 추가할 수 있는 새 경로를 만들려면 **[!UICONTROL 시간 제한 경로 설정]** 확인란을 선택하십시오.
