@@ -7,9 +7,9 @@ product_v2:
 feature_v2:
   - id: 3c1de303-7a7c-59a6-abca-8c534730e19c
     internal-label: Reporting
-source-git-commit: 56f39b3c77bd13984cf72761621ac3b228f13abd
+source-git-commit: 32017a2577b7f31632080215ba91b9454c51b9ef
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '488'
 ht-degree: 2%
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 2%
 >
 >조직은 모든 보고서에서 주별 또는 월별 주기로 최대 10개의 예약된 내보내기를 가질 수 있습니다. 관리자가 아닌 경우 예약된 자체 내보내기만 관리할 수 있습니다. 관리자는 조직의 모든 예약된 내보내기를 보고 관리할 수 있습니다.
 
-## CJA에서 보고서 분석 {#analyze-a-report-in-cja}
+## [!DNL Customer Journey Analytics]에서 보고서 분석 {#analyze-a-report-in-cja}
 
 >[!AVAILABILITY]
 >
