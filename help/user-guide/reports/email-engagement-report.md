@@ -7,15 +7,15 @@ product_v2:
 feature_v2:
   - id: 3c1de303-7a7c-59a6-abca-8c534730e19c
     internal-label: Reporting
-source-git-commit: 8c47a9c69c32ba0a37ba2efadb6ad4c1b796c21d
+source-git-commit: 6e919a66af259ea1f5facf7f5c3e811d76101e85
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '343'
 ht-degree: 0%
 ---
 
 # 이메일 참여 보고서
 
-<!-- SPHR-39569: content drafted, but hide: true and hide-from-toc stay until eng confirms this shipped to production. Filter by Program, Filter by Audience, and the program data point from SPHR-32511 are not documented here pending delivery-state confirmation. -->
+<!-- SPHR-32511: Filter by Program, Filter by Audience, and the program data point for the email performance table are not documented here pending delivery. -->
 
 [!UICONTROL 전자 메일 참여] 보고서를 사용하여 전자 메일 및 여정으로 분류된 인스턴스 전체의 전자 메일 전달성 및 참여 성능을 검토하십시오.
 
@@ -54,13 +54,9 @@ ht-degree: 0%
 | [!UICONTROL 구독 취소됨] | 이메일 구독을 취소한 수신자 수입니다. |
 | [!UICONTROL % 구독 취소됨] | 구독을 취소한 게재된 이메일 비율입니다. |
 
-<!--
+## 필터 {#filters}
 
-## Filters {#filters}
+필터를 사용하여 보고서의 범위를 특정 여정 또는 담당자로 좁힐 수 있습니다. 모든 필터를 지우고 기본 보기로 돌아가려면 **[!UICONTROL 모두 재설정]**&#x200B;을 선택하세요.
 
-Use filters to narrow the report to a specific journey, persona, or date range. Select **[!UICONTROL Reset all]** to clear every filter and return to the default view.
-
-* **[!UICONTROL Journey Name (Event)]** - Filter by the journey that sent the email. Default is [!UICONTROL No filter].
-* **[!UICONTROL Persona (Event)]** - Filter by the persona associated with the email. Default is [!UICONTROL No filter].
-* **[!UICONTROL Date range]** - Filter by a specific date span, shown as explicit start and end dates. Default is [!UICONTROL Last 30 days].
--->
+* **[!UICONTROL 여정 이름(이벤트)]** - 전자 메일을 보낸 여정으로 필터링합니다. 기본값은 [!UICONTROL 필터 없음]입니다.
+* **[!UICONTROL 담당자(이벤트)]** - 전자 메일과 연결된 담당자로 필터링합니다. 기본값은 [!UICONTROL 필터 없음]입니다.

@@ -27,10 +27,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6e03e2dc6abb00d288f5684e9ea9b6489c6517e4
+source-git-commit: 1dcc3bcdc59114c7fc1e16178db8921ae173b955
 workflow-type: tm+mt
-source-wordcount: '568'
-ht-degree: 5%
+source-wordcount: '633'
+ht-degree: 6%
 ---
 # 동료 기술
 
@@ -95,11 +95,17 @@ _스킬_&#x200B;은(는) Coworker가 실행 방법을 알고 있는 패키지된
 | `send-time-optimization` | 이메일 노드에서 STO 상태 및 활성화/비활성화로 확인합니다. | 읽기+쓰기 | [!DNL Marketo Optimizer] | 읽기 + 쓰기 [!DNL Marketo Optimizer] |
 | `send-time-report` | STO 성능 보고서를 가져오거나 표시합니다. | 읽기 | [!DNL Marketo Optimizer] | [!DNL Marketo Optimizer] 읽기 |
 
+## 분석 및 보고 {#analytics-reporting}
+
+| 스킬 | 기능 | 액세스 | 제품 | 백엔드(데이터 흐름) |
+|---|---|---|---|---|
+| `surface-analytics` | 활동 트렌드, 이메일 성능, 리드 및 계정 데이터, 세그먼트 및 목록 멤버십, 여정 지표에 걸쳐 자연어에서 분석 보고서를 생성하여 차트 및 표로 반환합니다. 보고서 데이터는 2시간마다 새로 고침됩니다. <p>_[분석 보고서 생성](./surface-analytics.md)_&#x200B;을 참조하세요.</p> | 읽기 | [!DNL Marketo Optimizer] | 읽기: [!DNL Marketo Optimizer] + [!DNL Marketo Engage] |
+
 ## 지식 {#knowledge}
 
 | 스킬 | 기능 | 액세스 | 제품 | 백엔드(데이터 흐름) |
 |---|---|---|---|---|
-| `product-knowledge` | Experience League의 [!DNL Marketo Optimizer] 설명서에서 방법/개념 질문에 답변합니다. | 읽기 | 모두 | 외부 문서 읽기 — 제품 데이터 없음 |
+| `product-knowledge` | Experience League에 게시된 [!DNL Marketo Optimizer] 설명서에서 방법/개념 질문에 답변합니다. | 읽기 | 모두 | 외부 문서 읽기 — 제품 데이터 없음 |
 
 ## 크로스 백엔드 {#cross-backend}
 
@@ -109,5 +115,6 @@ _스킬_&#x200B;은(는) Coworker가 실행 방법을 알고 있는 패키지된
 - **`audience-creation`** — [!DNL Marketo Engage]개의 스마트 목록(`get_smart_list`/`get_smart_campaign`)을 읽은 다음 [!DNL Marketo Optimizer]개의 사용자 목록을 씁니다.
 - **`journey-observability`** — [!DNL Marketo Optimizer] 읽기와 `check_lead_in_marketo_static_list` [!DNL Marketo Engage] 읽기를 더한 값입니다.
 - **`scoring-studio`** — [!DNL Marketo Optimizer] 채점 서비스와 함께 [!DNL Marketo Engage] 리드 필드/활동 유형을 읽습니다.
+- **`surface-analytics`** — 단일 쿼리에서 [!DNL Marketo Engage]과(와) [!DNL Marketo Optimizer]의 데이터에 걸쳐 있는 보고 질문에 답변할 수 있습니다.
 
 모든 `falco-mcp_*` 및 여정/토큰/채점/STO/FCS 도구는 [!DNL Marketo Optimizer] 서비스를 히트하고 CSV/프로그램/리드 도구는 [!DNL Marketo Engage]을 히트합니다.
