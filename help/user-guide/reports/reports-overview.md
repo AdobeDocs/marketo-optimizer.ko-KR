@@ -7,9 +7,9 @@ product_v2:
 feature_v2:
   - id: 3c1de303-7a7c-59a6-abca-8c534730e19c
     internal-label: Reporting
-source-git-commit: 32017a2577b7f31632080215ba91b9454c51b9ef
+source-git-commit: 6e919a66af259ea1f5facf7f5c3e811d76101e85
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '491'
 ht-degree: 2%
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 2%
 일부 보고서는 섹션 전체 보기 대신 단일 레코드에 중점을 두며 애플리케이션의 다른 영역에서 액세스됩니다.
 
 * 이메일 전송 시간 최적화 성능을 위해 [!UICONTROL 동료] 채팅 인터페이스에서 보고서를 엽니다. 단계는 [이메일 전송 시간 최적화](../marketing/email-send-time-optimization.md#reporting)를 참조하십시오.
-* 단일 여정을 통한 개인의 진행 상황에 대해서는 해당 여정 내에서 보고서를 엽니다.
+* 단일 여정을 통해 진행 중인 개인의 경우 해당 여정 내에서 [개인 여정 개별 보고서](./person-journey-individual-report.md)를 여십시오.
 
 ## 보고서 내보내기 {#export-a-report}
 
