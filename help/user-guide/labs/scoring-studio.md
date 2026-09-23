@@ -7,10 +7,10 @@ product_v2:
 feature_v2:
   - id: 1650dadf-b034-5ac9-a309-77ad1e2f5035
     internal-label: Chat Interface
-source-git-commit: cc6a908809cfb91bf03157935737f4869761a7db
+source-git-commit: 7e3080b688415ef623cdbd57aa08ed43eb6fcd17
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 2%
+source-wordcount: '1410'
+ht-degree: 1%
 ---
 
 # Scoring Studio
@@ -105,6 +105,84 @@ Coworker는 여러 활동의 패턴을 감지하면 모든 조건을 요약하�
 
 ## 게시 및 예약 {#publish-schedule}
 
-모델이 준비되면 **[!UICONTROL 게시]**&#x200B;를 선택하십시오. 모델이 대상자를 평가하는 빈도를 매일, 매주 또는 매월 중에서 선택합니다.
+모델이 준비되면 **[!UICONTROL 게시]**&#x200B;를 클릭하십시오.
 
-[!DNL Marketo Optimizer]이(가) 채점 필드를 자동으로 프로비저닝하는 방법을 포함한 전체 게시 프로세스에 대해서는 [_채점 모델 게시_](../agents/lead-scoring-model.md#publish-model)&#x200B;를 참조하십시오.
+![초안 채점 모델에 대해 게시 단추가 표시됩니다.](./assets/scoring-model-publish.png){width="700" zoomable="yes"}
+
+모델이 대상자를 평가하는 빈도를 매일, 매주 또는 매월 중에서 선택합니다. 수동 옵션을 선택하여 모델을 실행할 수도 있습니다.
+
+![일정 옵션은 채점 모델을 실행하기 위한 일별, 주별, 월별 및 수동 반복 선택 사항을 보여 줍니다.](./assets/scoring-model-publish-schedule-options.png){width="420" zoomable="no"}
+
+[!DNL Marketo Optimizer]이(가) 채점 필드를 자동으로 프로비저닝하는 방법을 포함하여 [동료 채팅 인터페이스](../agents/chat-interface.md)를 사용한 전체 게시 프로세스에 대해서는 [_채점 모델 게시_](../agents/lead-scoring-model.md#publish-model)&#x200B;를 참조하십시오.
+
+최신 점수는 [!DNL Marketo Engage] 인스턴스에 동기화된 프로비전된 필드에 저장됩니다.
+
+![Marketo Engage 필드 관리에 표시된 프로비전된 점수 필드](./assets/scoring-model-score-field-ame.png){width="800" zoomable="yes"}
+
+## 필터에서 점수 사용 {#filter-score}
+
+[모델을 게시](#publish-schedule)한 후 이벤트 기반 대상자를 빌드할 때 결과 점수를 필터로 사용하고 _이벤트 수신_ 노드를 분할 경로 조건으로 사용하거나 사용자 목록 멤버십에 사용할 수 있습니다.
+
+점수는 모델 이름 또는 할당한 사용자 지정 [_점수 필드 이름_](#lead-segment)(으)로 레이블이 지정된 **[!UICONTROL 개인 특성]** 범주 아래의 필터 패널에 표시됩니다. 필터 패널의 검색 필드에 해당 이름을 입력하여 점수를 찾은 다음 캔버스로 드래그하여 기준을 정의합니다.
+
+### 이벤트 기반 대상 및 노드 {#scoring-model-event-audience}
+
+채점 모델 결과를 사용하여 [이벤트 기반 대상](../audiences/event-based-audiences.md) 또는 [_이벤트 수신_ 노드](../marketing/listen-for-event-nodes.md)을 필터링하려면:
+
+1. **[!UICONTROL 이벤트 조건 추가]**&#x200B;를 클릭합니다.
+
+1. _[!UICONTROL 이벤트 기준 편집]_ 대화 상자에서 **[!UICONTROL 필터]** 탭을 선택합니다.
+
+1. 검색 필드에 모델 이름을 입력한 다음 점수를 캔버스로 드래그합니다.
+
+   ![필터 탭에는 검색 필드에 입력한 모델 이름과 일치하는 점수가 캔버스로 드래그되어 표시됩니다.](./assets/scoring-model-event-filter.png){width="700" zoomable="yes"}
+
+1. 타깃팅하려는 점수와 일치하도록 연산자 및 값을 설정하십시오.
+
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
+### 경로 조건 분할 {#split-path-conditions}
+
+채점 모델 결과를 사용하여 [_분할 경로_ 노드](../marketing/split-merge-paths-nodes.md)에 대한 경로 조건을 정의하려면 다음을 수행하십시오.
+
+1. 노드 경로에 대해 **[!UICONTROL 조건 편집]**&#x200B;을 클릭합니다.
+
+1. _[!UICONTROL 조건]_ 대화 상자에서 검색 필드에 모델 이름을 입력한 다음 일치하는 점수를 캔버스로 드래그합니다.
+
+   ![조건 대화 상자에 검색 필드에 입력한 모델 이름과 일치하는 점수가 캔버스로 드래그되어 표시됩니다.](./assets/scoring-model-split-path-condition.png){width="700" zoomable="yes"}
+
+1. 타깃팅하려는 점수와 일치하도록 연산자 및 값을 설정하십시오.
+
+1. **[!UICONTROL 완료]**&#x200B;를 클릭하여 경로에 대한 조건을 저장합니다.
+
+### 사용자 목록 멤버십 {#scoring-model-people-lists}
+
+채점 모델 결과를 사용하여 [사람 목록](../audiences/people-lists.md) 멤버십을 관리하려면 다음을 수행하십시오.
+
+**정적 목록 — 구성원 추가**
+
+1. 정적 목록을 열고 **[!UICONTROL 사람 추가]**&#x200B;를 클릭합니다.
+
+1. _[!UICONTROL 사람 추가]_ 대화 상자에서 검색 필드에 모델 이름을 입력한 다음 일치하는 점수를 캔버스로 드래그합니다.
+
+   ![사람 추가 대화 상자에 검색 필드에 입력한 모델 이름과 일치하는 점수가 캔버스로 드래그되어 표시됩니다.](./assets/scoring-model-static-list-add-people.png){width="700" zoomable="yes"}
+
+1. 타깃팅하려는 점수와 일치하도록 연산자 및 값을 설정하십시오.
+
+1. 필터를 적용하고 일치하는 사람을 목록에 추가하려면 **[!UICONTROL 완료]**&#x200B;를 클릭하십시오.
+
+**동적 목록 — 구성원 규칙을 설정합니다**
+
+1. 동적 목록을 열고 **[!UICONTROL 규칙]** 탭을 선택합니다.
+
+1. **[!UICONTROL 규칙 편집]**&#x200B;을 클릭합니다.
+
+1. _[!UICONTROL 규칙 편집]_ 대화 상자에서 모델 이름을 검색 필드에 입력한 다음 점수 항목을 캔버스로 드래그합니다.
+
+   ![규칙 편집 대화 상자에 검색 필드에 입력한 모델 이름과 일치하는 점수가 캔버스로 드래그되어 표시됩니다.](./assets/scoring-model-dynamic-list-rules.png){width="700" zoomable="yes"}
+
+1. 타깃팅하려는 점수와 일치하도록 연산자 및 값을 설정하십시오.
+
+1. 규칙을 저장하려면 **[!UICONTROL 완료]**&#x200B;를 클릭하십시오.
+
+   개인 레코드가 규칙에 대해 평가되면 멤버십이 자동으로 업데이트됩니다.

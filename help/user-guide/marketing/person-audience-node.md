@@ -4,16 +4,17 @@ description: Journey Optimizer B2B에서 개인 대상 노드를 구성하여 �
 TQID: 'https://experienceleague.adobe.com/WqM-yLPadt6lBFtqJOGUxDtk0fm6n6S29wQTRSWB8fY'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 46e599c6-e20f-5f67-9824-93415016f66b
+    internal-label: Audiences
   - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Journeys
+source-git-commit: 759b4b769b9a1534e9b750f053991e9be50b953a
 workflow-type: tm+mt
-source-wordcount: 215
+source-wordcount: '215'
 ht-degree: 0%
-
 ---
-
 # 개인 대상 노드
 
 _개인 대상_ 노드는 여정에 들어오는 개인 프로필을 지정합니다. [개인 여정을 만듭니다](./person-journeys.md). 여정은 항상 입력을 정의하는 개인 대상 노드로 시작합니다. 개인 대상 노드에는 동적 사람 목록 또는 이벤트 트리거와 같은 두 가지 대상 입력 유형 중 하나가 있을 수 있습니다.
