@@ -4,31 +4,35 @@ description: 마케팅 아티팩트의 동적 개인화를 위해 사용자 지�
 TQID: 'https://experienceleague.adobe.com/utVM69g7aQSuF-V3XQIdVBqvBXyiDz1ZWr0WtE67UCg'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+    internal-label: Journeys
   - id: a29661b8-f7a4-53d1-a9ac-fdec08c092e4
+    internal-label: Programs
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Personalization
+source-git-commit: 177e7c3d0806febd730104b19787ba3cbea2914a
 workflow-type: tm+mt
-source-wordcount: 629
-ht-degree: 3%
-
+source-wordcount: '704'
+ht-degree: 2%
 ---
-
 # 개인화를 위한 사용자 지정 토큰
 
-콘텐츠 개인화는 토큰을 콘텐츠 아티팩트가 생성될 때 채워지는 자리 표시자 또는 변수로 사용합니다. 표준 개인화 토큰은 이메일, 랜딩 페이지, 조각 및 템플릿에 사용할 수 있습니다. 프로그램 또는 폴더와 관련된 값을 사용하여 사용자 지정 토큰 세트를 정의할 수도 있습니다. 이 사용자 지정 토큰 집합을 _내 토큰_&#x200B;이라고 하며 이러한 사용자 지정 토큰은 모두 개인화용입니다.
+콘텐츠 개인화는 토큰을 콘텐츠 아티팩트가 생성될 때 채워지는 자리 표시자 또는 변수로 사용합니다. 표준 개인화 토큰은 이메일, 랜딩 페이지, 조각 및 템플릿에 사용할 수 있습니다. 프로그램 또는 폴더와 관련된 값을 사용하여 사용자 지정 토큰 세트를 정의할 수도 있습니다. 이 사용자 지정 토큰 집합을 _내 토큰_&#x200B;이라고 하며 이러한 사용자 지정 토큰 중 하나를 개인화할 수 있습니다.
 
-사용자 지정 토큰을 전자 메일에 추가하면 `{{my.TokenName}}`(으)로 표시됩니다. 예를 들어 예정된 웨비나와 관련된 이메일 콘텐츠를 관리하기 위해 만든 토큰이 `{{my.EventDate}}` 또는 `{{my.WebinarSpeaker}}`개일 수 있습니다.
+<!-- 
+When you add a custom token to an email, it is displayed as `{{my.TokenName}}`. For example, you might have `{{my.EventDate}}` or `{{my.WebinarSpeaker}}` tokens created to manage email content related to upcoming webinars in your program.
+-->
 
 프로그램 또는 폴더에만 해당되는 _내 토큰_ 외에도 개인화를 위해 표준(기본 제공) 토큰을 사용할 수 있습니다.
 
->[!NOTE]
+>[!IMPORTANT]
 >
->_내 토큰_&#x200B;은(는) 현재 이 Beta 릴리스의 Personalization 편집기에서 사용할 수 없습니다.
+>초기 Marketo Optimizer 릴리스의 경우 _내 토큰_&#x200B;은(는) 데이터 값 변경 여정 작업 노드에 대해 지원되며 문자열 및 텍스트 특성에서 사용하도록 제한됩니다. _내 토큰_&#x200B;이 현재 Personalization 편집기에서 **활성화되지 않음**&#x200B;입니다.
 
-## 토큰 액세스
+## 토큰 액세스 {#access-tokens}
 
 1. 왼쪽 탐색에서 **[!UICONTROL 마케팅 관리]**&#x200B;를 확장합니다.
 
@@ -57,17 +61,17 @@ _내 토큰_&#x200B;은(는) 프로그램 또는 폴더에 대해 만들거나 �
 | 부울 | 이 유형은 true 또는 false의 표준 부울 값을 보유합니다. |
 | 리치 텍스트 | 이 형식에는 서식이 지정된 텍스트가 포함됩니다. |
 
-### 토큰 중첩
+### 토큰 중첩 {#nesting}
 
-프로그램 또는 폴더에서 토큰을 만들 때 다른 하위 개체에서 참조할 수 있습니다.
+프로그램 또는 폴더에서 토큰을 만들 때 계층 구조 내의 객체에서 참조할 수 있습니다.
 
-* 로컬 토큰 - 토큰은 동일한 프로그램 또는 폴더에 정의됩니다.
-* 상속된 토큰 - 토큰은 상위 프로그램 또는 폴더에 정의되어 있으며 현재 프로그램 또는 폴더보다 한 수준 이상 높습니다.
-* 재정의된 토큰 - 토큰은 상위 프로그램 또는 폴더에 정의되어 있지만 다른 값이 현재 프로그램 또는 폴더에 정의되어 있습니다. 토큰 상태가 _재정의됨_(으)로 바뀌고 모든 하위 폴더, 프로그램 및 마케팅 아티팩트가 새 값을 상속합니다.
+* **로컬 토큰** - 토큰이 동일한 프로그램 또는 폴더에 정의되어 있습니다.
+* **상속된 토큰** - 토큰이 현재 프로그램 또는 폴더보다 한 수준 이상 높은 상위 프로그램 또는 폴더에 정의되어 있습니다.
+* **재정의된 토큰** - 토큰이 상위 프로그램 또는 폴더에 정의되어 있지만 현재 프로그램 또는 폴더에는 다른 값이 정의되어 있습니다. 토큰 상태가 _재정의됨_(으)로 바뀌고 모든 하위 폴더, 프로그램 및 마케팅 아티팩트가 새 값을 상속합니다.
 
 ![토큰 형식 및 상속](./assets/program-tokens-inherited-overridden.png){width="600" zoomable="yes"}
 
-### 토큰 만들기
+### 토큰 만들기 {#create}
 
 1. _[!UICONTROL 토큰]_ 탭에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
@@ -83,9 +87,9 @@ _내 토큰_&#x200B;은(는) 프로그램 또는 폴더에 대해 만들거나 �
 
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
-### 토큰 편집
+### 토큰 편집 {#edit}
 
-정의된 내 토큰의 값을 편집할 수 있습니다. 상속된 토큰의 값을 재정의하려면 이 작업을 수행합니다.
+정의된 내 토큰의 값을 편집할 수 있습니다. 이는 상속된 토큰의 값을 재정의합니다.
 
 <!-- (How does this affect live person journeys? ) -->
 
@@ -97,13 +101,21 @@ _내 토큰_&#x200B;은(는) 프로그램 또는 폴더에 대해 만들거나 �
 
 1. _저장_ 아이콘을 클릭합니다.
 
-### 토큰 삭제
+### 토큰 삭제 {#delete}
 
 사용자 지정 토큰이 현재 여정 이메일 콘텐츠에 사용되지 않는 경우 목록에서 삭제할 수 있습니다.
 
 1. _[!UICONTROL 토큰]_&#x200B;에서 토큰 이름 옆에 있는 _삭제_ 아이콘을 클릭합니다.
 
 1. 확인 대화 상자에서 **[!UICONTROL 삭제]**&#x200B;를 클릭합니다.
+
+## 자동 제안 및 미리보기 {#autosuggest}
+
+여정에 _데이터 값 변경_ [작업 노드](./action-nodes.md)을(를) 포함하는 경우 **[!UICONTROL 새 값]** 필드에 `{{`을(를) 입력하여 토큰 _자동 제안_ 메뉴를 표시할 수 있습니다. 표시된 목록에는 지원되는 네임스페이스 및 개별 토큰이 표시됩니다. 호환되는 데이터 형식의 토큰만 나열됩니다.
+
+_내 토큰_&#x200B;의 경우 올바른 값을 쉽게 선택할 수 있도록 토큰 이름과 함께 토큰 값의 미리 보기가 표시됩니다.
+
+![토큰에 대한 자동 사용자 지정 메뉴를 표시하는 새 값 필드의 구문](./assets/program-tokens-change-data-value-autosuggest.png){width="500" zoomable="yes"}
 
 <!--
 
