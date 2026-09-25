@@ -1,120 +1,129 @@
 ---
 title: 동료 기술
-description: Marketo Optimizer에서 프로그램, 여정, 대상, 채점, 콘텐츠 및 전송 시간 최적화를 위한 패키지화된 워크플로우인 CX Enterprise Coworker 기술을 검토합니다.
+description: 여정, 대상, 프로그램, 컨텐츠, 분석 및 AI 의사 결정에 대한 Marketo Optimizer의 동료 기술을 검토합니다. 각 스킬이 여러분을 위해 무엇을 할 수 있는지 알아봅니다.
+autotag-review: '2026-09-22T14:02:17.516Z'
 TQID: 'https://experienceleague.adobe.com/nNFB9UEghfqVvnBrNtTDnpnLUKKKMAU2nY1Pqt0KkUQ'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
     internal-label: Marketo Optimizer
 feature_v2:
-  - id: 3cf5f37e-e87e-5179-812b-53ce05d7eebb
-    internal-label: Setup
-  - id: 46e599c6-e20f-5f67-9824-93415016f66b
-    internal-label: Audiences
-  - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
-    internal-label: Journeys
-  - id: a29661b8-f7a4-53d1-a9ac-fdec08c092e4
-    internal-label: Programs
-  - id: d4203578-d294-5145-b397-f26f4488a904
-    internal-label: Channels
+  - id: 1650dadf-b034-5ac9-a309-77ad1e2f5035
+    internal-label: Chat Interface
+subfeature_v2:
+  - id: b9e5c7f3-be30-563c-9e41-cc8ea76e2fee
+    internal-label: Skills
 topic_v2:
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-    internal-label: Data quality
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-    internal-label: Implementation
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-    internal-label: Customer experience
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-    internal-label: Optimization
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-    internal-label: Personalization
-source-git-commit: 1dcc3bcdc59114c7fc1e16178db8921ae173b955
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
+source-git-commit: 5334f0f5d9d958ea47b055b067a7308950352e9c
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 6%
+source-wordcount: '988'
+ht-degree: 4%
 ---
+
 # 동료 기술
 
-_스킬_&#x200B;은(는) Coworker가 실행 방법을 알고 있는 패키지된 워크플로우입니다. `/` 메뉴와 자연어 요청 모두의 뒤에 기본 요소가 있습니다. 각 스킬은 단계별 지침 및 한 작업에 필요한 특정 도구(예: &quot;여정 게시&quot;, &quot;두 사람 목록 비교&quot;, &quot;채점 모델 구축&quot;)를 번들로 제공합니다.
+_스킬_&#x200B;은(는) Coworker가 실행할 수 있는 패키지된 워크플로우입니다. 스킬은 `/` 메뉴와 자연어 요청 모두의 구성 요소입니다. 각 스킬은 여정 게시, 두 사람 목록 비교 또는 채점 모델 구축과 같이, 한 작업에 필요한 단계별 지침과 특정 도구를 번들로 제공합니다.
 
->[!NOTE]
->
->각 스킬은 해당 스킬이 [!DNL Marketo Optimizer] 또는 [!DNL Marketo Engage] 상태(**쓰기**)를 변경하는지, 쿼리/분석/생성(**읽기**)만 하는지 또는 동일한 쿼리 + 돌연변이 함수(**읽기+쓰기**)를 가지는지에 따라 분류됩니다.
+각 스킬에 대한 분류는 수행하는 작업의 종류를 반영합니다.
 
-## 프로그램 및 계획 {#programs-planning}
-
-| 스킬 | 기능 | 액세스 | 제품 표면 | 영향 / 데이터 흐름 |
-|---|---|---|---|---|
-| `adapt-program` | [!DNL Marketo Optimizer] 적응을 위해 [!DNL Marketo Engage] 프로그램에서 마이그레이션 스토리를 생성합니다. | 읽기 | [!DNL Marketo Optimizer] | 읽기 [!DNL Marketo Engage], 쓰기 [!DNL Marketo Optimizer] |
-| `folder-creation` | 자산 트리에 조직 폴더를 만듭니다. | 쓰기 | [!DNL Marketo Optimizer] | 읽기 + 쓰기 [!DNL Marketo Optimizer] |
-| `program-creation` *(프로그램 빌드)* | 캠페인 개요에서 Marketo 프로그램을 만듭니다.  <p>_[개요에서 프로그램 만들기](./program-from-brief.md)_&#x200B;를 참조하세요. | 쓰기 | [!DNL Marketo Engage] | 읽기 + 쓰기 [!DNL Marketo Engage] |
-| `program-planning` *(플랜 캠페인)* | 브리프를 설정/구현 문서로 변환합니다. | 읽기 | [!DNL Marketo Engage] | [!DNL Marketo Engage] 읽기 |
-| `program-qa` *(프로그램 유효성 검사)* | 프로그램 검증/감사(규칙 전용, 테스트 계획 또는 개요) | 읽기 | [!DNL Marketo Engage] | [!DNL Marketo Engage] 읽기 |
+* _검색_ 스킬이 기존 레코드를 검색하거나 나열합니다.
+* 데이터를 변경하지 않고 _분석_ 스킬 검토, 비교 또는 보고합니다.
+* _보기_ 스킬은 읽기 전용 보고서나 지표를 표시합니다.
+* _편집_ 스킬은 기존 개체의 설정 또는 콘텐츠를 변경합니다.
+* _만들기_ 스킬에서 새 개체를 만듭니다.
 
 ## 여정 {#journeys}
 
-| 스킬 | 기능 | 액세스 | 제품 | 백엔드(데이터 흐름) |
-|---|---|---|---|---|
-| `journey-creation` | 자연어에서 개인 여정을 만들고 편집합니다. | 쓰기 | [!DNL Marketo Optimizer] | 읽기 + 쓰기 [!DNL Marketo Optimizer] |
-| `journey-edit-dates` | 게시하지 않고 여정의 시작/종료 날짜를 변경합니다. | 쓰기 | [!DNL Marketo Optimizer] | 읽기 + 쓰기 [!DNL Marketo Optimizer] |
-| `journey-publish` | 사람 여정 게시/실행/예약 | 쓰기 | [!DNL Marketo Optimizer] | 읽기 + 쓰기 [!DNL Marketo Optimizer] |
-| `journey-stop` | 여정 중단, 닫기, 중지, 중지 또는 종료 | 쓰기 | [!DNL Marketo Optimizer] | 읽기 + 쓰기 [!DNL Marketo Optimizer] |
-| `journey-reentry` | 재입력 구성: 허용/허용 안 함, 쿨다운, 최대 항목 수. | 쓰기 | [!DNL Marketo Optimizer] | 읽기 + 쓰기 [!DNL Marketo Optimizer] |
-| `journey-trafficcontrol` | 프로필 라우팅을 보여주는 트래픽 제어 시뮬레이션을 실행합니다. | 읽기 | [!DNL Marketo Optimizer] | 읽기 [!DNL Marketo Optimizer]&#x200B;(시뮬레이션) |
-| `journey-observability` | 진행 상황 디버그/모니터링 — 경로, 타이밍, 분할, 정지, 유지 <p>_[여정 진행률 디버그 및 모니터링](./journey-observability.md)_&#x200B;을 참조하세요. | 읽기 | [!DNL Marketo Optimizer] | [!DNL Marketo Optimizer] + [!DNL Marketo Engage]을(를) 읽습니다(정적 목록 확인). |
+이러한 스킬은 개인 여정을 만들고, 게시하고, 디버깅하고, 관리합니다.
 
-## 대상자 및 사람 {#audiences-people}
+| 스킬 | 기능 | 유형 |
+| --- | --- | --- |
+| **여정 가시성** | 경로, 시간, 분할, 정지, 체류 시간 등 여정을 통해 사람의 이동을 디버깅하고 모니터링합니다. _[여정 진행률 디버그 및 모니터링](./journey-observability.md)_&#x200B;을 참조하세요. | 분석 |
+| **여정 트래픽 제어** | 모든 활성 여정에서 프로필이 배포되는 방식을 시뮬레이션합니다. | 분석 |
+| **여정 게시** | 시작 모드, 날짜 및 확인을 포함하여 여정을 게시, 실행 또는 예약합니다. | 편집 |
+| **여정 중지** | 실행 중인 여정을 중단하여 즉시 중지하거나, 종료하여 적절하게 축소하십시오. | 편집 |
+| **날짜 여정** | 초안, 예약됨 또는 라이브 여정의 시작 또는 종료 날짜를 다시 게시하지 않고 변경합니다. | 편집 |
+| **여정 재입력** | 재입력 허용 여부, 쿨다운 지연 및 최대 항목 수를 포함하여 여정에 대한 재입력 설정을 구성합니다. | 편집 |
+| **여정 만들기** | 자연어 요청을 사용하여 개인 여정을 만들고 편집합니다. | 만들기 |
+| **여정 웨비나** | 웨비나 전 홍보 여정과 후 후속 여정을 설정합니다. | 만들기 |
 
-| 스킬 | 기능 | 액세스 | 제품 | 백엔드(데이터 흐름) |
-|---|---|---|---|---|
-| `audience-creation` | [!DNL Marketo Engage] 스마트 목록을 조정하거나 사람 목록을 만들거나 규칙을 추가/업데이트합니다. <p>_[프로그램에 대한 대상 만들기](./audience-creation.md)_&#x200B;를 참조하십시오. | 쓰기 | [!DNL Marketo Optimizer] | 읽기 [!DNL Marketo Engage] + 읽기/쓰기 [!DNL Marketo Optimizer]. |
-| `people-list-comparison` | 두 사람 목록을 비교하고 중복되는 구성원을 표시합니다. | 읽기 | [!DNL Marketo Optimizer] | [!DNL Marketo Optimizer] 읽기 |
-| `import-leads` | CSV 데이터 품질을 검사하고 [!DNL Marketo Engage]에 가져오기를 커밋합니다. | 읽기+쓰기 | 모두 | 읽기 + 쓰기 [!DNL Marketo Engage] |
-| `lead-investigation` *(리드 조사)* | 잠재 고객의 활동, 점수, 자격, 라이프사이클을 조사합니다. | 읽기 | [!DNL Marketo Engage] | [!DNL Marketo Engage] 읽기 |
+## 대상자 및 사용자 목록 {#audience-people-lists}
 
-## 컨텐츠 및 채널 {#content-channels}
+이러한 스킬은 사람 목록과 대상 정의를 만들고 관리합니다.
 
-| 스킬 | 기능 | 액세스 | 제품 | 백엔드(데이터 흐름) |
-|---|---|---|---|---|
-| `content-personalization` | 템플릿을 검색/미리 보고 컨텐츠를 편집하거나 변형을 생성할 수 있습니다. | 읽기+쓰기 | [!DNL Marketo Optimizer] | [!DNL Marketo Optimizer]을(를) 읽고 씁니다. _[사용자별 전자 메일 콘텐츠 개인화](./personalize-content.md)_&#x200B;를 참조하십시오. |
-| `asset-tokens` | 프로그램/폴더/여정에 대한 전체 토큰 CRUD. | 읽기+쓰기 | [!DNL Marketo Optimizer] | 읽기 + 쓰기 [!DNL Marketo Optimizer] |
-| `fcs-channels` | 채널 조회 및 CRUD + 게시/중지/삭제. | 읽기+쓰기 | [!DNL Marketo Optimizer] | 읽기 + 쓰기 [!DNL Marketo Optimizer] |
+| 스킬 | 기능 | 유형 |
+| --- | --- | --- |
+| **동적 목록 구성원 검색** | 동적 또는 정적 사용자 목록의 구성원을 검색하고 필터링합니다. | 검색 |
+| **사람 목록 비교** | 두 사람 목록을 비교하고 중복되는 구성원을 표시합니다. | 분석 |
+| **정적 목록에서 제거** | 정적 목록에서 자연어 기준과 일치하는 멤버를 제거합니다. | 편집 |
+| **대상자 만들기** | [!DNL Marketo Engage] 스마트 목록을 조정하거나 사람 목록을 만들거나 해당 규칙을 추가 또는 업데이트하십시오. _[프로그램에 대한 대상 만들기](./audience-creation.md)_&#x200B;를 참조하십시오. | 만들기 |
 
-## 채점 및 신호 {#scoring-signals}
+## 프로그램, 폴더 및 채널 {#programs-folders-channels}
 
-| 스킬 | 기능 | 액세스 | 제품 | 백엔드(데이터 흐름) |
-|---|---|---|---|---|
-| `scoring-studio` | 채점 모델을 나열/가져오고 빌드/게시합니다. <p>_[사용자 지정 점수 모델 만들기](./lead-scoring-model.md)_&#x200B;를 참조하십시오. | 읽기+쓰기 | [!DNL Marketo Optimizer] | [!DNL Marketo Optimizer]&#x200B;(채점 서비스)을(를) 읽고 씁니다; [!DNL Marketo Engage] 리드 필드/활동 유형을 읽습니다. |
-| `engagementconfiguration` | 참여 구성 및 가중치 편집/업데이트 표시 | 읽기+쓰기 | [!DNL Marketo Optimizer] | 읽기 + 쓰기 [!DNL Marketo Optimizer] |
-| `intentconfiguration` | 의도 구성 및 가중치 설정/업데이트. | 읽기+쓰기 | [!DNL Marketo Optimizer] | 읽기 + 쓰기 [!DNL Marketo Optimizer] |
-| `intent-query` | 개인/세그먼트/목록별로 의도 점수를 쿼리하고 설명합니다. | 읽기 | [!DNL Marketo Optimizer] | [!DNL Marketo Optimizer] 읽기 |
+이러한 스킬은 프로그램 구조, 토큰 및 채널 구성을 관리합니다.
 
-## 전송 시간 최적화 {#sto}
+| 스킬 | 기능 | 유형 |
+| --- | --- | --- |
+| **프로그램 만들기** | 캠페인 개요에서 프로그램을 만듭니다. _[개요에서 프로그램 만들기](./program-from-brief.md)_&#x200B;를 참조하세요. | 분석 |
+| **프로그램 조정** | [!DNL Marketo Optimizer] 적응을 위해 [!DNL Marketo Engage] 프로그램에서 마이그레이션 스토리를 생성합니다. | 분석 |
+| **자산 토큰** | 프로그램, 폴더 및 여정에서 `{{my.token}}` 값을 만들고 관리합니다. | 편집 |
+| **FCS 채널** | XDM 스키마 및 프로비저닝을 포함하여 채널 서비스에서 채널을 만들고, 게시하고, 중지하고, 복제합니다. | 편집 |
+| **폴더 만들기** | 자산 트리에 조직 폴더를 만듭니다. | 만들기 |
+| **WhatsApp 인라인 캠페인** | 여정 노드에서 [!DNL WhatsApp] 인라인 캠페인을 만들고 게시합니다. | 만들기 |
+| **마케팅 프로그램 만들기** | 하위 폴더, 토큰, 사용자 목록 및 여정을 포함한 전체 프로그램을 만듭니다. | 만들기 |
+| **프로그램 및 여정 일괄 처리 만들기** | 단일 배치 요청에서 여러 프로그램 및 여정 쌍을 만듭니다. | 만들기 |
 
-| 스킬 | 기능 | 액세스 | 제품 | 백엔드(데이터 흐름) |
-|---|---|---|---|---|
-| `send-time-optimization` | 이메일 노드에서 STO 상태 및 활성화/비활성화로 확인합니다. | 읽기+쓰기 | [!DNL Marketo Optimizer] | 읽기 + 쓰기 [!DNL Marketo Optimizer] |
-| `send-time-report` | STO 성능 보고서를 가져오거나 표시합니다. | 읽기 | [!DNL Marketo Optimizer] | [!DNL Marketo Optimizer] 읽기 |
+## 이메일 및 랜딩 페이지 {#email-landing-pages}
 
-## 분석 및 보고 {#analytics-reporting}
+이러한 기술은 이메일, 양식 및 랜딩 페이지를 만들고 관리합니다.
 
-| 스킬 | 기능 | 액세스 | 제품 | 백엔드(데이터 흐름) |
-|---|---|---|---|---|
-| `surface-analytics` | 활동 트렌드, 이메일 성능, 리드 및 계정 데이터, 세그먼트 및 목록 멤버십, 여정 지표에 걸쳐 자연어에서 분석 보고서를 생성하여 차트 및 표로 반환합니다. 보고서 데이터는 2시간마다 새로 고침됩니다. <p>_[분석 보고서 생성](./surface-analytics.md)_&#x200B;을 참조하세요.</p> | 읽기 | [!DNL Marketo Optimizer] | 읽기: [!DNL Marketo Optimizer] + [!DNL Marketo Engage] |
+| 스킬 | 기능 | 유형 |
+| --- | --- | --- |
+| **Forms 나열** | 양식을 나열하고 세부 정보 및 필드를 봅니다. | 검색 |
+| **랜딩 페이지 나열** | 랜딩 페이지를 나열하고, 세부 정보를 보고, 초안 또는 게시 상태를 관리합니다. | 검색 |
+| **전자 메일 감사** | 사용자 추론과 간단한 섹션 별 검토를 포함하여 대상 그룹에 대해 이메일을 감사합니다. | 분석 |
+| **전자 메일 작성** | 개요 또는 PDF에서 작성, 노드에 연결 및 컨텐츠 작성을 포함하여 여정 이메일 노드를 만들거나 업데이트합니다. | 편집 |
+| **양식 작성** | 독립 실행형 리드 캡처 양식을 만들거나 업데이트하고 게시한 다음 선택적으로 랜딩 페이지에 임베드합니다. | 만들기 |
+| **랜딩 페이지 작성** | 콘텐츠 계획, 템플릿 선택, 슬롯 채우기, 양식 추가 등 간단한 항목으로 랜딩 페이지를 만들거나 업데이트한 다음 게시합니다. 게시된 랜딩 페이지를 이메일에 call-to-action 링크로 첨부합니다. | 만들기 |
+| **전자 메일 렌더링 확인** | 전자 메일에서 [!DNL Microsoft Outlook] 렌더링 문제를 확인하고 자동으로 해결할 수 있는 내용을 수정하십시오. | 편집 |
 
-## 지식 {#knowledge}
+## 콘텐츠 개인화 {#content-personalization}
 
-| 스킬 | 기능 | 액세스 | 제품 | 백엔드(데이터 흐름) |
-|---|---|---|---|---|
-| `product-knowledge` | Experience League에 게시된 [!DNL Marketo Optimizer] 설명서에서 방법/개념 질문에 답변합니다. | 읽기 | 모두 | 외부 문서 읽기 — 제품 데이터 없음 |
+이 스킬은 템플릿을 탐색하고 다양한 성향에 대한 이메일 콘텐츠를 개인화합니다.
 
-## 크로스 백엔드 {#cross-backend}
+| 스킬 | 기능 | 유형 |
+| --- | --- | --- |
+| **컨텐츠 Personalization** | 템플릿을 찾아보고 미리 본 다음 콘텐츠를 편집하거나 변형을 생성합니다. _[사용자별 전자 메일 콘텐츠 개인화](./personalize-content.md)_&#x200B;를 참조하십시오. | 만들기 |
 
-이러한 기술은 두 개 이상의 백엔드에 걸쳐 있습니다.
+## 분석 및 최적화 {#analytics-optimization}
 
-- **`adapt-program`** — `gather_program_assets`이(가) [!DNL Marketo Engage]&#x200B;(`get_program`, `get_smart_campaign`, `list_emails`)을(를) 읽은 다음 `falcomcp_create_journey` — 클래식 크로스 백엔드를 통해 씁니다.
-- **`audience-creation`** — [!DNL Marketo Engage]개의 스마트 목록(`get_smart_list`/`get_smart_campaign`)을 읽은 다음 [!DNL Marketo Optimizer]개의 사용자 목록을 씁니다.
-- **`journey-observability`** — [!DNL Marketo Optimizer] 읽기와 `check_lead_in_marketo_static_list` [!DNL Marketo Engage] 읽기를 더한 값입니다.
-- **`scoring-studio`** — [!DNL Marketo Optimizer] 채점 서비스와 함께 [!DNL Marketo Engage] 리드 필드/활동 유형을 읽습니다.
-- **`surface-analytics`** — 단일 쿼리에서 [!DNL Marketo Engage]과(와) [!DNL Marketo Optimizer]의 데이터에 걸쳐 있는 보고 질문에 답변할 수 있습니다.
+이러한 기술은 성능에 대해 보고하고 전송 시간 최적화 및 채점 모델을 구성합니다.
 
-모든 `falco-mcp_*` 및 여정/토큰/채점/STO/FCS 도구는 [!DNL Marketo Optimizer] 서비스를 히트하고 CSV/프로그램/리드 도구는 [!DNL Marketo Engage]을 히트합니다.
+| 스킬 | 기능 | 유형 |
+| --- | --- | --- |
+| **Surface Analytics** | 활동 트렌드, 이메일 성능, 리드 및 계정 데이터, 세그먼트 및 목록 멤버십, 여정 지표에 대해 설명하는 자연어 요청에서 분석 보고서를 생성합니다. 보고서 데이터는 2시간마다 새로 고침됩니다. _[분석 보고서 생성](./surface-analytics.md)_&#x200B;을 참조하세요. | 분석 |
+| **시간 보고서 보내기** | 여정 수준 또는 개별 이메일 노드에 대한 STO(전송 시간 최적화) 성능 보고서를 봅니다. | 분석 |
+| **전자 메일 시뮬레이션 중지** | STO를 활성화하기 전에 이메일 노드에 대해 예측된 전송 시간, 대상 품질 및 참여 히트맵을 미리 봅니다. | 분석 |
+| **전송 시간 최적화** | 여정 이메일 노드에서 STO를 활성화하거나 비활성화합니다. | 편집 |
+| **참여 구성** | 개인 참여 점수 모델에 대한 활동 가중치를 표시 및 편집합니다. | 편집 |
+| **채점 스튜디오** | 채점 모델을 나열하고 본 다음, 새 채점 모델을 빌드하고 게시합니다. _[사용자 지정 점수 모델 만들기](./lead-scoring-model.md)_&#x200B;를 참조하십시오. | 만들기 |
+
+## AI 의사 결정 및 의도 {#ai-decisioning-intent}
+
+이러한 기술은 AI 의사 결정을 위한 데이터 준비 상태를 평가하고 의도 점수를 구성합니다.
+
+| 스킬 | 기능 | 유형 |
+| --- | --- | --- |
+| **AI 의사 결정 상태** | 잠재 고객 가용성, 사용자 분포, 스토리 풍부성 및 의도를 포함하여 조직의 데이터가 AI 의사 결정을 위해 준비되었는지 여부를 보고합니다. | 분석 |
+| **의도 분석** | 리드 수준 인텐트 순위, 트렌드, 제품 및 키워드 분류법을 쿼리하고 유효성을 검사합니다. | 분석 |
+| **의도 구성** | 개인 의도 점수 모델에 대한 활동 가중치를 표시 및 편집합니다. | 편집 |
+
+## 지식 및 기술 관리 {#knowledge-skill-management}
+
+이러한 기술을 통해 제품 관련 질문에 답변하고 새로운 맞춤형 기술을 구축할 수 있습니다.
+
+| 스킬 | 기능 | 유형 |
+| --- | --- | --- |
+| **제품 정보** | Experience League에 게시된 [!DNL Marketo Optimizer] 설명서를 사용하여 방법 및 개념 질문에 답변합니다. | 검색 |
+| **스킬 생성** | 새로운 사용자 정의 스킬을 만들고, 테스트하고, 다듬습니다. | 만들기 |
