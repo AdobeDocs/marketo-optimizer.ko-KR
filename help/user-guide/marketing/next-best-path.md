@@ -13,7 +13,7 @@ feature_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 055fd02e1007ba6d06e563dc931adffe6145bed6
+source-git-commit: c733fd2c334324d8666bac908e55a0780ede557e
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 0%
@@ -133,20 +133,22 @@ AI 기반 경로 할당은 여정을 게시하기 전까지 적용되지 않습�
 
 1. 대화 상자에서 시뮬레이션 대상에 사용할 동적 목록을 선택합니다.
 
-<!-- 
-   * **[!UICONTROL Original person lists]** – Use the audience from the audience node. Specify a sample size when the full audience exceeds the simulation threshold.
-   * **[!UICONTROL Dynamic and static lists]** – Use a [!DNL Marketo Engage] static or dynamic list.
-   * **[!UICONTROL Test records]** – Use AI-suggested test profiles.
--->
+   ![동적 목록이 선택된 상태로 경로 시뮬레이션 대화 상자를 만들고 취소 및 시뮬레이트 단추를 만듭니다.](./assets/next-best-path-simulate-paths.png){width="250"}
 
-![동적 목록이 선택된 상태로 경로 시뮬레이션 대화 상자를 만들고 취소 및 시뮬레이트 단추를 만듭니다.](./assets/next-best-path-simulate-paths.png){width="250"}
-
->[!NOTE]
->
->* 선택한 대상자가 시뮬레이션 임계값을 초과하는 경우 시스템은 100개 프로필의 샘플에서 시뮬레이션을 실행합니다. UI의 표시기는 결과가 샘플 기반임을 보여 줍니다.
->* 선택한 대상자가 아직 구체화되지 않은 경우 시뮬레이션이 차단됩니다. 인라인 경고는 대상자를 먼저 구체화하도록 지시합니다.
+   >[!NOTE]
+   >
+   >* 선택한 대상자가 시뮬레이션 임계값을 초과하는 경우 시스템은 100개 프로필의 샘플에서 시뮬레이션을 실행합니다. UI의 표시기는 결과가 샘플 기반임을 보여 줍니다.
+   >* 선택한 대상자가 아직 구체화되지 않은 경우 시뮬레이션이 차단됩니다. 인라인 경고는 대상자를 먼저 구체화하도록 지시합니다.
 
 1. **[!UICONTROL 시뮬레이션]**&#x200B;을 클릭합니다.
+
+
+<!--
+after second step above...
+* **[!UICONTROL Original person lists]** – Use the audience from the audience node. Specify a sample size when the full audience exceeds the simulation threshold.
+* **[!UICONTROL Dynamic and static lists]** – Use a [!DNL Marketo Engage] static or dynamic list.
+* **[!UICONTROL Test records]** – Use AI-suggested test profiles.
+-->
 
 ### 시뮬레이션 결과 검토 {#review-results}
 
