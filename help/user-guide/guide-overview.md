@@ -1,32 +1,42 @@
 ---
 title: Adobe Marketo Optimizer 설명서
-description: Marketo Optimizer에 대한 전체 설명서 - 온보딩, AI 기반 마케팅 자동화, 개인 여정 및 대상 관리에 사용할 수 있는 리소스를 살펴봅니다.
+description: Marketo Optimizer에 대한 전체 설명서 - 온보딩, AI 기반 마케팅 자동화, 개인 여정 및 대상자 관리에 사용할 수 있는 리소스를 살펴봅니다.
 TQID: 'https://experienceleague.adobe.com/UefS41mK-pwG-bqv2d-6Qj6qH9ZPBf4AYK2uoKzzk6E'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 1650dadf-b034-5ac9-a309-77ad1e2f5035
+    internal-label: Chat Interface
   - id: 3cf5f37e-e87e-5179-812b-53ce05d7eebb
+    internal-label: Setup
   - id: 46e599c6-e20f-5f67-9824-93415016f66b
+    internal-label: Audiences
   - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+    internal-label: Journeys
   - id: a29661b8-f7a4-53d1-a9ac-fdec08c092e4
+    internal-label: Programs
   - id: a659ad61-de21-559d-a901-02e2fb329ff5
+    internal-label: Administration
   - id: d4203578-d294-5145-b397-f26f4488a904
+    internal-label: Channels
 topic_v2:
   - id: da3860b0-d637-47df-bef0-273751180266
+    internal-label: Digital asset management
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Administration
+source-git-commit: 7a4e898b64751d5b912e6468d318083c571eff1b
 workflow-type: tm+mt
-source-wordcount: 423
+source-wordcount: '427'
 ht-degree: 3%
-
 ---
-
 # Adobe Marketo Optimizer 설명서
 
-[!DNL Adobe Marketo Optimizer]은(는) 마케터와 비즈니스 개발 담당자가 프로그램을 계획하고, 개인화된 개인 여정을 조정하고, 잠재 고객을 검증할 수 있는 AI 우선 마케팅 자동화 솔루션입니다. 대화형 AI를 사용하여 B2B 리드 및 계정을 위한 개인화된 AI 기반 콘텐츠로 마케팅 및 판매 업무를 조정하고 실행할 수 있습니다.
+[!DNL Adobe Marketo Optimizer]은(는) 마케터와 BDR(비즈니스 개발 담당자)이 리드, 계정 및 구매 그룹 여정을 가져올 수 있는 강력한 AI 추론 기능을 제공하는 AI 우선 마케팅 자동화 솔루션으로, 지속적으로 업데이트된 의미 있는 이야기로 고객 컨텍스트를 강화하고 마케팅, 유료 미디어 및 BDR 채널 전반에 걸친 차선의 작업으로 참여를 확대합니다.
 
 ## 기본 사항부터 시작 {#basics}
 
