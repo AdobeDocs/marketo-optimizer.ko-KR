@@ -1,23 +1,28 @@
 ---
 title: 자산
-description: 이메일, 템플릿 및 시각적 조각에 대한 Marketo Optimizer의 이미지 에셋을 관리합니다.
+description: Marketo Optimizer에서 이메일, 템플릿 및 시각적 조각에 대한 이미지 자산을 관리합니다.
 feature: Assets, Content
 role: User
 TQID: 'https://experienceleague.adobe.com/4Nggkg68RA3TQTYwhOG-2dOvmyXVvBqunBGC3fWRV-k'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+    internal-label: Journeys
   - id: 8881ff95-1653-5fea-82af-ce1549c0d99d
+    internal-label: Content Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Metadata
+source-git-commit: cd171c6ec89301ed315d8b882ac0fccac745809f
 workflow-type: tm+mt
-source-wordcount: 734
+source-wordcount: '734'
 ht-degree: 19%
-
 ---
-
 # 자산
 
 [!DNL Adobe Marketo Optimizer]에서 에셋은 일반적으로 여정을 지원하는 콘텐츠를 디자인할 때 사용되는 이미지입니다. 자산 선택기의 [전자 메일](email-authoring.md), [전자 메일 템플릿](templates.md) 및 [시각적 조각](email-authoring.md#visual-fragments) 또는 시각적 디자인 공간 내의 간단한 드래그 앤 드롭 인터페이스에서 이러한 이미지를 사용할 수 있습니다.

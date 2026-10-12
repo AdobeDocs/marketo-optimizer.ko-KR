@@ -1,29 +1,36 @@
 ---
 title: 개인 정보 관리
-description: Marketo Optimizer에서 GDPR, CCPA 및 기타 개인 정보 보호 규정을 준수하고 Adobe Privacy Service을 사용하여 요청을 제출하는 방법을 알아봅니다.
+description: Marketo Optimizer에서 GDPR, CCPA 및 기타 개인 정보 보호 규정을 준수하는 방법을 알아보고 Adobe Privacy Service을 사용하여 요청을 제출합니다.
 feature: Setup
 role: Admin
 TQID: 'https://experienceleague.adobe.com/VgnMCjm6l4pWG2-gqMuOmZUqU7E2Wrc-eVxn4kL5rKc'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 18a33a66-85a1-58e4-8e50-418b832ade8b
+    internal-label: Privacy
   - id: 3cf5f37e-e87e-5179-812b-53ce05d7eebb
+    internal-label: Setup
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Privacy
+source-git-commit: cd171c6ec89301ed315d8b882ac0fccac745809f
 workflow-type: tm+mt
-source-wordcount: 630
+source-wordcount: '630'
 ht-degree: 5%
-
 ---
-
 
 # 개인 정보 관리 {#privacy-management}
 
-[Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/ko/docs/experience-platform/privacy/home){target="_blank"}은(는) 고객 데이터 요청을 관리하는 데 도움이 되는 RESTful API 및 사용자 인터페이스를 제공합니다. [!DNL Adobe Privacy Service]을(를) 사용하면 Adobe CX 엔터프라이즈 애플리케이션에서 개인 고객 데이터에 액세스하고 삭제하는 요청을 제출할 수 있으므로 법적 및 조직의 개인 정보 보호 규정을 자동으로 준수할 수 있습니다.
+[Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/ko/docs/experience-platform/privacy/home){target="_blank"}은(는) 고객 데이터 요청을 관리하는 데 도움이 되는 RESTful API 및 사용자 인터페이스를 제공합니다. [!DNL Adobe Privacy Service]을(를) 사용하면 Adobe CX Enterprise 애플리케이션에서 개인 고객 데이터에 액세스하고 삭제하는 요청을 제출할 수 있으므로 법적 및 조직의 개인 정보 보호 규정을 자동으로 준수할 수 있습니다.
 
 [!DNL Adobe Marketo Optimizer]은(는) 글로벌 데이터 보호 요구 사항을 충족할 수 있도록 이러한 개인 정보 보호 도구를 제공합니다. [!DNL Privacy Service]을(를) 사용하여 [!DNL Marketo Optimizer]에서 수집하고 저장하는 데이터에 대한 액세스 및 관리 요청을 제출하고 관리합니다.
 
@@ -54,7 +61,7 @@ ht-degree: 5%
 * **[!UICONTROL Privacy Service 권한]** - `Privacy Read Permission` 및 `Privacy Write Permission`
 * **[!UICONTROL 데이터 거버넌스]** - `View Privacy Console`
 
-자세한 내용은 [!DNL Privacy Service] 안내서의 [_Privacy Service에 대한 권한 관리_](https://experienceleague.adobe.com/ko/docs/experience-platform/privacy/permissions){target="_blank"}를 참조하십시오.
+자세한 내용은 [!DNL Privacy Service] 안내서의 [_Privacy Service에 대한 권한 관리_](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/permissions){target="_blank"}를 참조하십시오.
 
 >[!ENDSHADEBOX]
 

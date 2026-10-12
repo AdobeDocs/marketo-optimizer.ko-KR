@@ -1,29 +1,39 @@
 ---
 title: 대화형 웨비나
 description: 웨비나 자산 모델, 멤버 상태, 토큰 및 활동을 포함하여 Marketo Optimizer에서 대화형 웨비나에 포함된 개념을 알아봅니다.
-keywords: 
+keywords:
 role: User
 feature: Channels
 TQID: 'https://experienceleague.adobe.com/rcaoljHUnCghXxc-W0LY5DYM-46-9jc5mz39208eMxE'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 3c1de303-7a7c-59a6-abca-8c534730e19c
+    internal-label: Reporting
   - id: 3cf5f37e-e87e-5179-812b-53ce05d7eebb
+    internal-label: Setup
   - id: 46e599c6-e20f-5f67-9824-93415016f66b
+    internal-label: Audiences
   - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+    internal-label: Journeys
   - id: a29661b8-f7a4-53d1-a9ac-fdec08c092e4
+    internal-label: Programs
   - id: d4203578-d294-5145-b397-f26f4488a904
+    internal-label: Channels
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Personalization
+source-git-commit: cd171c6ec89301ed315d8b882ac0fccac745809f
 workflow-type: tm+mt
-source-wordcount: 1085
+source-wordcount: '1085'
 ht-degree: 2%
-
 ---
-
 
 # 대화형 웨비나
 
@@ -41,7 +51,7 @@ ht-degree: 2%
 
 ## 자산으로서의 웨비나
 
-웨비나는 전자 메일 또는 랜딩 페이지와 같은 방식으로 [program](https://experienceleague.adobe.com/ko/docs/journey-optimizer-b2b/prime/marketing-management/programs/programs)이(가) 소유한 자산입니다. 프로그램에 웨비나를 추가하면 해당 프로그램에 웨비나가 등록되고 해당 프로그램의 모든 여정 및 에셋에서 토큰, 속성 및 활동을 사용할 수 있습니다.
+웨비나는 전자 메일 또는 랜딩 페이지와 같은 방식으로 [program](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/prime/marketing-management/programs/programs)이(가) 소유한 자산입니다. 프로그램에 웨비나를 추가하면 해당 프로그램에 웨비나가 등록되고 해당 프로그램의 모든 여정 및 에셋에서 토큰, 속성 및 활동을 사용할 수 있습니다.
 
 >[!IMPORTANT]
 >
@@ -53,7 +63,7 @@ ht-degree: 2%
 
 | 주 | 소유자 | 값 |
 |---|---|---|
-| 프로그램 구성원 상태 | 프로그램 | [프로그램 유형](https://experienceleague.adobe.com/ko/docs/journey-optimizer-b2b/prime/admin/program-types)별 구성 가능 |
+| 프로그램 구성원 상태 | 프로그램 | [프로그램 유형](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/prime/admin/program-types)별 구성 가능 |
 | 웨비나 상태 | 웨비나 자산 | 초대됨, 등록됨, 참석됨, 표시 안 함, 온디맨드로 참석함 |
 | 여정 상태 | 여정 | 현재 노드, 일시 중지, 완료 및 기타 여정 런타임 상태 |
 
@@ -81,13 +91,13 @@ ht-degree: 2%
 
 자산 수준 토큰은 웨비나 폴더에 직접 배치됩니다.
 
-&#x200B;- 제목
-&#x200B;- 설명
-&#x200B;- 시작 날짜/시간, 종료 날짜/시간
-&#x200B;- 기간
-&#x200B;- 시간대
-&#x200B;- 발표자
-&#x200B;- 레코딩 URL
+- 제목
+- 설명
+- 시작 날짜/시간, 종료 날짜/시간
+- 기간
+- 시간대
+- 발표자
+- 레코딩 URL
 
 >[!NOTE]
 >
@@ -95,9 +105,9 @@ ht-degree: 2%
 
 **구성원** 하위 폴더에 있는 받는 사람당 토큰:
 
-&#x200B;- **상태** - 받는 사람의 현재 웨비나 상태(초대됨, 등록됨, 참석함, 표시 안 함 또는 요청 시 참석함)입니다. [웨비나 상태](#webinar-status)를 참조하세요.
-&#x200B;- **URL 가입** - 수신자의 개인 [!DNL Adobe Connect] 링크입니다. 수신자의 웨비나 상태가 등록됨 또는 이후 버전인 경우에만 확인됩니다. 이전 단계에서 모든 사용자가 비어 있게 해결됩니다.
-&#x200B;- **녹화 URL** - 라이브 세션 후에 녹화가 게시된 후 확인되며, 그 때까지 비어 있습니다. 표시할 녹화가 있기 전에 링크가 표시되지 않도록 포스트 웨비나 이메일에서 조건부로 사용하십시오.
+- **상태** - 받는 사람의 현재 웨비나 상태(초대됨, 등록됨, 참석함, 표시 안 함 또는 요청 시 참석함)입니다. [웨비나 상태](#webinar-status)를 참조하세요.
+- **URL 가입** - 수신자의 개인 [!DNL Adobe Connect] 링크입니다. 수신자의 웨비나 상태가 등록됨 또는 이후 버전인 경우에만 확인됩니다. 이전 단계에서 모든 사용자가 비어 있게 해결됩니다.
+- **녹화 URL** - 라이브 세션 후에 녹화가 게시된 후 확인되며, 그 때까지 비어 있습니다. 표시할 녹화가 있기 전에 링크가 표시되지 않도록 포스트 웨비나 이메일에서 조건부로 사용하십시오.
 
 >[!NOTE]
 >
@@ -121,7 +131,7 @@ ht-degree: 2%
 
 라이브 이벤트 후 녹화를 시청하는 사람들의 참여가 온디맨드 모드로 태그가 지정된 동일한 활동으로 수집됩니다. 활동과 달리, 온디맨드 참여는 별도의 웨비나 상태를 만듭니다. 라이브로 참여하지 않았으며 나중에 녹화를 시청하는 사람은 **표시 안 함**&#x200B;에서 **온디맨드 참석**(으)로 이동합니다.
 
-## 사전 요구 사항
+## 필요 조건
 
 웨비나 빌드를 시작하기 전에 다음 사항이 준비되었는지 확인하십시오.
 
