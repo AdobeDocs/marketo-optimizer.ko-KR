@@ -136,4 +136,4 @@ ht-degree: 0%
 
 채팅 인터페이스에서 *&quot;예정된 웨비나 모두 표시&quot;* 또는 *&quot;웨비나 [이름]&quot;*&#x200B;에 대한 세부 정보를 제공하세요. **디자인**, **공동 호스트 추가** 또는 **웨비나 날짜에 게시**&#x200B;와 같은 다음 모범 작업과 함께 참여 대시보드 링크가 표시됩니다.
 
-보다 심층적인 분석(출석, 투표 및 설문 조사 실적, 멤버별 데이터)을 위해 채팅 인터페이스가 웨비나의 **Analytics** 및 **멤버** 탭과 **웨비나 관리**&#x200B;의 크로스 프로그램 롤업에 연결됩니다. <!-- See [Webinar reporting](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/prime/marketing-management/webinars/webinar-reporting). -->
+보다 심층적인 분석(출석, 투표 및 설문 조사 실적, 멤버별 데이터)을 위해 채팅 인터페이스가 웨비나의 **Analytics** 및 **멤버** 탭과 **웨비나 관리**&#x200B;의 크로스 프로그램 롤업에 연결됩니다. <!-- See [Webinar reporting](https://experienceleague.adobe.com/ko/docs/journey-optimizer-b2b/prime/marketing-management/webinars/webinar-reporting). -->
