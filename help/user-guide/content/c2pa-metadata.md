@@ -1,23 +1,28 @@
 ---
 title: C2PA 메타데이터
-description: Adobe Marketo Optimizer에서 생성 AI로 생성된 이미지에 C2PA 메타데이터를 자동으로 적용하는 방법과 이 방법이 콘텐츠에 미치는 영향에 대해 알아봅니다.
+description: Adobe Marketo Optimizer에서 생성 AI로 생성된 이미지에 C2PA 메타데이터를 자동으로 적용하는 방법과 이것이 콘텐츠에 미치는 영향에 대해 알아봅니다.
 feature: Assets, Content
 role: User
 TQID: 'https://experienceleague.adobe.com/DI9vJhE4EsGI4g4X5wz5-kqTjHOZqs6cvqo6Fke-4HU'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: d4203578-d294-5145-b397-f26f4488a904
+    internal-label: Channels
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Customer experience
+source-git-commit: cd171c6ec89301ed315d8b882ac0fccac745809f
 workflow-type: tm+mt
-source-wordcount: 586
+source-wordcount: '586'
 ht-degree: 0%
-
 ---
-
 # C2PA 메타데이터
 
 마케팅 조직들은 콘텐츠 투명성, AI 공시, 자산 변조 방지에 어느 때보다 신경을 곤두세우고 있다. Adobe의 Content Authenticity Initiative(CAI)는 [콘텐츠 증명 및 인증을 위한 연합](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model)&#x200B;(C2PA) 기술 표준을 준수하는 도구를 빌드합니다. _C2PA 메타데이터_&#x200B;은(는) 시청자가 콘텐츠 계보를 이해하고 브랜드 자산의 무결성을 확인하는 데 도움이 되는 변조 가능한 암호화된 정보입니다. 이 정보에는 다음이 포함됩니다.
@@ -34,7 +39,7 @@ ht-degree: 0%
 
 C2PA 메타데이터는 이미지 파일과 함께 유지됩니다. 생성 AI로 생성 또는 편집한 이미지를 [!DNL Adobe Marketo Optimizer]에 업로드하거나 내보내면 해당 C2PA 메타데이터가 유지됩니다.
 
-Adobe CX 엔터프라이즈 애플리케이션 전반에 걸쳐 C2PA 메타데이터를 자동으로 첨부하는 방법에 대한 자세한 내용은 CX 엔터프라이즈 안내서의 [_생성 AI 콘텐츠 투명도_](https://experienceleague.adobe.com/ko/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency){target="_blank"}를 참조하십시오.
+Adobe CX Enterprise 애플리케이션 전반에 걸쳐 C2PA 메타데이터를 자동으로 첨부하는 방법에 대한 자세한 내용은 CX Enterprise 안내서의 AI 안내서에서 [_생성 AI 콘텐츠 투명도_](https://experienceleague.adobe.com/ko/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency){target="_blank"}를 참조하십시오.
 
 >[!NOTE]
 >

@@ -1,6 +1,6 @@
 ---
 title: 사용자 액세스 및 권한
-description: 'Adobe Admin Console에서 사용자 액세스 관리: Marketo Optimizer에 대한 사용자 그룹 만들기, 제품 프로필 할당 및 역할 기반 권한 설정.'
+description: 'Adobe Admin Console에서 사용자 액세스 관리: 사용자 그룹을 만들고, 제품 프로필을 할당하고, Marketo Optimizer에 대한 역할 기반 권한을 설정합니다.'
 TQID: 'https://experienceleague.adobe.com/IY7Fvbk8GG2Xudh6vC4N9Bwk-sejvh-MMRIHHxvS-nc'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
@@ -9,7 +9,7 @@ feature_v2:
   - id: 3cf5f37e-e87e-5179-812b-53ce05d7eebb
     internal-label: Setup
   - id: 46e599c6-e20f-5f67-9824-93415016f66b
-    internal-label: Administration
+    internal-label: Audiences
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
@@ -17,7 +17,7 @@ topic_v2:
     internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 98214f502bba0efea89c7f36ac46e634e65cd0c9
+source-git-commit: c825d93cdf9754a516b2d930bbe8c1e2e8aeaea1
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 36%
@@ -258,7 +258,7 @@ When your organization has [!DNL Marketo Optimizer] provisioned, Experience Plat
 
 1. [!DNL Marketo Optimizer] 액세스(`Mktoaep<Marketo subscription prefix>`)에 대해 프로비전된 샌드박스를 선택하십시오.
 
-   ![추가할 수 있는 Marketo Optimizer 샌드박스를 표시하는 역할 편집기의 샌드박스 선택 목록.](./assets/aep-permissions-optimizer-sandbox.png){width="500" zoomable="yes"}
+   ![추가할 수 있는 Marketo Optimizer 샌드박스를 표시하는 역할 편집기의 샌드박스 선택 목록입니다.](./assets/aep-permissions-optimizer-sandbox.png){width="500" zoomable="yes"}
 
 1. 각 기능 리소스에 대해 _추가_ 아이콘(**+**)을 클릭합니다.
 
@@ -330,7 +330,7 @@ When your organization has [!DNL Marketo Optimizer] provisioned, Experience Plat
 
 1. [!DNL Marketo Optimizer] 액세스(`Mktoaep<Marketo subscription prefix>`)에 대해 프로비전된 샌드박스를 선택하십시오.
 
-   ![Marketo Optimizer 샌드박스를 선택한 역할 편집기의 샌드박스 선택 목록입니다.](./assets/aep-permissions-optimizer-sandbox.png){width="500" zoomable="yes"}
+   ![Marketo Optimizer 샌드박스가 선택된 역할 편집기의 샌드박스 선택 목록입니다.](./assets/aep-permissions-optimizer-sandbox.png){width="500" zoomable="yes"}
 
 1. 제품 권한 추가:
 

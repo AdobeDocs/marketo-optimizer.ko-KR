@@ -1,27 +1,36 @@
 ---
 title: 웨비나 만들기 및 홍보
-description: Marketo Optimizer의 채팅 인터페이스를 사용하여 웨비나를 예약하고, 공동 호스트 및 발표자를 추가하고, 홍보 및 여정을 빌드하고, 보고를 확인합니다. 이 모든 작업은 자연어로 수행됩니다.
-keywords: 
+description: Marketo Optimizer의 채팅 인터페이스를 사용하여 웨비나를 예약하고, 공동 호스트 및 발표자를 추가하고, 홍보 및 여정을 구축하고 보고를 확인합니다. 이 모든 작업은 자연어로 수행됩니다.
+keywords:
 role: User
 TQID: 'https://experienceleague.adobe.com/OKsYvVIcNN-GEMiMPW2mWomstM2MabYcK0jTColgxIQ'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 1650dadf-b034-5ac9-a309-77ad1e2f5035
+    internal-label: Chat Interface
   - id: 3c1de303-7a7c-59a6-abca-8c534730e19c
+    internal-label: Reporting
   - id: 3cf5f37e-e87e-5179-812b-53ce05d7eebb
+    internal-label: Setup
   - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+    internal-label: Journeys
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Security
+source-git-commit: cd171c6ec89301ed315d8b882ac0fccac745809f
 workflow-type: tm+mt
-source-wordcount: 958
+source-wordcount: '958'
 ht-degree: 0%
-
 ---
-
 
 # 웨비나 만들기 및 홍보
 
@@ -127,4 +136,4 @@ ht-degree: 0%
 
 채팅 인터페이스에서 *&quot;예정된 웨비나 모두 표시&quot;* 또는 *&quot;웨비나 [이름]&quot;*&#x200B;에 대한 세부 정보를 제공하세요. **디자인**, **공동 호스트 추가** 또는 **웨비나 날짜에 게시**&#x200B;와 같은 다음 모범 작업과 함께 참여 대시보드 링크가 표시됩니다.
 
-보다 심층적인 분석(출석, 투표 및 설문 조사 실적, 멤버별 데이터)을 위해 채팅 인터페이스가 웨비나의 **Analytics** 및 **멤버** 탭과 **웨비나 관리**&#x200B;의 크로스 프로그램 롤업에 연결됩니다. <!-- See [Webinar reporting](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/prime/marketing-management/webinars/webinar-reporting). -->
+보다 심층적인 분석(출석, 투표 및 설문 조사 실적, 멤버별 데이터)을 위해 채팅 인터페이스가 웨비나의 **Analytics** 및 **멤버** 탭과 **웨비나 관리**&#x200B;의 크로스 프로그램 롤업에 연결됩니다. <!-- See [Webinar reporting](https://experienceleague.adobe.com/ko/docs/journey-optimizer-b2b/prime/marketing-management/webinars/webinar-reporting). -->
