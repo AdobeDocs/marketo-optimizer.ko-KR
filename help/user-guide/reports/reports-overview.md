@@ -7,9 +7,9 @@ product_v2:
 feature_v2:
   - id: 3c1de303-7a7c-59a6-abca-8c534730e19c
     internal-label: Reporting
-source-git-commit: 6e919a66af259ea1f5facf7f5c3e811d76101e85
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '508'
 ht-degree: 2%
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 2%
 각 보고서는 [!DNL Adobe Customer Journey Analytics]에 작성되고 [!DNL Marketo Optimizer]에 직접 포함됩니다. _목록_ 아이콘( ![목록 아이콘](../assets/do-not-localize/icon-table-of-contents.svg) )을 클릭하여 왼쪽의 **[!UICONTROL 목차]** 패널을 사용하여 섹션 사이를 이동합니다.
 
 ![개인 여정 개요, 참여, 전자 메일 참여 및 웹 참여 섹션을 나열하는 보고서 페이지](./assets/reports-table-of-contents.png){width="800" zoomable="yes"}
+
+>[!PREREQUISITES]
+>
+>_[!UICONTROL 보고서]_ 탭에서 보고서를 보려면 **[!UICONTROL B2B 포함된 보고서 보기]** [권한](../start/permissions-reference.md)이 있어야 합니다.
 
 ## 보고서 섹션 {#report-sections}
 

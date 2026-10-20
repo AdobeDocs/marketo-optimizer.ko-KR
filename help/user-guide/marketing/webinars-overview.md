@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: cd171c6ec89301ed315d8b882ac0fccac745809f
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 2%
+source-wordcount: '1131'
+ht-degree: 1%
 ---
 
 # 대화형 웨비나
@@ -51,7 +51,7 @@ ht-degree: 2%
 
 ## 자산으로서의 웨비나
 
-웨비나는 전자 메일 또는 랜딩 페이지와 같은 방식으로 [program](https://experienceleague.adobe.com/ko/docs/journey-optimizer-b2b/prime/marketing-management/programs/programs)이(가) 소유한 자산입니다. 프로그램에 웨비나를 추가하면 해당 프로그램에 웨비나가 등록되고 해당 프로그램의 모든 여정 및 에셋에서 토큰, 속성 및 활동을 사용할 수 있습니다.
+웨비나는 전자 메일 또는 랜딩 페이지와 같은 방식으로 [program](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/prime/marketing-management/programs/programs)이(가) 소유한 자산입니다. 프로그램에 웨비나를 추가하면 해당 프로그램에 웨비나가 등록되고 해당 프로그램의 모든 여정 및 에셋에서 토큰, 속성 및 활동을 사용할 수 있습니다.
 
 >[!IMPORTANT]
 >
@@ -63,7 +63,7 @@ ht-degree: 2%
 
 | 주 | 소유자 | 값 |
 |---|---|---|
-| 프로그램 구성원 상태 | 프로그램 | [프로그램 유형](https://experienceleague.adobe.com/ko/docs/journey-optimizer-b2b/prime/admin/program-types)별 구성 가능 |
+| 프로그램 구성원 상태 | 프로그램 | [프로그램 유형](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/prime/admin/program-types)별 구성 가능 |
 | 웨비나 상태 | 웨비나 자산 | 초대됨, 등록됨, 참석됨, 표시 안 함, 온디맨드로 참석함 |
 | 여정 상태 | 여정 | 현재 노드, 일시 중지, 완료 및 기타 여정 런타임 상태 |
 
@@ -143,14 +143,15 @@ ht-degree: 2%
 
 ### 권한
 
-웨비나 기능에 대한 액세스 권한은 웨비나에 할당된 권한에 따라 다릅니다.
+웨비나 기능에 대한 액세스 권한은 웨비나에 할당된 권한에 따라 다릅니다. 권한 및 권장 역할의 전체 목록을 보려면 [사용자 액세스 및 권한](../start/permissions-reference.md)을 참조하세요.
 
-| 역할 | 부여 내용 |
+| 사용 권한 | 부여 내용 |
 |---|---|
 | B2B 웨비나 보기 | 웨비나 목록과 웨비나 구성, 세부 정보 및 보고서를 봅니다. 이 권한을 통해서는 만들기, 디자인, 편집 및 입력 컨트롤을 사용할 수 없으며 웨비나에 공동 호스트 또는 발표자로 할당할 수 없습니다. |
+| B2B 웨비나 관리 | 전체 라이프사이클 액세스: 웨비나 만들기, 디자인, 구성, 예약, 편집, 게재, 호스팅 및 삭제 만들기, 디자인, 편집 및 관리 컨트롤은 이 권한이 있는 사용자만 사용할 수 있습니다. |
 
 <!-- 
-| Manage B2B webinars | Full lifecycle access: create, design, configure, schedule, edit, deliver, host, and delete a webinar. The Create, Design, Edit, and Manage controls are available only for users with this role. |
+
 | Webinar co-host | After you are added as a co-host, this permission enables you to design and enter that webinar with co-host controls. |
 | Webinar presenter | After you are added as a presenter, this permission enables you to view and enter that webinar with presenter capabilities. It grants no authoring or design access on its own. |
 

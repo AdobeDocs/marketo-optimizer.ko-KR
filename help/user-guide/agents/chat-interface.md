@@ -19,14 +19,20 @@ topic_v2:
     internal-label: Customer experience
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: e2577dd31c38f55f4dc2ce32119315ad7f9fe6f6
+source-git-commit: be5df9d4e4482516a60b652d9ec2f977eb29b520
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '955'
 ht-degree: 0%
 ---
 # 채팅 인터페이스
 
 [!DNL Adobe Marketo Optimizer] 전체에 채팅 패널이 포함되어 있습니다. 일반 언어를 사용하여 AI 에이전트와 상호 작용하여 프로그램 및 여정을 빌드하고, 사용자 목록을 만들고 비교하며, 리드를 조사하고, 채점을 구성하는 등의 작업을 수행합니다.
+
+>[!PREREQUISITES]
+>
+>[!DNL Marketo Optimizer]에서 동료 채팅 패널을 사용하려면 **[!UICONTROL B2B 대화 환경 관리]** [권한](../start/permissions-reference.md)이 있어야 합니다.
+>
+>이 권한은 채팅 패널에 대한 액세스 권한을 부여하지만 어떤 기능에도 대한 액세스 권한을 부여하지 않습니다. 시스템은 채팅에서 모든 스킬 또는 작업을 채팅 외부에서 해당 기능에 필요한 권한과 동일하게 확인합니다. 만들기, 편집 또는 게시할 수 있는 권한은 _관리_&#x200B;이고 읽기 전용 스킬에 대한 권한은 _보기_&#x200B;입니다. 기능 권한이 없는 경우 도우미가 해당 작업을 수행할 수 없습니다. 예를 들어, 여정을 만들려면 **[!UICONTROL B2B 개인 여정 관리]**&#x200B;가 필요하며 목록 양식에는 **[!UICONTROL B2B Forms 보기]**&#x200B;가 필요합니다.
 
 왼쪽 탐색에서 _Coworker_ 아이콘을 선택하여 패널을 엽니다. 패널 헤더에는 네 개의 컨트롤이 있습니다.
 

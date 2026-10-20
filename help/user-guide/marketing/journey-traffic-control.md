@@ -4,20 +4,24 @@ description: Marketo Optimizer의 여정 트래픽 제어에서 7개의 가중�
 TQID: 'https://experienceleague.adobe.com/MRPRSUHGHV9CZdp4ZIqxsIsIaB6U86DDiau7RE2r0ak'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 3c1de303-7a7c-59a6-abca-8c534730e19c
+    internal-label: Reporting
   - id: 46e599c6-e20f-5f67-9824-93415016f66b
+    internal-label: Audiences
   - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+    internal-label: Journeys
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Reporting
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: 1543
+source-wordcount: '1582'
 ht-degree: 0%
-
 ---
-
 # 여정 트래픽 제어
 
 여정 트래픽 제어(JTC)는 대상이 겹칠 때 개인에게 최상의 여정을 우선시합니다. 한 사람이 여러 JTC를 지원하는 여정에 참가할 수 있는 자격을 얻으면 AI 모델이 각 후보에 대해 이를 평가하고 다른 후보에 배치하지 않고 가장 적합한 여정에 추가합니다.
@@ -52,10 +56,11 @@ ht-degree: 0%
 >
 >의미 있는 작업을 수행하려면 적어도 두 개의 여정에 JTC가 활성화되어 있어야 합니다. 중재할 경쟁 여정이 없기 때문에 단일 여정에서 활성화하면 효과가 없습니다. 둘 이상의 여정이 JTC를 사용할 수 있는 경우에만 모델이 충돌 해결을 시작합니다.
 
-## 사전 요구 사항 {#prerequisites}
+## 필요 조건 {#prerequisites}
 
 여정 트래픽 제어에서 결과를 얻으려면 다음 사항에 유의하십시오.
 
+* **사용 권한** 여정 트래픽 제어 설정을 보려면 **[!UICONTROL B2B 여정 트래픽 제어 보기]** 권한이 필요하며, 효과를 시뮬레이션하는 등 여정 트래픽 제어를 구성하려면 **[!UICONTROL B2B 여정 트래픽 제어 관리]** 권한이 필요합니다. 자세한 내용은 [권한 리소스](../start/permissions-reference.md)를 참조하세요.
 * **보고 시 게시된 JTC 사용 여정이 필요합니다.** 여정 트래픽 제어가 활성화된 여정이 하나 이상 게시될 때까지 _[!UICONTROL 보고]_ 탭에 데이터가 표시되지 않습니다.
 * **시뮬레이션을 수행하려면 인스턴스에 게시된 여정이 하나 이상 있어야 합니다.** 시뮬레이션은 이미 실시간 여정에 있는 [프로필](../audiences/people-lists.md)을 평가하므로, 프로필의 출판을 위해서는 인스턴스에 게시된 여정이 하나 이상 있어야 합니다. 시뮬레이션 자체는 JTC를 활성화할 필요가 없습니다([_점수 시뮬레이션_](#simulate-scoring) 참조).
 

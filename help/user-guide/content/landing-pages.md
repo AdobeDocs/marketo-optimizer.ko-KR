@@ -1,19 +1,20 @@
 ---
 title: 랜딩 페이지
-description: 개인 여정을 위한 랜딩 페이지를 만들고, 디자인하고, 게시합니다. Marketo Optimizer에서 처음부터 빌드하고, HTML을 가져오고, 양식을 추가하고, 콘텐츠를 개인화하고, 이메일을 링크합니다.
+description: 개인 여정을 위한 랜딩 페이지를 만들고, 디자인하고, 게시합니다. Marketo Optimizer에서 처음부터 빌드하고, HTML을 가져오고, 양식을 추가하고, 콘텐츠를 개인화하고, 이메일을 통해 연결합니다.
 TQID: 'https://experienceleague.adobe.com/2eRB0eqgUbOrzaRTnWWy--Fjb4e5-qopiOMZWmr-sa4'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+    internal-label: Journeys
   - id: 8881ff95-1653-5fea-82af-ce1549c0d99d
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Content Management
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: 1589
+source-wordcount: '1627'
 ht-degree: 2%
-
 ---
-
 # 랜딩 페이지
 
 랜딩 페이지는 연락처와 고객이 이메일, SMS 메시지 또는 디지털 위치에서 연결된 항목을 클릭한 후 직접 연락할 수 있는 독립 실행형 웹 페이지입니다. 이러한 페이지를 여정에 통합하여 잠재 고객과 고객이 웹에서 메시지를 보고 여정에서 진행되는 과정을 확인할 수 있습니다.
@@ -25,6 +26,14 @@ ht-degree: 2%
 * 랜딩 페이지의 양식을 사용하여 프로필 데이터(점진적 프로파일링, 환경 설정, 등록 및 유사한 시나리오)를 캡처하거나 업데이트합니다.
 * 여정 오케스트레이션에 맞게 디자인된 캠페인 관련 정보를 대상자에게 안내합니다.
 * [!DNL Marketo Optimizer] 외부에서 외부 페이지를 만들지 않고 전용 웹 양식으로 사용자를 리디렉션합니다.
+
+>[!PREREQUISITES]
+>
+>랜딩 페이지를 사용하여 작업하려면 다음 [권한](../start/permissions-reference.md)이 필요합니다.
+>
+>* **[!UICONTROL B2B 랜딩 페이지 보기]** - 랜딩 페이지를 보는 데 필요합니다.
+>* **[!UICONTROL B2B 랜딩 페이지 관리]** - 랜딩 페이지를 만들고, 편집하고, 삭제하는 데 필요합니다.
+>* **[!UICONTROL B2B 랜딩 페이지 게시]** - 랜딩 페이지를 게시하는 데 필요합니다.
 
 ## 랜딩 페이지 워크플로 {#workflow}
 
@@ -200,7 +209,7 @@ In the dialog, select the columns to display and click **[!UICONTROL Apply]**.
 
 1. **[!UICONTROL 랜딩 페이지]** 옵션의 경우 _페이지 선택_ 아이콘(![링크 표시 아이콘](../assets/do-not-localize/icon-landing-page-select.svg))을 클릭합니다.
 
-1. 랜딩 페이지 선택 대화 상자에서 **[!UICONTROL 랜딩 페이지 소스]**&#x200B;를 **[!UICONTROL Journey Optimizer B2B edition]**(으)로 설정하고 게시된 페이지 목록에서 랜딩 페이지에 대한 확인란을 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 클릭합니다.
+1. 랜딩 페이지 선택 대화 상자에서 **[!UICONTROL 랜딩 페이지 소스]**&#x200B;를 **[!UICONTROL Journey Optimizer B2B Edition]**(으)로 설정하고, 게시된 페이지 목록에서 랜딩 페이지에 대한 확인란을 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 클릭합니다.
 
    ![랜딩 페이지에 대한 링크 옵션](assets/content-design-link-landing-page-select.png){width="600" zoomable="yes"}
 

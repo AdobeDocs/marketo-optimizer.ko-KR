@@ -7,15 +7,22 @@ product_v2:
 feature_v2:
   - id: 1650dadf-b034-5ac9-a309-77ad1e2f5035
     internal-label: Chat Interface
-source-git-commit: 7e3080b688415ef623cdbd57aa08ed43eb6fcd17
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1445'
 ht-degree: 1%
 ---
 
 # Scoring Studio
 
 Scoring Studio에는 모델 목록, 각 모델에 대해 편집 가능한 캔버스 및 [동료 채팅 인터페이스](../agents/chat-interface.md)가 포함되어 있습니다. 캔버스를 사용하여 차원 및 신호를 직접 검토하거나 조정할 수 있으며, Coworker에서는 계속해서 자연어 변경 사항을 함께 제안합니다. 프롬프트에서 모델을 만드는 방법에 대한 자세한 내용은 [_사용자 지정 점수 모델 만들기_](../agents/lead-scoring-model.md)&#x200B;를 참조하십시오.
+
+>[!PREREQUISITES]
+>
+>Scoring Studio는 Labs 기능이며 다음 [권한](../start/permissions-reference.md)이 필요합니다.
+>
+>* **[!UICONTROL B2B Labs 보기]** - 사용 가능하고 활성화된 Labs 기능을 보는 데 필요합니다.
+>* **[!UICONTROL B2B Labs 관리]** - Labs 기능을 활성화하고 구성하는 데 필요합니다.
 
 ## 모델 목록 {#model-list}
 

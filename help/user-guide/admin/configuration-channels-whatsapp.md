@@ -1,30 +1,32 @@
 ---
 title: WhatsApp 채널 구성
-description: Meta의 Cloud API를 통해 WhatsApp 비즈니스 계정을 연결하여 Marketo Optimizer 사용자 여정에서 WhatsApp 메시지를 사용하도록 설정합니다.
+description: Meta의 Cloud API를 통해 WhatsApp 비즈니스 계정을 연결하여 Marketo Optimizer 사용자 여정에서 WhatsApp 메시지를 활성화합니다.
 TQID: 'https://experienceleague.adobe.com/y7rOywtyZ-OlupwLS-Fsjx72EVlaT7Vy-O1NEMwMO5E'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+    internal-label: Journeys
   - id: a659ad61-de21-559d-a901-02e2fb329ff5
+    internal-label: Administration
   - id: d4203578-d294-5145-b397-f26f4488a904
+    internal-label: Channels
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Administration
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: 1469
+source-wordcount: '1510'
 ht-degree: 13%
-
 ---
-
 # WhatsApp 채널 구성
 
-Marketo Optimizer는 Meta의 Cloud API를 통해 WhatsApp 메시지를 보냅니다. 마케터가 개인 여정에 대한 WhatsApp 메시지를 만들려면 먼저 제품 관리자가 WhatsApp 채널을 구성해야 합니다.
+Marketo Optimizer은 Meta의 Cloud API를 통해 WhatsApp 메시지를 전송합니다. 마케터가 개인 여정에 대한 WhatsApp 메시지를 만들려면 먼저 제품 관리자가 WhatsApp 채널을 구성해야 합니다.
 
 ![Marketo Optimizer에 대한 WhatsApp 작업 흐름](assets/whatsapp-flow-diagram.png)
-
-## 사전 요구 사항 {#prerequisites}
 
 WhatsApp 채널을 구성하기 전에 다음 사항이 있는지 확인하십시오.
 
@@ -35,13 +37,13 @@ WhatsApp 채널을 구성하기 전에 다음 사항이 있는지 확인하십�
 
 >[!IMPORTANT]
 >
->WhatsApp 메시징 서비스 사용은 Meta의 약관이 적용됩니다. Marketo Optimizer를 통해 WhatsApp 메시지에 액세스하면 [Meta WhatsApp 비즈니스 정책](https://www.whatsapp.com/legal/business-policy/)을(를) 검토하고 준수하는 데 동의하는 것으로 간주됩니다.
+>WhatsApp 메시징 서비스 사용은 Meta의 약관이 적용됩니다. Marketo Optimizer을 통해 WhatsApp 메시지에 액세스하면 [Meta WhatsApp 비즈니스 정책](https://www.whatsapp.com/legal/business-policy/)을 검토하고 이에 동의하는 것으로 간주됩니다.
 
 ## 제한 사항 {#limitations}
 
 WhatsApp 채널에는 다음 제한 사항이 적용됩니다.
 
-* Adobe Marketo Optimizer가 **HIPAA를 준수하지 않고 HIPAA를 사용할 수 없습니다**. 또한 서드파티 공급업체는 Adobe의 BAA에 포함되지 않습니다. 자체 규정 준수 및 공급업체 유효성 검사에 대한 책임은 고객에게 있습니다.
+* Adobe Marketo Optimizer은 **HIPAA를 준수하지 않고 HIPAA를 준비하지 않습니다**. 또한 서드파티 공급업체는 Adobe의 BAA에 포함되지 않습니다. 자체 규정 준수 및 공급업체 유효성 검사에 대한 책임은 고객에게 있습니다.
 
 * 자동화된 응답 메시지나 사전 정의된 응답 메시지는 아직 지원되지 않습니다.
 
@@ -58,6 +60,14 @@ WhatsApp 메시지를 보내기 전에 Marketo Optimizer 환경을 구성하고 
 1. [WhatsApp API 자격 증명 만들기](#create-whatsapp-api-credentials)
 1. [WhatsApp 웹후크 추가](#configure-webhooks)
 1. [WhatsApp 채널 구성 만들기](#create-channel-configuration)
+
+>[!PREREQUISITES]
+>
+>[!DNL Marketo Optimizer]에서 이 작업을 완료하려면 다음 [권한](../start/permissions-reference.md)이 필요합니다.
+>
+>* **[!UICONTROL B2B 채널 구성 관리]** - _[!UICONTROL 채널]_ 메뉴에 액세스하는 데 필요합니다.
+>* **[!UICONTROL B2B WhatsApp 설정 관리]** - WhatsApp 채널을 구성하는 데 필요합니다.
+>* **[!UICONTROL B2B WhatsApp 사전 설정 관리]** - API 자격 증명 및 웹후크를 만드는 데 필요합니다.
 
 ### WhatsApp API 자격 증명 만들기 {#create-whatsapp-api-credentials}
 
@@ -79,7 +89,7 @@ WhatsApp 메시지를 보내기 전에 Marketo Optimizer 환경을 구성하고 
    * **[!UICONTROL API 토큰]** - API 토큰을 입력하십시오. 자세한 내용은 [Meta 설명서](https://developers.facebook.com/blog/post/2022/12/05/auth-tokens/)를 참조하세요.
    * **[!UICONTROL 비즈니스 계정 ID]** - 비즈니스 포트폴리오와 관련된 고유 번호를 입력합니다. 자세한 내용은 [Meta 설명서](https://www.facebook.com/business/help/1181250022022158?id=180505742745347)를 참조하세요.
 
-   ![WhatsApp 설정 API 자격 증명 &#x200B;](assets/config-whatsapp-channels-api-credentials.png){width="500" zoomable="yes"}
+   ![WhatsApp 설정 API 자격 증명 ](assets/config-whatsapp-channels-api-credentials.png){width="500" zoomable="yes"}
 
 1. **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 
@@ -117,7 +127,7 @@ WhatsApp API 자격 증명을 구성할 때 HTTP 500 오류가 발생하는 경�
    * API 토큰 - 적절한 권한이 있는 올바른 [Meta 액세스 토큰이어야 합니다](https://developers.facebook.com/blog/post/2022/12/05/auth-tokens/).
    * 비즈니스 계정 ID - [Meta 비즈니스 계정 ID](https://www.facebook.com/business/help/1181250022022158?id=180505742745347)와 정확히 일치해야 합니다.
 
-1. 자격 증명을 외부에서 테스트 - Meta API로 직접 자격 증명을 확인하여 문제가 자격 증명과 관련된 문제인지 Marketo Optimizer 자격 증명 처리와 관련된 문제인지 확인합니다.
+1. 자격 증명을 외부에서 테스트합니다. Meta API로 직접 자격 증명을 확인하여 문제가 자격 증명에 의한 문제인지 Marketo Optimizer 자격 증명 처리에 의한 문제인지 확인합니다.
 
 1. Adobe에 문의 - 환경 및 권한이 유효하다고 확인되었지만 HTTP 500 오류가 지속되는 경우 Adobe 담당자에게 문의하십시오.
 
@@ -145,7 +155,7 @@ WhatsApp API 자격 증명을 구성할 때 HTTP 500 오류가 발생하는 경�
 >title="토큰 확인"
 >abstract="검증 과정에서 콜백 URL을 확인하고 검증하기 위해 Meta가 다시 반환하는 토큰입니다."
 
-웹후크를 사용하면 Marketo Optimizer가 WhatsApp 비즈니스 계정에서 인바운드 메시지, 동의 응답 및 게재 알림을 받을 수 있습니다. 적절한 동의 관리 및 메시지 추적을 보장하기 위해 웹후크를 구성합니다.
+웹후크를 사용하면 Marketo Optimizer이 WhatsApp 비즈니스 계정에서 인바운드 메시지, 동의 응답 및 게재 알림을 받을 수 있습니다. 적절한 동의 관리 및 메시지 추적을 보장하기 위해 웹후크를 구성합니다.
 
 >[!NOTE]
 >
@@ -224,7 +234,7 @@ Webhook이 제출되면 토큰과 URL 값을 검색한 다음 Meta에 등록할 
 
    ![WhatsApp 채널 구성 세부 정보](assets/config-whatsapp-channels-general-create.png){width="500" zoomable="yes"}
 
-1. (현재 Marketo Optimizer에 적용할 수 없음) **[!UICONTROL WhatsApp 실행 필드]**&#x200B;의 경우 수신자가 여러 개의 전화 번호를 사용할 수 있을 때 우선 순위 전화 번호로 사용할 프로필 특성을 선택하십시오.
+1. (현재 Marketo Optimizer에 적용할 수 없음) **[!UICONTROL WhatsApp 실행 필드]**&#x200B;의 경우 수신자가 여러 개의 전화 번호를 사용할 수 있는 경우 우선 순위 전화 번호로 사용할 프로필 특성을 선택하십시오.
 
 1. **[!UICONTROL 제출]**&#x200B;을 클릭하여 저장하거나 **[!UICONTROL 초안으로 저장]**&#x200B;을 클릭하여 나중에 구성을 완료하고 제출합니다.
 

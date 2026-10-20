@@ -1,20 +1,22 @@
 ---
 title: 사용자 여정
-description: Marketo Optimizer에서 개인 여정 만들기, 게시 및 관리 - 여정 목록을 탐색하고, 여러 단계 플로우를 디자인하고, 여정을 복제하거나 삭제합니다.
+description: Marketo Optimizer에서 개인 여정 만들기, 게시 및 관리 - 여정 목록을 탐색하고, 다중 단계 흐름을 디자인하고, 여정을 복제하거나 삭제합니다.
 TQID: 'https://experienceleague.adobe.com/RYzV8B9QTuGm1gGb2ZX6i3rc4TlACsM3LRwcnULgwV8'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+    internal-label: Journeys
   - id: a29661b8-f7a4-53d1-a9ac-fdec08c092e4
+    internal-label: Programs
   - id: d4203578-d294-5145-b397-f26f4488a904
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Channels
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: 1418
-ht-degree: 19%
-
+source-wordcount: '1480'
+ht-degree: 18%
 ---
-
 # 사용자 여정
 
 [!DNL Adobe Marketo Optimizer]에서 개인 여정은 여러 채널에 걸쳐 개인화된 경험을 오케스트레이션하는 자동화된 여러 단계 리드 기반 마케팅 계획입니다. 이러한 여정은 Marketo Engage 데이터를 사용하여 참여, 비즈니스 이벤트 또는 예약된 캠페인에 대한 응답으로 이러한 마케팅 계획을 실행합니다.
@@ -22,6 +24,15 @@ ht-degree: 19%
 >[!NOTE]
 >
 >각 여정은 정의된 [program](./programs.md) 내에 있습니다. 여정을 만들기 전에 상위로 사용할 프로그램이 하나 이상 있어야 합니다.
+
+>[!PREREQUISITES]
+>
+>사용자 여정을 사용하여 작업하려면 다음 [권한](../start/permissions-reference.md)이 필요합니다.
+>
+>* **[!UICONTROL B2B 개인 여정 보기]** - _[!UICONTROL 개인 여정]_ 목록 및 여정 세부 정보에 대한 읽기 전용 액세스에 필요합니다.
+>* **[!UICONTROL B2B 개인 여정 관리]** - _[!UICONTROL 개인 여정]_ 목록에 액세스하고 모든 개인 여정 작업을 수행하는 데 필요합니다.
+>* **[!UICONTROL B2B 개인 여정 게시]** - 개인 여정을 게시하는 데 필요합니다.
+>* **[!UICONTROL B2B 개인 여정 보고서 보기]** - 개인 여정 보고서를 보는 데 필요합니다.
 
 새 개인 여정을 만들려면(_T):_
 
@@ -70,11 +81,11 @@ ht-degree: 19%
 
 | 상태 | 설명 | 사용 가능한 액션 |
 | ------ | ----------- | ----------------- |
-| _&#x200B;**초안**&#x200B;_ | 편집 가능한 게시되지 않은 여정입니다. | [게시](#publish-a-journey), [복제](#duplicate-a-journey), [삭제](#delete-a-journey) |
-| _&#x200B;**라이브**&#x200B;_ | 여정을 게시하면 여정 상태가 _초안_&#x200B;에서 _라이브_(으)로 변경됩니다. 이 상태에서는 더 이상 편집할 수 없습니다. | [복제](#duplicate-a-journey), [새 항목에 닫기](#close-to-new-entries), [중단](#abort-a-journey) |
-| _&#x200B;**새로운 참여 마감됨**&#x200B;_ | 여정 헤더에서 **[!UICONTROL 새 항목에 닫기]**&#x200B;를 클릭하면 여정 상태가 _Live_&#x200B;에서 _새 항목에 닫힘_(으)로 변경됩니다. | [복제](#duplicate-a-journey), [중단](#abort-a-journey) |
-| _&#x200B;**중단됨**&#x200B;_ | 여정을 중단하면 여정 상태가 _진행 중_ 또는 _새로운 참여 마감됨_&#x200B;으로 변경됩니다. 중단된 여정은 다시 시작할 수 없습니다. | [복제](#duplicate-a-journey), [삭제](#delete-a-journey) |
-| _&#x200B;**완료됨**&#x200B;_ | 여정의 모든 개인 대상 구성원이 여정을 완료하면 상태가 _Live_ 또는 _새 항목으로 닫힘_&#x200B;에서 _완료됨_(으)로 변경됩니다. | [복제](#duplicate-a-journey), [삭제](#delete-a-journey) |
+| _**초안**_ | 편집 가능한 게시되지 않은 여정입니다. | [게시](#publish-a-journey), [복제](#duplicate-a-journey), [삭제](#delete-a-journey) |
+| _**라이브**_ | 여정을 게시하면 여정 상태가 _초안_&#x200B;에서 _라이브_(으)로 변경됩니다. 이 상태에서는 더 이상 편집할 수 없습니다. | [복제](#duplicate-a-journey), [새 항목에 닫기](#close-to-new-entries), [중단](#abort-a-journey) |
+| _**새로운 참여 마감됨**_ | 여정 헤더에서 **[!UICONTROL 새 항목에 닫기]**&#x200B;를 클릭하면 여정 상태가 _Live_&#x200B;에서 _새 항목에 닫힘_(으)로 변경됩니다. | [복제](#duplicate-a-journey), [중단](#abort-a-journey) |
+| _**중단됨**_ | 여정을 중단하면 여정 상태가 _진행 중_ 또는 _새로운 참여 마감됨_&#x200B;으로 변경됩니다. 중단된 여정은 다시 시작할 수 없습니다. | [복제](#duplicate-a-journey), [삭제](#delete-a-journey) |
+| _**완료됨**_ | 여정의 모든 개인 대상 구성원이 여정을 완료하면 상태가 _Live_ 또는 _새 항목으로 닫힘_&#x200B;에서 _완료됨_(으)로 변경됩니다. | [복제](#duplicate-a-journey), [삭제](#delete-a-journey) |
 
 ## 개인 여정 만들기 {#create-a-person-journey}
 
@@ -100,12 +111,12 @@ ht-degree: 19%
 
 * 여정 이름 또는 설명 정보를 변경하려면 _편집_ 아이콘( ![편집 아이콘](../assets/do-not-localize/icon-react-edit.svg))을 클릭하십시오.
 * 여정 시작 및 반복을 변경하려면 **[!UICONTROL 여정 설정]**&#x200B;을 클릭하세요.
-* **클릭... 여정 작업을 적용하거나 [여정 트래픽 제어](./journey-traffic-control.md)를 활성화/비활성화하고 다시 입력하려면**&#x200B;을(를) 더 추가하십시오.
+* **[!UICONTROL 클릭... 여정 작업을 적용하거나 [여정 트래픽 제어](./journey-traffic-control.md)를 활성화/비활성화하고 다시 입력하려면]**&#x200B;을(를) 더 추가하십시오.
 * 모든 오류가 해결되고 여정을 활성화하려면 **[!UICONTROL 게시]**&#x200B;를 클릭합니다.
 
 ### 여정 디자인 {#journey-design}
 
-_여정 캔버스_&#x200B;는 여정 작업 영역의 중앙 영역입니다. 여기에서 여정 노드를 추가하고 구성할 수 있습니다. 노드를 클릭하여 패널에서 레이아웃 오른쪽에 있는 속성을 열고 디자인에 따라 설정합니다. 개인 여정은 항상 [_[!UICONTROL 개인 대상&#x200B;]_&#x200B;노드](./person-audience-node.md)(으)로 시작하며, 여기서 여정에 대한 입력을 정의할 수 있습니다.
+_여정 캔버스_&#x200B;는 여정 작업 영역의 중앙 영역입니다. 여기에서 여정 노드를 추가하고 구성할 수 있습니다. 노드를 클릭하여 패널에서 레이아웃 오른쪽에 있는 속성을 열고 디자인에 따라 설정합니다. 개인 여정은 항상 [_[!UICONTROL 개인 대상&#x200B;]_노드](./person-audience-node.md)(으)로 시작하며, 여기서 여정에 대한 입력을 정의할 수 있습니다.
 
 개인 여정을 만들고 개인 대상자를 정의한 후 노드를 사용하여 여정을 빌드합니다. 여정 캔버스에서는 다음 노드 유형을 사용하여 다단계 B2B 마케팅 사용 사례를 빌드하여 여정을 구성할 수 있는 시각적 디자인 공간을 제공합니다.
 

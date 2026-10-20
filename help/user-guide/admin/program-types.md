@@ -1,21 +1,23 @@
 ---
 title: 프로그램 유형
-description: Marketo Optimizer의 프로그램에 대한 특성 및 멤버 상태 흐름을 정의하는 프로그램 유형을 만들고 관리합니다.
+description: Marketo Optimizer의 프로그램에 대한 속성 및 멤버 상태 흐름을 정의하는 프로그램 유형을 만들고 관리합니다.
 TQID: 'https://experienceleague.adobe.com/Eepcnc51p-P-yoyylXBr47SF0xR-3pvZab2aHf9jdew'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: a29661b8-f7a4-53d1-a9ac-fdec08c092e4
+    internal-label: Programs
   - id: a659ad61-de21-559d-a901-02e2fb329ff5
+    internal-label: Administration
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Administration
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: 389
+source-wordcount: '420'
 ht-degree: 0%
-
 ---
-
 # 프로그램 유형
 
 프로그램 유형은 [프로그램](../marketing/programs.md) 및 해당 멤버의 중요한 측면을 정의하며 서로 다른 유형의 마케팅 프로그램을 구별합니다. 각 프로그램 유형은 프로그램 유형을 사용하는 프로그램에 대해 상속되는 다음 속성을 정의합니다.
@@ -29,6 +31,13 @@ ht-degree: 0%
 >[!NOTE]
 >
 >프로그램 유형을 하나 이상의 프로그램에서 사용하는 경우 편집할 수 없습니다.
+
+>[!PREREQUISITES]
+>
+>프로그램 유형을 사용하여 작업하려면 다음 [권한](../start/permissions-reference.md)이 필요합니다.
+>
+>* **[!UICONTROL B2B 프로그램 유형 보기]** - 마케팅 프로그램 유형을 보는 데 필요합니다.
+>* **[!UICONTROL B2B 프로그램 유형 관리]** - 마케팅 프로그램 유형을 만들고, 편집하고, 삭제하는 데 필요합니다.
 
 사용자 지정 프로그램 형식을 정의하려면(_T):_
 

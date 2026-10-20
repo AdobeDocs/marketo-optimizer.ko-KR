@@ -4,18 +4,20 @@ description: 플레이스홀더
 TQID: 'https://experienceleague.adobe.com/7X5-67hfrjRjWbGjq9duLu7mVjgfCs7tpAQLV8u6YKE'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: a659ad61-de21-559d-a901-02e2fb329ff5
+    internal-label: Administration
   - id: d4203578-d294-5145-b397-f26f4488a904
+    internal-label: Channels
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Administration
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: 541
-ht-degree: 16%
-
+source-wordcount: '591'
+ht-degree: 15%
 ---
-
 # Forms 구성
 
 마케터가 랜딩 페이지에서 사용할 양식을 만들고 게시하려면 제품 관리자가 하나 이상의 전용 사전 설정을 만들어야 합니다. 각 사전 설정은 양식 제출 데이터를 전송하는 데 사용되는 연결 끝점과 캡처된 데이터를 저장하는 데 사용되는 데이터 세트를 정의합니다.
@@ -24,24 +26,20 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-## 사전 요구 사항
+## 필요 조건
 
-웹 양식을 사용하려면 Adobe Experience Platform에 하나 이상의 _&#x200B;**HTTP API 스트리밍 연결**&#x200B;_&#x200B;이 정의되어 있어야 합니다. 사용하려는 각 연결이 다음 요구 사항을 충족하는지 확인하십시오.
+웹 양식을 사용하려면 Adobe Experience Platform에 하나 이상의 _**HTTP API 스트리밍 연결**_&#x200B;이 정의되어 있어야 합니다. 사용하려는 각 연결이 다음 요구 사항을 충족하는지 확인하십시오.
 
 * 데이터 유형은 원시 데이터가 아닌 XDM으로 설정되어야 합니다.
 * 인증을 사용하지 않도록 설정해야 합니다(인증되지 않은 연결).
 
 스트리밍 소스 연결 만들기에 대한 자세한 내용은 [_Experience Platform 설명서_](https://experienceleague.adobe.com/ko/docs/experience-platform/sources/ui-tutorials/create/streaming/http)를 참조하세요.
 
-<!-- 
-permissions coming in GA
+[!DNL Marketo Optimizer]의 Forms 채널 구성에는 다음 [권한](../start/permissions-reference.md)이 필요합니다.
 
-Forms channel configuration in Journey Optimizer B2B Edition requires the following [permissions](../start/user-management.md#b2b-product-permissions):
-
-* _[!UICONTROL B2B Channel Configurations]_ > _[!UICONTROL View Forms Presets]_ - Required to view forms preset configurations.
-* _[!UICONTROL B2B Channel Configurations]_ > _[!UICONTROL Manage Forms Presets]_ - Required to create, update, and delete forms preset configurations.
-* _[!UICONTROL B2B Channel Configurations]_ > _[!UICONTROL Publish Forms Presets]_ - Required to publish forms preset configurations.
--->
+* _[!UICONTROL B2B 채널 구성]_ > _[!UICONTROL B2B Forms 사전 설정 보기]_ - 양식 사전 설정 구성을 보는 데 필요합니다.
+* _[!UICONTROL B2B 채널 구성]_ > _[!UICONTROL B2B Forms 사전 설정 관리]_ - 양식 사전 설정 구성을 만들고, 편집하고, 삭제하는 데 필요합니다.
+* _[!UICONTROL B2B 채널 구성]_ > _[!UICONTROL B2B Forms 사전 설정 게시]_ - 양식 사전 설정 구성을 게시하는 데 필요합니다.
 
 >[!ENDSHADEBOX]
 

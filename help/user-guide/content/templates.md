@@ -4,16 +4,17 @@ description: 폴더를 사용하여 템플릿을 구성하는 방법을 비롯�
 TQID: 'https://experienceleague.adobe.com/PS1sj99Udmajg2M4JadFQCGYF7DL9JkkdU9-7FG-OzY'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+    internal-label: Journeys
   - id: 8881ff95-1653-5fea-82af-ce1549c0d99d
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Content Management
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: 483
+source-wordcount: '511'
 ht-degree: 1%
-
 ---
-
 
 # 이메일 템플릿
 
@@ -24,6 +25,13 @@ ht-degree: 1%
 >이 Beta 릴리스에서는 이메일 템플릿만 지원됩니다.
 
 템플릿이 새 이메일에 적용되면 해당 시점에 콘텐츠가 복사됩니다. 템플릿을 편집해도 이전에 템플릿에서 만든 이메일에는 영향을 주지 않습니다.
+
+>[!PREREQUISITES]
+>
+>템플릿을 사용하여 작업하려면 다음 [권한](../start/permissions-reference.md)이 필요합니다.
+>
+>* **[!UICONTROL B2B 템플릿 보기]** - 템플릿 목록 및 세부 정보를 보는 데 필요합니다.
+>* **[!UICONTROL B2B 템플릿 관리]** - 템플릿을 만들고, 편집하고, 삭제하는 데 필요합니다.
 
 ## 이메일 템플릿 액세스 {#access}
 

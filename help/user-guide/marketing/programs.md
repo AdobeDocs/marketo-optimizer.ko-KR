@@ -4,23 +4,34 @@ description: 프로그램을 사용하여 마케팅 활동을 구성하고 마�
 TQID: 'https://experienceleague.adobe.com/RljL2N9P22AbWB6jSSaQ-iKlpTSz8d3cGNrIKatMH4o'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 46e599c6-e20f-5f67-9824-93415016f66b
+    internal-label: Audiences
   - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+    internal-label: Journeys
   - id: a29661b8-f7a4-53d1-a9ac-fdec08c092e4
+    internal-label: Programs
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: ff2b9b37-92e0-45fc-b853-379d44c08c89
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Audience segmentation
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: 804
+source-wordcount: '830'
 ht-degree: 1%
-
 ---
-
 # 프로그램
 
 프로그램은 마케팅 자료 및 여정에 공유된 컨텍스트를 제공하도록 설계되었으므로 단일 위치에서 마케팅 노력의 모든 측면을 관리할 수 있습니다. 프로그램 특성을 사용하여 프로그램을 설명하고 _프로그램의 구성원_ 필터를 사용하여 프로그램 멤버십, 구성원 상태 및 성공에 따라 대상을 세그먼트화합니다. 토큰 탭에서 로컬 _내 토큰_&#x200B;과(와) 폴더 구조에서 상속된 토큰을 모두 관리할 수 있습니다.
+
+>[!PREREQUISITES]
+>
+>프로그램을 사용하여 작업하려면 다음 [권한](../start/permissions-reference.md)이 필요합니다.
+>
+>* **[!UICONTROL B2B 프로그램 보기]** - 마케팅 프로그램을 보는 데 필요합니다.
+>* **[!UICONTROL B2B 프로그램 관리]** - 마케팅 프로그램을 만들고 편집하고 삭제하는 데 필요합니다.
 
 ## 프로그램 액세스 {#access-programs}
 

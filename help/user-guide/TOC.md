@@ -1,10 +1,10 @@
 ---
 user-guide-title: Marketo Optimizer 설명서
 user-guide-description: Adobe Marketo Optimizer에 대해 알아보고 이를 사용하여 B2B 리드 및 계정을 위한 개인화된 AI 기반 컨텐츠와 함께 조정된 마케팅 및 판매 참여를 실행하는 방법에 대해 알아봅니다.
-source-git-commit: ef45be43f6fc08805ebb5b2824340c45d60996e8
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 43%
+source-wordcount: '262'
+ht-degree: 42%
 ---
 
 # Marketo Optimizer 사용 안내서 {#user}
@@ -20,7 +20,7 @@ ht-degree: 43%
 + [홈 페이지](./home-insights/home-page.md)
 + 동료 기능 {#coworker}
   + [채팅 인터페이스](./agents/chat-interface.md)
-  + [기술](./agents/skills.md)
+  + [스킬](./agents/skills.md)
   + [간단한 방법으로 프로그램 만들기](./agents/program-from-brief.md)
   + [프로그램의 대상 만들기](./agents/audience-creation.md)
   + [담당자별 이메일 콘텐츠 개인화](./agents/personalize-content.md)
@@ -108,3 +108,4 @@ ht-degree: 43%
   + [비즈니스 규칙](./admin/business-rules.md)
   + [프로그램 유형](./admin/program-types.md)
   + [페르소나 매핑](./admin/persona-mapping.md)
+  + [제품 권한](./start/permissions-reference.md)

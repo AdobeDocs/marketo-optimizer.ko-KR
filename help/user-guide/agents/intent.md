@@ -4,18 +4,20 @@ description: 의도 점수 모델에 대한 활동 가중치를 구성하고 순
 TQID: 'https://experienceleague.adobe.com/BNzbM6v6ADSKyPR6jQMj1QdWMnLQQX-j3PNk8gF6PxY'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 46e599c6-e20f-5f67-9824-93415016f66b
+    internal-label: Audiences
   - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+    internal-label: Journeys
 topic_v2:
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Taxonomy
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: 978
+source-wordcount: '987'
 ht-degree: 0%
-
 ---
-
 
 # 의도 구성 및 분석
 
@@ -57,6 +59,10 @@ ht-degree: 0%
 AI 제안 가중치, 콘텐츠 관련성 및 제한 사항을 포함하여 이러한 지표에 대한 자세한 내용은 [의도 구성](../audiences/intent-configuration.md)을 참조하십시오.
 
 ## 의도 보고서
+
+>[!PREREQUISITES]
+>
+>의도 보고서를 사용하려면 **[!UICONTROL B2B 의도 보고서 보기]** [권한](../start/permissions-reference.md)이 필요합니다.
 
 생성할 수 있는 4가지 보고서 형식을 도입하려면 `/analyze-intent`을(를) 호출하여 Coworker에 메시지를 표시하십시오. 그런 다음 Coworker는 Lead, Product 또는 Comparison 이름을 지정하는 후속 요청을 기다립니다. 각 보고서는 작업 영역 패널에서 자체 탭으로 열리고 _[!UICONTROL 보고서 열기]_ 단추가 있는 채팅에서 Coworker가 요약 카드를 추가합니다.
 

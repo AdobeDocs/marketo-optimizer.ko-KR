@@ -18,10 +18,10 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: cd171c6ec89301ed315d8b882ac0fccac745809f
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 19%
+source-wordcount: '765'
+ht-degree: 18%
 ---
 # 자산
 
@@ -61,6 +61,13 @@ Assets 라이브러리의 ![생성 AI 사용 약관 계약 대화 상자](./asse
 
 * **[!UICONTROL 목록]** — 메타데이터 열이 있는 정렬 가능한 테이블에 에셋을 표시하려면 _목록 보기_( ![목록 보기 아이콘](../assets/do-not-localize/icon-falco-list-view.svg) ) 아이콘을 클릭합니다.
 * **[!UICONTROL 갤러리]** — 자산을 시각적 썸네일 격자로 표시하려면 _갤러리 보기_( ![갤러리 보기 아이콘](../assets/do-not-localize/icon-falco-gallery-view.svg)) 아이콘을 클릭합니다.
+
+>[!PREREQUISITES]
+>
+>자산을 사용하여 작업하려면 다음 [권한](../start/permissions-reference.md)이 필요합니다.
+>
+>* **[!UICONTROL B2B Assets 보기]** - _[!UICONTROL Assets]_ 라이브러리 및 자산 파일 세부 정보를 보는 데 필요합니다.
+>* **[!UICONTROL B2B Assets 관리]** - 에셋 파일을 만들고, 편집하고, 삭제하는 데 필요합니다.
 
 ## 자산 검색 {#find-assets}
 

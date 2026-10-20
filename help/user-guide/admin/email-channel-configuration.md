@@ -22,9 +22,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: cd171c6ec89301ed315d8b882ac0fccac745809f
+source-git-commit: b6253400e2c9fc5b7f277add102367743981ce8a
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '638'
 ht-degree: 0%
 ---
 # 이메일 채널 구성
@@ -45,7 +45,7 @@ ht-degree: 0%
 >
 >* 하나 이상의 [하위 도메인](../start/email-deliverability.md#subdomain-delegation)을(를) 위임하고 활성화해야 합니다.
 >* 최소 하나 이상의 [IP 풀](../start/email-deliverability.md#ip-pools)을 조직에 할당해야 합니다.
->* 관리자 역할이 필요합니다.
+>* **[!UICONTROL B2B 채널 구성 관리]** 및 **[!UICONTROL B2B 전자 메일 설정 보기]** 권한이 필요합니다. 자세한 내용은 [필요한 권한](../start/email-deliverability.md#required-permissions)을 참조하세요.
 >* [현재 제한 사항](../start/email-deliverability.md#limitations)을 검토하십시오. Beta에서는 전용 IP 풀을 사용할 수 없습니다.
 
 1. [!DNL Adobe Marketo Optimizer] 왼쪽 탐색에서 **[!UICONTROL 관리]**&#x200B;를 확장하고 **[!UICONTROL 채널]**&#x200B;을 선택합니다.
