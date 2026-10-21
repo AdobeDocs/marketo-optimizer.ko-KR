@@ -4,17 +4,18 @@ description: 필요한 권한, 지원되는 대상 및 Marketo Optimizer에서 �
 TQID: 'https://experienceleague.adobe.com/u5sWVDR0JaiX-YvlQ23l7mqoI9G95xS-uiKcqANwsnc'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 3cf5f37e-e87e-5179-812b-53ce05d7eebb
+    internal-label: Setup
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Governance
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: 643
+source-wordcount: '680'
 ht-degree: 7%
-
 ---
-
 # 대상
 
 대상은 [!DNL Marketo Optimizer]에서 외부 광고 또는 소셜 플랫폼(예: LinkedIn 캠페인 대상, Google Customer Match 대상 또는 Facebook 사용자 지정 대상)으로 [정적 사람 목록](./people-lists.md#static-lists)을 보낼 수 있는 미리 빌드된 통합입니다. 정적 목록을 대상으로 활성화하면 구성원이 목록에 추가되거나 제거될 때 대상 대상 대상 대상 및 확장에 따라 대상이 피딩하는 모든 캠페인에서 해당 구성원이 추가되거나 제거됩니다.
@@ -28,11 +29,14 @@ ht-degree: 7%
 
 ## 필요한 권한 {#required-permissions}
 
-전체 대상 기능을 사용하려면 다음 [!DNL Adobe Experience Platform] 권한이 활성화되어야 합니다.
+전체 대상 기능을 사용하려면 다음 [!DNL Adobe Experience Platform] 권한이 활성화되어야 합니다. 각 사용자 유형에 대한 설명 및 권장 사용 권한은 [제품 사용 권한](../start/permissions-reference.md) 페이지 및 [외부 대상 사용 권한](../start/permissions-reference.md#external-destinations-permissions)을 참조하십시오.
 
 | 카테고리 | 사용 권한 | 필수 |
 |--- |--- |--- |
 | 샌드박스 | 샌드박스 액세스 _(기본적으로 활성화됨)_ | 예 |
+| B2B 대상 | B2B 대상 보기 | 예 |
+| B2B 대상 | B2B 대상 관리 | 예 |
+| B2B 대상 | B2B 대상 활성화 | 예 |
 | 대시보드 | 표준 대시보드 보기 | 예 |
 | 대시보드 | 표준 대시보드 관리 | 예 |
 | 대상 | 대상 보기 | 예 |

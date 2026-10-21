@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7a4e898b64751d5b912e6468d318083c571eff1b
+source-git-commit: e2577dd31c38f55f4dc2ce32119315ad7f9fe6f6
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 3%
+source-wordcount: '498'
+ht-degree: 2%
 ---
 # Adobe Marketo Optimizer 설명서
 
@@ -146,6 +146,16 @@ Author emails and WhatsApp messages, manage templates and assets, create landing
 ::::
 
 -->
+
+>[!BEGINSHADEBOX]
+
+## Marketo Qualifier
+
+[!DNL Adobe Marketo Qualifier]은(는) [!DNL Marketo Optimizer]에서 사용할 수 있는 AI 기반 애플리케이션입니다. 계정 자격 기술을 구현하고 비즈니스 개발 담당자(BDR)를 위한 워크플로를 간소화하도록 설계되었습니다. [!DNL Marketo Qualifier]은(는) 채널 전반에서 잠재 고객 자격, 전달 및 구매자 참여 워크플로를 자동화합니다. 엔터프라이즈 B2B 기업의 수동 BDR 로드를 줄이고 파이프라인 속도를 가속화합니다.
+
+자세한 내용은 [Marketo Qualifier 설명서](https://experienceleague.adobe.com/ko/docs/marketo-qualifier/using/home){target="_blank"}를 참조하세요.
+
+>[!ENDSHADEBOX]
 
 ## 설명서 살펴보기
 

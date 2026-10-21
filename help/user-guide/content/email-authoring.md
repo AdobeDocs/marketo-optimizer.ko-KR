@@ -4,21 +4,26 @@ description: 시각적 캔버스, 드래그 앤 드롭 도구, HTML 가져오기
 TQID: 'https://experienceleague.adobe.com/uNzBQk1fXPZchQna577-bUQtqRRRiqEVPI3jzZKgGKw'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 3cf5f37e-e87e-5179-812b-53ce05d7eebb
+    internal-label: Setup
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Personalization
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: 2287
+source-wordcount: '2325'
 ht-degree: 2%
-
 ---
-
 # 이메일 콘텐츠 작성
 
 [!DNL Adobe Marketo Optimizer]에서 이메일 디자인 공간은 마케터가 이메일을 작성하는 시각적 캔버스를 제공합니다. 왼쪽 및 상단 패널(구조, 콘텐츠 구성 요소, 템플릿, 조각 등)의 이메일 디자인 도구는 드래그 앤 드롭으로 처음부터 빌드를 지원합니다. 템플릿에서 시작하거나, 원시 HTML을 붙여넣거나, 재사용 가능한 시각적 조각에서 메시지를 조합하도록 선택할 수도 있습니다.
@@ -26,6 +31,14 @@ ht-degree: 2%
 >[!IMPORTANT]
 >
 >하위 도메인, 인증, IP 풀 및 전자 메일 채널 구성에 대한 관리자 설정은 [전자 메일 게재 기능](../start/email-deliverability.md) 및 [전자 메일 채널 구성](../admin/email-channel-configuration.md)을 참조하십시오.
+
+>[!PREREQUISITES]
+>
+>전자 메일을 작성하려면 다음 [권한](../start/permissions-reference.md)이 필요합니다.
+>
+>* **[!UICONTROL B2B 전자 메일 보기]** - 전자 메일 메시지를 보는 데 필요합니다.
+>* **[!UICONTROL B2B 전자 메일 관리]** - 전자 메일 메시지를 만들고 편집하고 삭제하는 데 필요합니다.
+>* **[!UICONTROL B2B 개인 여정 관리]** - 개인 여정에 전자 메일을 추가하는 데 필요합니다.
 
 [!DNL Marketo Optimizer]에서 모든 전자 메일은 개인 여정 내의 _[!UICONTROL 전자 메일 보내기]_ 작업과 연결됩니다. 여정 디자인부터 이메일 정의까지 전체 워크플로는 하나의 지속적인 경험에서 발생합니다. [개인 여정에 _전자 메일 보내기_ 노드를 추가](../marketing/action-nodes.md#add-an-action-node)하면 **[!UICONTROL 전자 메일 만들기]**&#x200B;를 클릭하여 프로세스를 시작하십시오. 먼저 이메일에 대한 작업 및 콘텐츠 설정을 정의합니다. **[!UICONTROL 전자 메일 본문 편집]**&#x200B;을 클릭하여 전자 메일 콘텐츠 디자인 공간을 시작합니다. 다음 옵션 중에서 전자 메일을 디자인할 방법을 선택할 수 있습니다.
 

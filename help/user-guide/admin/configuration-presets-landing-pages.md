@@ -4,19 +4,22 @@ description: 플레이스홀더
 TQID: 'https://experienceleague.adobe.com/wowFSf32UsmDemN6Iy5-IgGOPmuocHHLRb4vvTUDt0U'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 3cf5f37e-e87e-5179-812b-53ce05d7eebb
+    internal-label: Setup
   - id: a659ad61-de21-559d-a901-02e2fb329ff5
+    internal-label: Administration
   - id: d4203578-d294-5145-b397-f26f4488a904
+    internal-label: Channels
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Administration
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: 971
-ht-degree: 21%
-
+source-wordcount: '996'
+ht-degree: 20%
 ---
-
 
 # 랜딩 페이지 구성
 
@@ -59,7 +62,7 @@ ht-degree: 21%
 
 랜딩 페이지 하위 도메인 구성은 **모든 환경에 공통됩니다**. 그 결과는 다음과 같습니다.
 
-* 랜딩 페이지 하위 도메인에 액세스하고 편집하려면 프로덕션 샌드박스에 대한 **[!UICONTROL 랜딩 페이지 하위 도메인 관리]** 권한이 있어야 합니다.
+* 랜딩 페이지 하위 도메인에 액세스하고 편집하려면 프로덕션 샌드박스에 대한 **[!UICONTROL B2B 랜딩 페이지 설정 관리]** 권한이 있어야 합니다. 왼쪽 탐색에서 _[!UICONTROL 채널]_&#x200B;에 액세스하려면 **[!UICONTROL B2B 채널 구성 관리]** 권한도 있어야 합니다. 자세한 내용은 [권한 리소스](../start/permissions-reference.md)를 참조하세요.
 
 * 랜딩 페이지 하위 도메인을 수정하면 프로덕션 샌드박스에도 영향을 줍니다.
 

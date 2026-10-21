@@ -1,18 +1,18 @@
 ---
 title: 템플릿을 위한 콘텐츠 거버넌스
-description: Marketo Optimizer의 거버넌스 설정을 사용하여 구조 또는 구성 요소 수준에서 이메일 템플릿 콘텐츠를 잠그고 이메일 작성자가 편집할 수 있는 내용을 제어합니다.
+description: Marketo Optimizer의 거버넌스 설정을 사용하여 구조 또는 구성 요소 수준에서 이메일 템플릿의 콘텐츠를 잠그고 이메일 작성자가 편집할 수 있는 내용을 제어합니다.
 TQID: 'https://experienceleague.adobe.com/0QZuUrqbF97W7c9yZzBYY39EC7DmbadKxXOJxjxDDy8'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Governance
+source-git-commit: b6253400e2c9fc5b7f277add102367743981ce8a
 workflow-type: tm+mt
-source-wordcount: 608
+source-wordcount: '608'
 ht-degree: 0%
-
 ---
-
 
 # 템플릿을 위한 콘텐츠 거버넌스
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >콘텐츠 잠금은 편집기 수준의 거버넌스 기능입니다. 이는 작성자가 이메일 디자인 공간에서 편집할 수 있는 항목을 제어하지만 API를 통해 변경되는 것을 방지하지는 않습니다.
 
-**[!UICONTROL 콘텐츠 템플릿 관리]** 권한이 있는 사용자만 거버넌스 설정을 구성할 수 있습니다.
+**[!UICONTROL B2B 템플릿 관리]** 권한이 있는 사용자만 거버넌스 설정을 구성할 수 있습니다.
 
 ## 거버넌스 활성화 {#enable}
 

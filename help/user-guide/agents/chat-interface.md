@@ -1,27 +1,38 @@
 ---
 title: 채팅 인터페이스
-description: Marketo Optimizer의 동료 채팅 패널을 사용하여 자연어 또는 슬래시(/) 메뉴를 사용하여 프로그램, 여정 및 목록을 빌드할 수 있습니다.
+description: Marketo Optimizer의 동료 채팅 패널을 사용하여 자연어 또는 슬래시(/) 메뉴를 사용하여 프로그램, 여정 및 목록을 빌드합니다.
 TQID: 'https://experienceleague.adobe.com/5oj0glKEbJuzQFem-jxL4qjnzxVG4tlOaiHKM5SuiWQ'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 1650dadf-b034-5ac9-a309-77ad1e2f5035
+    internal-label: Chat Interface
   - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+    internal-label: Journeys
   - id: a29661b8-f7a4-53d1-a9ac-fdec08c092e4
+    internal-label: Programs
   - id: d4203578-d294-5145-b397-f26f4488a904
+    internal-label: Channels
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Optimization
+source-git-commit: be5df9d4e4482516a60b652d9ec2f977eb29b520
 workflow-type: tm+mt
-source-wordcount: 928
+source-wordcount: '955'
 ht-degree: 0%
-
 ---
-
 # 채팅 인터페이스
 
 [!DNL Adobe Marketo Optimizer] 전체에 채팅 패널이 포함되어 있습니다. 일반 언어를 사용하여 AI 에이전트와 상호 작용하여 프로그램 및 여정을 빌드하고, 사용자 목록을 만들고 비교하며, 리드를 조사하고, 채점을 구성하는 등의 작업을 수행합니다.
+
+>[!PREREQUISITES]
+>
+>[!DNL Marketo Optimizer]에서 동료 채팅 패널을 사용하려면 **[!UICONTROL B2B 대화 환경 관리]** [권한](../start/permissions-reference.md)이 있어야 합니다.
+>
+>이 권한은 채팅 패널에 대한 액세스 권한을 부여하지만 어떤 기능에도 대한 액세스 권한을 부여하지 않습니다. 시스템은 채팅에서 모든 스킬 또는 작업을 채팅 외부에서 해당 기능에 필요한 권한과 동일하게 확인합니다. 만들기, 편집 또는 게시할 수 있는 권한은 _관리_&#x200B;이고 읽기 전용 스킬에 대한 권한은 _보기_&#x200B;입니다. 기능 권한이 없는 경우 도우미가 해당 작업을 수행할 수 없습니다. 예를 들어, 여정을 만들려면 **[!UICONTROL B2B 개인 여정 관리]**&#x200B;가 필요하며 목록 양식에는 **[!UICONTROL B2B Forms 보기]**&#x200B;가 필요합니다.
 
 왼쪽 탐색에서 _Coworker_ 아이콘을 선택하여 패널을 엽니다. 패널 헤더에는 네 개의 컨트롤이 있습니다.
 
@@ -36,16 +47,6 @@ ht-degree: 0%
 
 * 메시지를 추가하고 **Enter**&#x200B;을 눌러 보내세요(**Shift+Enter**&#x200B;이(가) 새 행을 삽입합니다).
 * _첨부_ 아이콘을 사용하여 파일을 첨부합니다(지원되는 형식: `.txt`, `.md`, `.csv`, `.json`, `.xlsx`, `.docx`, `.pdf`). CSV 및 스프레드시트 업로드를 사용하여 리드 가져오기를 시작합니다.
-
->[!BEGINSHADEBOX]
-
-## 영업 구분자
-
-[!DNL Adobe Sales Qualifier]은(는) [!DNL Marketo Optimizer]에서 사용할 수 있는 AI 기반 애플리케이션입니다. Account Qualification Agent을 구현하고 BDR(비즈니스 개발 담당자)을 위한 워크플로를 간소화하도록 설계되었습니다. [!DNL Sales Qualifier]은(는) 채널 전반에서 잠재 고객 자격, 전달 및 구매자 참여 워크플로를 자동화합니다. 엔터프라이즈 B2B 기업의 수동 BDR 로드를 줄이고 파이프라인 속도를 가속화합니다.
-
-자세한 내용은 [Sales Qualifier 설명서](https://experienceleague.adobe.com/ko/docs/sales-qualifier/using/home){target="_blank"}를 참조하세요.
-
->[!ENDSHADEBOX]
 
 ## 동료에게 묻기
 
@@ -89,7 +90,7 @@ ht-degree: 0%
 >
 >일부 명령이 회색으로 표시되고 _준비 중_(으)로 표시됩니다. 기능 플래그로 제어되며 계정에서 아직 활성화되지 않았습니다. 기능 플래그를 선택하면 아무 작업도 수행되지 않습니다. 사용 가능한 세트는 사용할 수 있는 기능에 따라 다릅니다.
 
-## 기술
+## 스킬
 
 스킬은 에이전트가 실행 방법을 알고 있는 패키지화된 워크플로우로서, `/` 메뉴와 자연어 요청 모두의 뒤에 기본 요소가 있습니다. 각 스킬은 단계별 지침 및 한 작업에 필요한 특정 도구(예: &quot;여정 게시&quot;, &quot;두 사람 목록 비교&quot;, &quot;채점 모델 구축&quot;)를 번들로 제공합니다.
 

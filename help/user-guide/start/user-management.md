@@ -17,10 +17,10 @@ topic_v2:
     internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: c825d93cdf9754a516b2d930bbe8c1e2e8aeaea1
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: '2474'
-ht-degree: 36%
+source-wordcount: '2584'
+ht-degree: 34%
 ---
 # 사용자 액세스 및 권한
 
@@ -32,6 +32,8 @@ ht-degree: 36%
 1. Admin Console에서 [사용자를 새 그룹에 추가](#add-users)합니다.
 1. [기본 제공 역할을 편집](#edit-role-permissions) 또는 [사용자 지정 역할을 만들기](#create-a-custom-role) 제품 권한과 Experience Platform에서 필요한 [!DNL Marketo Optimizer] 샌드박스를 사용합니다.
 1. Adobe Experience Platform의 역할에 [사용자 추가](#add-users-to-a-role) 또는 [그룹](#add-user-groups-to-a-role).
+
+관리자, 모든 액세스 사용자 및 읽기 전용 사용자에 대한 권장 사용자 그룹 및 역할을 설정하려면 [제안된 사용자 유형](./permissions-reference.md#suggested-user-types) 및 [제안된 사용자 유형에 대한 사용자 그룹 및 역할 만들기](#create-suggested-roles)를 참조하십시오.
 
 ## 제품 프로필 구성 {#config-profile}
 
@@ -172,65 +174,15 @@ Experience Platform의 역할 권한에 대한 자세한 내용은 Experience Pl
 
 ### 권한 리소스 {#permissions}
 
-다음 권한 리소스는 [!DNL Marketo Optimizer]의 채널 구성, 콘텐츠 관리 및 개인 여정 기능에 대한 액세스를 제어합니다.
+각 사용자 유형에 대해 권장되는 설명 및 권한을 포함하여 [!DNL Marketo Optimizer] 기능에 대한 액세스를 제어하는 전체 권한 목록은 [제품 권한](./permissions-reference.md) 페이지를 참조하십시오.
 
 >[!IMPORTANT]
 >
->[!DNL Marketo Optimizer] 액세스를 사용하려면 명명 규칙 `Mktoaep` + [!DNL Marketo Engage] 구독 접두사를 사용하여 프로비저닝된 특정 샌드박스를 활성화해야 합니다. 예를 들어 연결된 [!DNL Marketo Engage] 구독 접두사가 _AcmeAssoc_&#x200B;인 경우 [!DNL Marketo Optimizer] 액세스에 필요한 샌드박스는 _MktoaepAcmeAssoc_&#x200B;입니다.
+>[!DNL Marketo Optimizer] 액세스를 사용하려면 명명 규칙 `Mktoaep` + [!DNL Marketo Engage] 구독 접두사를 사용하여 프로비저닝된 특정 샌드박스를 활성화해야 합니다. 예를 들어 연결된 [!DNL Marketo Engage] 구독 접두사가 _AcmeAssoc_&#x200B;인 경우 [!DNL Marketo Optimizer] 액세스에 필요한 샌드박스는 _MktoaepAcmeAssoc_&#x200B;입니다. 모든 역할에 이 샌드박스를 추가합니다.
 
-| 카테고리 | 사용 권한 | 설명 |
-| -------- | ----------- | ---------- |
-| B2B 채널 구성 | B2B 이메일 설정 보기 | 이메일 설정(하위 도메인, PTR 레코드, IP 풀, 제외 목록, 시드 목록, IP 준비 계획) 보기. |
-| | B2B 이메일 설정 관리 | 이메일 설정(하위 도메인, PTR 레코드, IP 풀, 제외 목록, 시드 목록, IP 준비 계획)을 구성합니다. 사용자가 이메일을 보낼 수 있으려면 이러한 설정이 필요합니다. |
-| | B2B 채널 구성 관리 | 왼쪽 탐색 및 모든 채널 구성 작업에서 _채널_ 메뉴 항목에 액세스합니다. |
-| | B2B WhatsApp 사전 설정 관리 | WhatsApp 메시지 사전 설정 및 관련 SMS 설정을 만들고, 보고, 삭제합니다. |
-| B2B 여정 | B2B 개인 여정 관리 | _개인 여정_ 목록 및 모든 개인 여정 작업에 액세스합니다. |
-| B2B Assets | 콘텐츠 템플릿 보기 | 콘텐츠 템플릿 목록 및 세부 정보를 봅니다. |
-| | B2B 템플릿 관리 | 콘텐츠 템플릿을 만들고, 편집하고, 삭제합니다. |
-| | B2B 조각 보기 | 콘텐츠 조각 목록 및 세부 정보를 봅니다. |
-| | B2B 조각 관리 | 콘텐츠 조각을 만들고, 편집하고, 삭제합니다. |
-| | B2B 조각 게시 | 템플릿, 이메일 및 랜딩 페이지에서 사용할 콘텐츠 조각을 게시합니다. |
-| | B2B Assets 보기 | Assets 라이브러리 및 자산 파일 세부 사항을 봅니다. |
-| | B2B Assets 관리 | 에셋 파일을 만들고, 편집하고, 삭제합니다. |
-| | B2B 이메일 보기 | 이메일 메시지를 봅니다. |
-| | B2B 이메일 관리 | 이메일 메시지 작성, 편집 및 삭제 |
-| | B2B 메시지 내보내기 관리 | 이메일 섹션 아래에서 메시지 보고서를 내보냅니다. |
-| Journey Optimizer 라이브러리 | B2B 라이브러리 항목 관리 | 라이브러리에 저장된 표현식을 추가하고 삭제합니다. |
-| 데이터 거버넌스 | B2B 관리 사용 레이블 삭제 | 데이터 세트 및 스키마에 적용된 DULE(데이터 사용 레이블)를 보고, 만들고, 삭제합니다. |
-| 샌드박스 관리 | B2B 패키지 관리 | 샌드박스 패키지 만들기, 내보내기, 가져오기, 복사 및 삭제 |
-
-[!DNL Marketo Optimizer]에서 외부 대상을 지원하려면 다음 권한이 필요합니다.
-
-| 카테고리 | 사용 권한 | 설명 |
-| -------- | ----------- | ---------- |
-| 대시보드 | 표준 대시보드 보기 | _프로필_, _대상_ 및 _세그먼트_ 대시보드에 대한 보기 전용 액세스입니다. 왼쪽 탐색 영역에서 _대시보드_&#x200B;에 액세스하고 _대시보드_ 인벤토리 및 통합 탭에 액세스할 수도 있습니다. |
-| | 표준 대시보드 관리 | Data Warehouse에 아직 없는 사용자 지정 특성을 추가합니다. |
-| 대상 | 대상 보기 | _카탈로그_ 탭에서 사용 가능한 대상 및 _찾아보기_ 탭에서 인증된 대상을 볼 수 있는 보기 전용 액세스입니다. |
-| | 대상 관리 | 대상 연결 및 대상 계정을 보고, 만들고, 삭제합니다. |
-| | 대상 활성화 | 활성 대상에 데이터를 활성화합니다. 이 기능에 액세스하려면 _대상 보기_ 또는 _대상 관리_&#x200B;도 필요합니다. |
-| | 매핑 없이 세그먼트 활성화 | 매핑 단계를 표시하지 않고 기존 대상에 대상을 활성화합니다. 사용자는 활성화 워크플로에서 대상을 추가하거나 제거할 수 있지만 매핑된 속성 또는 ID를 추가하거나 제거할 수 없습니다. 이 함수에 액세스하려면 _대상 보기_ 권한도 필요합니다. |
-| | 데이터 세트 대상 관리 및 활성화 | 데이터 세트 내보내기 흐름을 보고, 만들고, 편집하고, 비활성화할 수 있을 뿐만 아니라 데이터를 활성 데이터 세트로 활성화할 수 있습니다. 이 함수에 액세스하려면 _대상 보기_ 권한도 필요합니다. |
-| | 대상 작성 | Adobe Experience Platform Destination SDK을 사용하여 대상을 작성할 수 있습니다. |
-| 데이터 거버넌스 | 데이터 사용 정책 보기 | 조직에 속한 데이터 사용 정책에 대한 보기 전용 액세스입니다. |
-| | 데이터 사용 정책 관리 | 데이터 사용 정책을 보고, 만들고, 편집하고, 삭제합니다. |
-| 데이터 수집 | 소스 보기 | _카탈로그_ 탭의 사용 가능한 소스와 _찾아보기_ 탭의 인증된 소스에 대한 보기 전용 액세스 권한입니다. |
-| | 소스 관리 | 소스를 보고 만들고 편집하고 비활성화합니다. |
-| 프로필 관리 | 프로필 설정 보기 | 모든 프로필 설정에 대한 보기 전용 액세스 권한. |
-| | 프로필 설정 관리 | 모든 프로필 설정을 보고 편집합니다. |
-
-<!--
-
-### B2B built-in roles {#b2b-built-in-roles}
-
-When your organization has [!DNL Marketo Optimizer] provisioned, Experience Platform includes a set of built-in (default, read-only) roles that you can use to manage access to the product capabilities:
-
-| Role | Permissions |
-| ---- | ----------- |
-| B2B Journey Manager | <li>Manage B2B Journeys <li>Manage B2B Buying Groups <li>Manage B2B Account Lists <li>View B2B Engagement Dashboard <li>View B2B Insights Dashboard |
-| B2B Channel Manager | <li>Manage B2B Assets <li>Manage B2B Templates <li>Manage B2B Fragments |
-| B2B System Administrator | <li>Manage B2B Channels Configurations <li>Manage B2B Admin Configurations |
-
--->
+>[!NOTE]
+>
+>Experience Platform에서 _[!UICONTROL 권한]_ 타일을 보려면 시스템 관리자여야 합니다.
 
 ### 역할 권한 편집 {#edit-role-permissions}
 
@@ -334,7 +286,7 @@ When your organization has [!DNL Marketo Optimizer] provisioned, Experience Plat
 
 1. 제품 권한 추가:
 
-   역할에 대해 원하는 제품 기능을 확인하려면 [제품 권한](#permissions) 목록을 참조하세요.
+   역할에 대해 원하는 제품 기능을 확인하려면 [제품 권한](./permissions-reference.md) 목록을 참조하세요.
 
    왼쪽의 _[!UICONTROL 리소스]_ 목록에서 B2B 항목을 찾은 다음 _추가_(**+**) 아이콘을 클릭하여 역할에 사용할 각 특성을 추가합니다.
 
@@ -353,3 +305,95 @@ When your organization has [!DNL Marketo Optimizer] provisioned, Experience Plat
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 사용자 지정 역할이 구성되었으며 할당된 그룹의 사용자가 이제 선택한 [!DNL Marketo Optimizer] 기능에 액세스할 수 있습니다.
+
+### 제안된 사용자 유형에 대한 사용자 그룹 및 역할 만들기 {#create-suggested-roles}
+
+다음 절차를 사용하여 _관리자_, _모든 액세스 사용자_ 및 _읽기 전용 액세스 사용자_ [제안된 사용자 유형](./permissions-reference.md#suggested-user-types)을 설정합니다. 각 사용자 유형에 대해 Admin Console에서 사용자 그룹 및 Experience Platform에서 역할을 만든 다음 해당 그룹을 역할에 추가합니다. 각 사용자 유형에 대해 권장되는 권한은 [_제품 권한_](./permissions-reference.md)&#x200B;에 나열되어 있습니다.
+
+#### 관리자 사용자 그룹 및 역할 만들기 {#create-admin-group}
+
+![이 절차를 완료하려면 관리자 액세스 권한이 필요함을 나타내는 아이콘입니다.](../assets/do-not-localize/icon-admin-user.svg){width="30"} 시스템 관리자는 다음 단계를 수행할 수 있습니다.
+
+1. Admin Console에서 [사용자 그룹 추가](#add-user-group)(이름: _Marketo Optimizer 관리자 그룹_) 및 [제품 프로필을 할당](#assign-profile).
+
+1. [!DNL Marketo Optimizer]을(를) 설정하고 관리하는 사용자를 그룹에 추가합니다.
+
+1. 사용자와 그룹을 관리할 수 있도록 사용자를 제품 관리자로 지정합니다.
+
+1. [!UICONTROL Experience Platform] _[!UICONTROL 권한]_&#x200B;에서 **[!UICONTROL 역할]** > **[!UICONTROL 역할 만들기]**&#x200B;를 선택합니다.
+
+1. _Marketo Optimizer 관리자_&#x200B;와 같은 이름을 입력하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
+
+1. [!DNL Marketo Optimizer] 액세스(`Mktoaep<Marketo subscription prefix>`)에 대해 프로비전된 샌드박스를 선택하십시오.
+
+   >[!IMPORTANT]
+   >
+   >이 단계는 적절한 액세스에 중요합니다.
+
+1. 다음 각 범주에 대해 _추가_(**+**) 아이콘을 클릭하고 **[!UICONTROL 모두 추가]**&#x200B;를 선택합니다.
+
+   * _[!UICONTROL B2B 관리 구성]_
+   * _[!UICONTROL B2B Assets]_
+   * _[!UICONTROL B2B 채널 구성]_
+   * _[!UICONTROL B2B 대화 환경]_
+   * _[!UICONTROL B2B 대상]_
+   * _[!UICONTROL B2B 폴더 토큰]_
+   * _[!UICONTROL B2B 폴더]_
+   * _[!UICONTROL B2B 의도 구성]_
+   * _[!UICONTROL B2B 여정]_
+   * _[!UICONTROL B2B Labs]_
+   * _[!UICONTROL B2B 조직 규칙]_
+   * _[!UICONTROL B2B 개인 목록]_
+   * _[!UICONTROL B2B 프로그램 토큰]_
+   * _[!UICONTROL B2B 프로그램 유형]_
+   * _[!UICONTROL B2B 프로그램]_
+   * _[!UICONTROL B2B 보고]_
+   * _[!UICONTROL 대시보드]_
+   * _[!UICONTROL 대상]_
+   * _[!UICONTROL 데이터 거버넌스]_
+   * _[!UICONTROL 데이터 수집]_
+   * _[!UICONTROL 프로필 관리]_
+
+   >[!TIP]
+   >
+   >관리자 역할에만 **[!UICONTROL 모두 추가]**&#x200B;를 사용합니다. 새 기능이 출시되면 해당 기능에 대해 준비된 권한이 자동으로 관리자 역할에 적용되므로 역할을 편집할 필요가 없습니다. 다른 사용자 유형의 경우 [_제품 권한_](./permissions-reference.md)&#x200B;에서 해당 유형에 권장되는 권한만 선택하십시오.
+
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
+1. 역할 세부 정보에서 **[!UICONTROL 사용자 그룹]** 탭을 선택하고 **[!UICONTROL 그룹 추가]**&#x200B;를 클릭한 다음 _Marketo Optimizer 관리자 그룹_&#x200B;을 선택하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
+#### 모든 액세스 사용자 그룹 및 역할 만들기 {#create-all-access-group}
+
+![이 절차를 완료하려면 관리자 액세스 권한이 필요함을 나타내는 아이콘입니다.](../assets/do-not-localize/icon-admin-user.svg){width="30"} 시스템 관리자는 다음 단계를 수행할 수 있습니다.
+
+1. Admin Console에서 [사용자 그룹 추가](#add-user-group)(이름: _Marketo Optimizer 사용자 그룹_), [제품 프로필을 할당](#assign-profile), [사용자를 추가](#add-users))합니다.
+
+1. Experience Platform 권한에서 [사용자 지정 역할을 만듭니다](#create-a-custom-role)(이름: _Marketo Optimizer 모든 액세스 사용자_).
+
+1. [!DNL Marketo Optimizer] 액세스(`Mktoaep<Marketo subscription prefix>`)에 대해 프로비전된 샌드박스를 선택하십시오.
+
+1. [제품 권한](./permissions-reference.md)의 각 범주에 대해 _추가_(**+**) 아이콘을 클릭하고 모든 Access 사용자에게 권장되는 권한만 선택하십시오.
+
+   모든 액세스 사용자는 매일 모든 기능에서 작업할 수 있지만 관리자, 채널 또는 설정 권한은 받지 않습니다.
+
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
+1. 역할 세부 정보에서 **[!UICONTROL 사용자 그룹]** 탭을 선택하고 **[!UICONTROL 그룹 추가]**&#x200B;를 클릭한 다음 _Marketo Optimizer 사용자 그룹_&#x200B;을 선택하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
+#### 읽기 전용 액세스 사용자 그룹 및 역할 만들기 {#create-read-only-group}
+
+![이 절차를 완료하려면 관리자 액세스 권한이 필요함을 나타내는 아이콘입니다.](../assets/do-not-localize/icon-admin-user.svg){width="30"} 시스템 관리자는 다음 단계를 수행할 수 있습니다.
+
+1. Admin Console에서 [사용자 그룹 추가](#add-user-group)(이름: _Marketo Optimizer 읽기 전용 사용자 그룹_), [제품 프로필을 할당](#assign-profile), [사용자를 추가](#add-users))합니다.
+
+1. Experience Platform 권한에서 [사용자 지정 역할을 만듭니다](#create-a-custom-role)(이름: _Marketo Optimizer 읽기 전용 액세스 사용자_).
+
+1. [!DNL Marketo Optimizer] 액세스(`Mktoaep<Marketo subscription prefix>`)에 대해 프로비전된 샌드박스를 선택하십시오.
+
+1. [제품 권한](./permissions-reference.md)의 각 범주에 대해 _추가_(**+**) 아이콘을 클릭하고 읽기 전용 액세스 사용자에게 권장되는 권한만 선택하십시오.
+
+   읽기 전용 액세스 사용자는 기능만 볼 수 있습니다.
+
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
+1. 역할 세부 정보에서 **[!UICONTROL 사용자 그룹]** 탭을 선택하고 **[!UICONTROL 그룹 추가]**&#x200B;를 클릭한 다음 _Marketo Optimizer 읽기 전용 사용자 그룹_&#x200B;을 선택하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.

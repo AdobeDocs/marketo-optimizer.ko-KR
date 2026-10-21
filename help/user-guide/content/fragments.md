@@ -4,15 +4,15 @@ description: 이메일 및 템플릿에 대한 시각적 콘텐츠 조각을 만
 TQID: 'https://experienceleague.adobe.com/dxPI12xu0thTB3eYJiyCY3OtLIxX-8IKKeXitH4C0Ws'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 8881ff95-1653-5fea-82af-ce1549c0d99d
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Content Management
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: 2634
+source-wordcount: '2677'
 ht-degree: 3%
-
 ---
-
 # 조각
 
 조각은 [!DNL Marketo Optimizer]에서 하나 이상의 전자 메일 및 전자 메일 템플릿에서 참조할 수 있는 재사용 가능한 구성 요소입니다. 일반적으로 미리 만들어 이메일 또는 이메일 템플릿에 신속하게 삽입할 수 있는 콘텐츠 블록(텍스트, 이미지 또는 둘 다)입니다. 이 기능을 사용하면 마케팅 팀원이 이메일 콘텐츠를 취합하여 디자인 프로세스를 개선하는 데 사용할 여러 사용자 지정 콘텐츠 블록을 미리 빌드할 수 있습니다. 일반적인 사용 사례로는 이메일, 이벤트 초대 배너 및 시즌 인사말을 위한 머리글/바닥글 콘텐츠 블록이 있습니다.
@@ -33,6 +33,14 @@ ht-degree: 3%
 
 * _나만의 조각 만들기_ - 처음부터 만들거나 콘텐츠를 시각적 콘텐츠 디자인 공간의 조각으로 저장하여 시각적 조각을 만듭니다.
 * _조각 재사용_ - 전자 메일 또는 전자 메일 템플릿 콘텐츠에 필요한 만큼 조각을 사용합니다.
+
+>[!PREREQUISITES]
+>
+>조각을 사용하여 작업하려면 다음 [권한](../start/permissions-reference.md)이 필요합니다.
+>
+>* **[!UICONTROL B2B 조각 보기]** - 조각 목록 및 세부 정보를 보는 데 필요합니다.
+>* **[!UICONTROL B2B 조각 관리]** - 조각을 만들고 편집하고 삭제하는 데 필요합니다.
+>* **[!UICONTROL B2B 조각 게시]** - 템플릿, 전자 메일 및 랜딩 페이지에서 사용할 조각을 게시하는 데 필요합니다.
 
 ## 조각 액세스 및 관리 {#access-manage-fragments}
 

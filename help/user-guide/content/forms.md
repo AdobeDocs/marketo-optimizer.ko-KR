@@ -1,23 +1,27 @@
 ---
 title: 양식
-description: Marketo Optimizer에서 필드를 디자인하고, 감사 페이지를 설정하고, 게시하고, 사용을 추적하는 등 비즈니스 데이터 수집을 위해 재사용 가능한 양식을 만들고 관리합니다.
+description: Marketo Optimizer에서 필드 디자인, 감사 페이지 설정, 게시 및 사용 추적 등 비즈니스 데이터 수집을 위한 재사용 가능한 양식을 만들고 관리합니다.
 TQID: 'https://experienceleague.adobe.com/StexA1TJKaBYnAoIMcxnHIoUwzfMAnJrBO7FDLdLnMo'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 8881ff95-1653-5fea-82af-ce1549c0d99d
+    internal-label: Content Management
   - id: a29661b8-f7a4-53d1-a9ac-fdec08c092e4
+    internal-label: Programs
   - id: d4203578-d294-5145-b397-f26f4488a904
+    internal-label: Channels
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Data management
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: 2434
+source-wordcount: '2473'
 ht-degree: 2%
-
 ---
-
 # 양식
 
 웹 페이지 방문자의 정보를 캡처하려면 양식을 만들고 랜딩 페이지에 추가합니다. 양식은 백서, 온디맨드 웨비나 무료 체험판 등과 같은 콘텐츠 또는 오퍼를 얻기 위해 페이지 방문자가 작성하고 제출하는 필드 세트입니다.
@@ -27,14 +31,12 @@ ht-degree: 2%
 >[!PREREQUISITES]
 >
 >마케팅 팀이 양식을 만들고 사용하여 정보를 캡처하려면 먼저 관리자가 하나 이상의 양식 사전 설정을 정의해야 합니다. 자세한 내용은 [_Forms 구성_](../admin/configuration-presets-forms.md)&#x200B;을 참조하십시오.
-
-<!-- 
->Form creation in [!DNL Marketo Optimizer] requires the following [permissions](../start/user-management.md#b2b-product-permissions):
 >
->* _[!UICONTROL Journey Optimizer Library]_ > _[!UICONTROL Read B2C Forms]_ - Required to access and view forms.
->* _[!UICONTROL Journey Optimizer Library]_ > _[!UICONTROL Manage B2C Forms]_ - Required to create, update, and delete forms.
->* _[!UICONTROL Journey Optimizer Library]_ > _[!UICONTROL Publish B2C Forms]_ - Required to publish forms.
--->
+>[!DNL Marketo Optimizer]에서 양식을 만들려면 다음 [권한](../start/permissions-reference.md)이 필요합니다.
+>
+>* _[!UICONTROL B2B Assets]_ > _[!UICONTROL B2B Forms 보기]_ - 양식에 액세스하고 양식을 보는 데 필요합니다.
+>* _[!UICONTROL B2B Assets]_ > _[!UICONTROL B2B Forms 관리]_ - 양식을 만들고, 편집하고, 삭제하는 데 필요합니다.
+>* _[!UICONTROL B2B Assets]_ > _[!UICONTROL B2B Forms 게시]_ - 양식을 게시하는 데 필요합니다.
 
 ## 양식 액세스 및 관리 {#view-forms}
 

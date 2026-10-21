@@ -4,17 +4,18 @@ description: AI가 제안하는 기본값에서 사용자 정의 가중치 모�
 TQID: 'https://experienceleague.adobe.com/ZL9RJqD-OZkIgFMpwJ4Cz-FW-463w6OJyEHAe5uJuec'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 1650dadf-b034-5ac9-a309-77ad1e2f5035
+    internal-label: Chat Interface
 topic_v2:
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Taxonomy
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: 1322
-ht-degree: 2%
-
+source-wordcount: '1365'
+ht-degree: 1%
 ---
-
 
 # 의도 구성
 
@@ -28,6 +29,14 @@ ht-degree: 2%
 * **[!UICONTROL +]**&#x200B;을(를) 클릭하고 **[!UICONTROL 에이전트 스킬 사용]**&#x200B;을(를) 선택하고 **[!UICONTROL 의도]** 탭을 선택한 다음 **[!UICONTROL 의도 구성]**&#x200B;을(를) 클릭합니다.
 
 ![채팅 인터페이스에서 의도 구성 패널을 열었습니다](./assets/intent-configuration-panel.png){width="700" zoomable="yes"}
+
+>[!PREREQUISITES]
+>
+>의도 구성에는 다음 [권한](../start/permissions-reference.md)이 필요합니다.
+>
+>* **[!UICONTROL B2B 의도 구성 보기]** - 의도 구성(의도 가중치 모델)을 보는 데 필요합니다.
+>* **[!UICONTROL B2B 의도 구성 관리]** - 의도 구성을 만들고 편집하고 삭제하는 데 필요합니다.
+>* **[!UICONTROL B2B 대화 환경 관리]** - 채팅 인터페이스에서 패널을 여는 데 필요합니다.
 
 ## 모델 목록 보기
 

@@ -17,9 +17,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: cd171c6ec89301ed315d8b882ac0fccac745809f
+source-git-commit: b6253400e2c9fc5b7f277add102367743981ce8a
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1554'
 ht-degree: 11%
 ---
 # 랜딩 페이지 만들기 및 게시
@@ -219,7 +219,7 @@ HTML 콘텐츠가 포함된 파일을 가져오려면(_T):_
 
 >[!PREREQUISITES]
 >
->랜딩 페이지를 미리 보고 테스트하려면 **[!UICONTROL 메시지 게시]** 권한과 테스트 프로필을 포함하는 정의된 데이터 세트가 있어야 합니다.
+>랜딩 페이지를 미리 보고 테스트하려면 **[!UICONTROL B2B 랜딩 페이지 게시]** 권한과 테스트 프로필이 포함된 정의된 데이터 세트가 있어야 합니다.
 
 1. 테스트 프로필 선택을 열려면 **[!UICONTROL 미리 보기 및 테스트]**&#x200B;를 클릭하십시오.
 
@@ -259,7 +259,7 @@ HTML 콘텐츠가 포함된 파일을 가져오려면(_T):_
 
 >[!PREREQUISITES]
 >
->랜딩 페이지를 게시하려면 **[!UICONTROL 메시지 게시]** 권한이 있어야 합니다. 게시하기 전에 [모든 경고를 확인 및 해결](#check-alerts)하세요.
+>랜딩 페이지를 게시하려면 **[!UICONTROL B2B 랜딩 페이지 게시]** 권한이 있어야 합니다. 게시하기 전에 [모든 경고를 확인 및 해결](#check-alerts)하세요.
 
 초안 페이지가 기준에 부합하고 여정 메시지에서 연결할 수 있도록 하려면 오른쪽 상단의 **[!UICONTROL 게시]**&#x200B;를 클릭합니다. 확인 대화 상자에서 **[!UICONTROL 게시]**&#x200B;를 다시 클릭하여 확인합니다.
 

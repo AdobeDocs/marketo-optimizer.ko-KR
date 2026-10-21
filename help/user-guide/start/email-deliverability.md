@@ -25,9 +25,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: cf3d8c71c9301ee038cc1b31968d30aba34d1fc7
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: '2590'
+source-wordcount: '2694'
 ht-degree: 0%
 ---
 # 이메일 전달성
@@ -70,6 +70,18 @@ ht-degree: 0%
 | **_하위 도메인_** | [!DNL Marketo Optimizer]을(를) 통해 전자 메일을 보내는 데 사용되는 전송 도메인(예: `mail.contoso.com`)의 위임된 부분. 하위 도메인은 B2B 마케팅 평판을 회사 또는 트랜잭션 메일로부터 격리합니다. |
 | **_IP 풀_** | 하나 이상의 하위 도메인과 연관된 IP 주소 그룹입니다. [!DNL Marketo Optimizer]은(는) 이 릴리스에서 Adobe에서 관리하는 공유 IP 풀을 지원합니다. 전용 IP 풀은 GA 로드맵에 있습니다. |
 | **_채널 구성_** | 여정의 이메일 작업에 첨부하는 재사용 가능한 이메일 전송 설정(발신자 ID, 회신 주소, 하위 도메인, IP 풀, 이메일 유형 및 추적) 세트입니다. 서로 다른 브랜드, 비즈니스 단위 또는 전송 유형에 대해 이름이 지정된 여러 채널 구성을 가질 수 있습니다. |
+
+## 필요한 권한 {#required-permissions}
+
+전달성 및 채널 설정은 관리자 수준의 작업입니다. _B2B 채널 구성_ 범주 제어 액세스에서 다음 사용 권한:
+
+| 사용 권한 | 허용 사항 |
+| ---------- | -------------- |
+| B2B 이메일 설정 보기 | 이메일 설정(하위 도메인, PTR 레코드, IP 풀, 제외 목록, 시드 목록, IP 준비 계획) 보기. |
+| B2B 이메일 설정 관리 | 이메일 설정을 구성합니다. 사용자가 이메일을 보낼 수 있으려면 이러한 설정이 필요합니다. |
+| B2B 채널 구성 관리 | 왼쪽 탐색 및 모든 채널 구성 작업에서 _채널_ 메뉴 항목에 액세스합니다. |
+
+각 사용자 유형에 대한 모든 권한 및 권장 권한에 대한 설명은 [제품 권한](./permissions-reference.md)을 참조하세요.
 
 <!--
 
@@ -155,7 +167,7 @@ Channel configurations sit under **[!UICONTROL Channels]** → **[!UICONTROL Gen
 >* 하위 도메인 명명 규칙을 결정합니다(예: 마케팅의 경우 `mail.contoso.com`, 트랜잭션의 경우 `alerts.contoso.com`).
 >* 하위 도메인(NS 레코드)을 Adobe에 위임할 수 있는지 IT/DNS 팀에 확인합니다.
 >* DNS 공급자에서 새 하위 도메인을 만든 다음 Adobe으로 위임하기 전에 DNS 전파가 시작될 때까지 24-48시간 대기합니다.
->* [!DNL Marketo Optimizer]에 관리자 역할이 있는지 확인하십시오.
+>* **[!UICONTROL B2B 전자 메일 설정 관리]** 권한이 있는지 확인하십시오. 자세한 내용은 [필요한 권한](#required-permissions)을 참조하세요.
 
 1. [!DNL Marketo Optimizer] 왼쪽 탐색에서 **[!UICONTROL 관리]**&#x200B;를 확장하고 **[!UICONTROL 채널]**&#x200B;을 선택합니다.
 1. 패널에서 **[!UICONTROL 전자 메일 설정]**&#x200B;을 확장하고 **[!UICONTROL 하위 도메인]**&#x200B;을 선택합니다.

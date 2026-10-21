@@ -1,20 +1,22 @@
 ---
 title: 사용자 여정
-description: Marketo Optimizer에서 개인 여정 만들기, 게시 및 관리 - 여정 목록을 탐색하고, 여러 단계 플로우를 디자인하고, 여정을 복제하거나 삭제합니다.
+description: Marketo Optimizer에서 개인 여정 만들기, 게시 및 관리 - 여정 목록을 탐색하고, 다중 단계 흐름을 디자인하고, 여정을 복제하거나 삭제합니다.
 TQID: 'https://experienceleague.adobe.com/RYzV8B9QTuGm1gGb2ZX6i3rc4TlACsM3LRwcnULgwV8'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+    internal-label: Journeys
   - id: a29661b8-f7a4-53d1-a9ac-fdec08c092e4
+    internal-label: Programs
   - id: d4203578-d294-5145-b397-f26f4488a904
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Channels
+source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
 workflow-type: tm+mt
-source-wordcount: 1418
-ht-degree: 19%
-
+source-wordcount: '1480'
+ht-degree: 18%
 ---
-
 # 사용자 여정
 
 [!DNL Adobe Marketo Optimizer]에서 개인 여정은 여러 채널에 걸쳐 개인화된 경험을 오케스트레이션하는 자동화된 여러 단계 리드 기반 마케팅 계획입니다. 이러한 여정은 Marketo Engage 데이터를 사용하여 참여, 비즈니스 이벤트 또는 예약된 캠페인에 대한 응답으로 이러한 마케팅 계획을 실행합니다.
@@ -22,6 +24,15 @@ ht-degree: 19%
 >[!NOTE]
 >
 >각 여정은 정의된 [program](./programs.md) 내에 있습니다. 여정을 만들기 전에 상위로 사용할 프로그램이 하나 이상 있어야 합니다.
+
+>[!PREREQUISITES]
+>
+>사용자 여정을 사용하여 작업하려면 다음 [권한](../start/permissions-reference.md)이 필요합니다.
+>
+>* **[!UICONTROL B2B 개인 여정 보기]** - _[!UICONTROL 개인 여정]_ 목록 및 여정 세부 정보에 대한 읽기 전용 액세스에 필요합니다.
+>* **[!UICONTROL B2B 개인 여정 관리]** - _[!UICONTROL 개인 여정]_ 목록에 액세스하고 모든 개인 여정 작업을 수행하는 데 필요합니다.
+>* **[!UICONTROL B2B 개인 여정 게시]** - 개인 여정을 게시하는 데 필요합니다.
+>* **[!UICONTROL B2B 개인 여정 보고서 보기]** - 개인 여정 보고서를 보는 데 필요합니다.
 
 새 개인 여정을 만들려면(_T):_
 
