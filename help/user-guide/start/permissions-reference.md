@@ -22,9 +22,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 autotag-review: '2026-10-20T17:03:48.312Z'
-source-git-commit: e80513284d179a9b27d0505463d07d5e15facabb
+source-git-commit: a33f749c32631dcd77ecf2892bdc3b1a5e06cd66
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1556'
 ht-degree: 3%
 ---
 # 제품 권한
@@ -143,7 +143,14 @@ ht-degree: 3%
 
 ## 채팅 권한 {#chat-permissions}
 
-채팅 권한은 기능 수준 권한을 따릅니다. _B2B 대화 환경 관리_&#x200B;에서 [!DNL CX Coworker] 대화 패널에 액세스할 수 있지만 기능 기능에는 액세스할 수 없습니다. 동료는 채팅에서 모든 스킬 또는 작업을 채팅 외부에서 해당 기능에 필요한 권한과 동일하게 확인합니다. 만들기, 편집 또는 게시할 수 있는 권한은 _관리_&#x200B;이고 읽기 전용 스킬에 대한 권한은 _보기_&#x200B;입니다. 사용자에게 기능 권한이 없는 경우 [!DNL Coworker]이(가) 해당 작업을 수행할 수 없습니다. 예를 들어, 여정을 만들려면 _B2B 개인 여정 관리_&#x200B;가 필요하며 목록 양식에는 _B2B Forms 보기_&#x200B;가 필요합니다.
+채팅 권한은 기능 수준 권한을 따릅니다. [!DNL Coworker for Marketo Optimizer]은(는) 채팅의 모든 스킬 또는 작업을 채팅 외부에서 기능에 필요한 권한과 동일한 권한으로 검사합니다. _관리_ 권한으로 만들기, 편집 또는 게시하고 _보기_ 권한으로 읽기 전용 스킬을 만듭니다. 사용자에게 기능 권한이 없는 경우 [!DNL Coworker]이(가) 해당 작업을 수행할 수 없습니다. 예를 들어, 여정을 만들려면 _B2B 개인 여정 관리_&#x200B;가 필요하며 목록 양식에는 _B2B Forms 보기_&#x200B;가 필요합니다.
+
+<!--
+_Manage B2B Conversational Experience_ gives access to the [!DNL CX Coworker] chat panel, but it does not grant access to any feature functions.
+
+Per wiki: 
+Update 10/02: We are no longer mapping b2b-conversational-experience read or write to any tools. It was decided that chat will be available for all users without permissions, but what they can do within the chat (i.e. tools they can use) will be defined by other permissions.
+-->
 
 ## 외부 대상 권한 {#external-destinations-permissions}
 
