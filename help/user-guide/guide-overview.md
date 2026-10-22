@@ -29,14 +29,20 @@ topic_v2:
     internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: e2577dd31c38f55f4dc2ce32119315ad7f9fe6f6
+source-git-commit: 8a41dd1e42f5c39a2e9a5b54518fb88392776afe
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '519'
 ht-degree: 2%
 ---
 # Adobe Marketo Optimizer 설명서
 
 [!DNL Adobe Marketo Optimizer]은(는) 마케터와 BDR(비즈니스 개발 담당자)이 리드, 계정 및 구매 그룹 여정을 가져올 수 있는 강력한 AI 추론 기능을 제공하는 AI 우선 마케팅 자동화 솔루션으로, 지속적으로 업데이트된 의미 있는 이야기로 고객 컨텍스트를 강화하고 마케팅, 유료 미디어 및 BDR 채널 전반에 걸친 차선의 작업으로 참여를 확대합니다.
+
+## 개요
+
+이 간략한 개요를 통해 [!DNL Adobe Marketo Optimizer]이(가) AI 추론을 사용하여 각 리드를 최적의 다음 단계로 이끄는 방법에 대해 알아보십시오.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3504788?quality=12)
 
 ## 기본 사항부터 시작 {#basics}
 

@@ -1,28 +1,35 @@
 ---
 title: AI 의사 결정
-description: 여정 트래픽 제어, 다음 최적 경로, 전송 시간 최적화 및 정적 규칙을 결과 기반 자동화로 대체하는 기타 기능을 제공하는 인텔리전스 계층인 Marketo Optimizer의 AI 의사 결정을 이해합니다.
+description: 여정 트래픽 제어, 다음 최적 경로, 전송 시간 최적화 및 정적 규칙을 결과 기반 자동화로 대체하는 기타 기능을 제공하는 인텔리전스 계층인 Marketo Optimizer의 AI 의사 결정에 대해 이해합니다.
 TQID: 'https://experienceleague.adobe.com/biPd2Zv3z75i7imGqRNuKXvgoD0sIcwrFrjWmSO7FpU'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 feature_v2:
   - id: 3cf5f37e-e87e-5179-812b-53ce05d7eebb
+    internal-label: Setup
   - id: 5229c72e-d79b-574f-a03e-5c4bf48172c3
+    internal-label: AI Decisioning
   - id: 64b90904-e4f0-5c1b-a871-8c6a40b204a1
+    internal-label: Journeys
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Optimization
+source-git-commit: 8a41dd1e42f5c39a2e9a5b54518fb88392776afe
 workflow-type: tm+mt
-source-wordcount: 808
+source-wordcount: '829'
 ht-degree: 2%
-
 ---
-
 
 # AI 의사 결정
 
 AI 의사 결정은 Adobe Marketo Optimizer 뒤의 인텔리전스 계층입니다. AI 의사 결정은 모든 분기를 정적 규칙으로 사전 빌드하는 대신 여정 멤버십, 참여 내역, 의도 점수 및 실시간 행동을 포함한 프로필 컨텍스트를 지속적으로 평가하여 해당 사용자에 대한 다음 모범 작업 또는 경로를 결정합니다.
 
 이러한 지속적인 평가는 정적 규칙에서 결과 기반 자동화로 오케스트레이션을 이동합니다. 즉, 모든 조건을 미리 정의하는 대신 원하는 결과를 설명하고 시스템은 각 사용자에 대해 그 결과를 파악하는 방법을 결정합니다.
+
+이 간략한 개요를 통해 [!DNL Adobe Marketo Optimizer]의 AI 추론이 Marketo Engage 데이터를 사용하여 워크플로 및 결과를 최적화하는 방법을 살펴보십시오.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3504789?quality=12)
 
 ## 기능 {#capabilities}
 
@@ -83,7 +90,7 @@ AI 의사 결정은 두 가지 다른 평가 일정을 사용합니다. 개인�
 
 **향후 범위: 계정 및 구매 그룹 컨텍스트**
 
-현재 Marketo Optimizer에서 사용할 수 없습니다. AI 의사 결정은 개인 프로필을 넘어 다음과 같이 확장될 예정입니다.
+현재는 Marketo Optimizer에서 사용할 수 없습니다. AI 의사 결정은 개인 프로필을 넘어 다음과 같이 확장될 예정입니다.
 
 * 계정 컨텍스트 - 의사 결정 입력으로서의 회사 및 계정 수준 신호입니다.
 * 구매 그룹 신호 — 거래, 의사 결정자 또는 실무자 상태, 구매 결정에 참여하는 모든 사람 간의 참여 집계.
