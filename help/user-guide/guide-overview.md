@@ -29,14 +29,20 @@ topic_v2:
     internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: e2577dd31c38f55f4dc2ce32119315ad7f9fe6f6
+source-git-commit: 8a41dd1e42f5c39a2e9a5b54518fb88392776afe
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '519'
 ht-degree: 2%
 ---
 # Adobe Marketo Optimizer 설명서
 
 [!DNL Adobe Marketo Optimizer]은(는) 마케터와 BDR(비즈니스 개발 담당자)이 리드, 계정 및 구매 그룹 여정을 가져올 수 있는 강력한 AI 추론 기능을 제공하는 AI 우선 마케팅 자동화 솔루션으로, 지속적으로 업데이트된 의미 있는 이야기로 고객 컨텍스트를 강화하고 마케팅, 유료 미디어 및 BDR 채널 전반에 걸친 차선의 작업으로 참여를 확대합니다.
+
+## 개요
+
+이 간략한 개요를 통해 [!DNL Adobe Marketo Optimizer]이(가) AI 추론을 사용하여 각 리드를 최적의 다음 단계로 이끄는 방법에 대해 알아보십시오.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3504788?quality=12)
 
 ## 기본 사항부터 시작 {#basics}
 
@@ -78,7 +84,7 @@ ht-degree: 2%
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=ko)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Get Started
 
@@ -89,7 +95,7 @@ Complete initial setup and configuration, then learn how to navigate the applica
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/lightbulb.svg?lang=ko)
+![icon](https://cdn.experienceleague.adobe.com/icons/lightbulb.svg)
 
 Coworker
 
@@ -100,17 +106,17 @@ Use natural language to plan programs, build journeys, manage audiences, and cre
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=ko)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Sales Qualifier
 
 Qualify prospects with AI, run outbound workflows, and connect CRM tasks with BDR activities.
 
-[Learn about Sales Qualifier](https://experienceleague.adobe.com/ko/docs/sales-qualifier/using/home){target="_blank"}
+[Learn about Sales Qualifier](https://experienceleague.adobe.com/en/docs/sales-qualifier/using/home){target="_blank"}
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=ko)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Marketing Management
 
@@ -121,7 +127,7 @@ Organize campaigns into programs, design person journeys with multi-channel cont
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/users.svg?lang=ko)
+![icon](https://cdn.experienceleague.adobe.com/icons/users.svg)
 
 Audiences
 
@@ -132,7 +138,7 @@ Build and maintain people lists, define event-based audiences, and track engagem
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/image.svg?lang=ko)
+![icon](https://cdn.experienceleague.adobe.com/icons/image.svg)
 
 Content
 
@@ -153,7 +159,7 @@ Author emails and WhatsApp messages, manage templates and assets, create landing
 
 [!DNL Adobe Marketo Qualifier]은(는) [!DNL Marketo Optimizer]에서 사용할 수 있는 AI 기반 애플리케이션입니다. 계정 자격 기술을 구현하고 비즈니스 개발 담당자(BDR)를 위한 워크플로를 간소화하도록 설계되었습니다. [!DNL Marketo Qualifier]은(는) 채널 전반에서 잠재 고객 자격, 전달 및 구매자 참여 워크플로를 자동화합니다. 엔터프라이즈 B2B 기업의 수동 BDR 로드를 줄이고 파이프라인 속도를 가속화합니다.
 
-자세한 내용은 [Marketo Qualifier 설명서](https://experienceleague.adobe.com/ko/docs/marketo-qualifier/using/home){target="_blank"}를 참조하세요.
+자세한 내용은 [Marketo Qualifier 설명서](https://experienceleague.adobe.com/en/docs/marketo-qualifier/using/home){target="_blank"}를 참조하세요.
 
 >[!ENDSHADEBOX]
 
@@ -195,15 +201,15 @@ Author emails and WhatsApp messages, manage templates and assets, create landing
 
 <table style="table-layout:fixed">
 <tr><td><strong>Adobe Journey Optimizer B2B Edition</strong><br/>
-<a href="https://experienceleague.adobe.com/ko/docs/journey-optimizer-b2b-learn/tutorials/overview" target="_blank">Videos and tutorials</a> - <a href="https://helpx.adobe.com/kr/legal/product-descriptions/adobe-journey-optimizer-b2b.html" target="_blank">Product description</a>
+<a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b-learn/tutorials/overview" target="_blank">Videos and tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer-b2b.html" target="_blank">Product description</a>
 </td>
 <td><strong>Adobe Experience Platform</strong><br/>
-<a href="https://experienceleague.adobe.com/ko/docs/experience-platform/landing/home" target="_blank">Documentation</a> - <a href="https://business.adobe.com/kr/products/experience-platform/documentation-and-developer-resources.html" target="_blank">Developer resources</a>
+<a href="https://experienceleague.adobe.com/en/docs/experience-platform/landing/home" target="_blank">Documentation</a> - <a href="https://business.adobe.com/products/experience-platform/documentation-and-developer-resources.html" target="_blank">Developer resources</a>
 </td></tr>
 <tr><td><strong>Adobe Real-Time Customer Data Platform</strong><br/>
-<a href="https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home" target="_blank">Documentation</a> - <a href="https://experienceleague.adobe.com/ko/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview" target="_blank">Developer tutorials</a>
+<a href="https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/home" target="_blank">Documentation</a> - <a href="https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview" target="_blank">Developer tutorials</a>
 </td><td><strong>Adobe Marketo Engage</strong><br/>
-<a href="https://experienceleague.adobe.com/ko/docs/marketo/using/home" target="_blank">User documentation</a> - <a href="https://experienceleague.adobe.com/ko/docs/marketo-developer/marketo/home" target="_blank">Developer documentation</a>
+<a href="https://experienceleague.adobe.com/en/docs/marketo/using/home" target="_blank">User documentation</a> - <a href="https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/home" target="_blank">Developer documentation</a>
 </td>
 </tr></table>
 
