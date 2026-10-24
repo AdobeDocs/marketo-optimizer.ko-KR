@@ -29,7 +29,7 @@ AI 의사 결정은 Adobe Marketo Optimizer 뒤의 인텔리전스 계층입니�
 
 이 간략한 개요를 통해 [!DNL Adobe Marketo Optimizer]의 AI 추론이 Marketo Engage 데이터를 사용하여 워크플로 및 결과를 최적화하는 방법을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3504789?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3504803?captions=kor&quality=12)
 
 ## 기능 {#capabilities}
 
