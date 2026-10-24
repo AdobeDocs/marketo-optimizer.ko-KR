@@ -42,7 +42,7 @@ ht-degree: 2%
 
 이 간략한 개요를 통해 [!DNL Adobe Marketo Optimizer]이(가) AI 추론을 사용하여 각 리드를 최적의 다음 단계로 이끄는 방법에 대해 알아보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3504788?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3504794?captions=kor&quality=12)
 
 ## 기본 사항부터 시작 {#basics}
 
