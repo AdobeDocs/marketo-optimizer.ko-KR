@@ -22,9 +22,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: b6253400e2c9fc5b7f277add102367743981ce8a
+source-git-commit: d46d6ad64726b6a4fb07e10c081b08e7336f151a
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '641'
 ht-degree: 0%
 ---
 # 이메일 채널 구성
@@ -89,7 +89,7 @@ ht-degree: 0%
 >
 >채널 구성 삭제는 영구적입니다. 활성 여정이 참조하는 구성은 삭제할 수 없습니다. 먼저 모든 이메일 작업을 제거하거나 재할당합니다.
 
-구성을 삭제하려면 먼저 [여정에 전자 메일 추가](../marketing/email-channel.md#define-email-properties)에서 참조하는 모든 전자 메일 작업을 제거하거나 업데이트하십시오. [!DNL Marketo Optimizer]은(는) 현재 활성 여정에서 사용 중인 구성을 삭제하지 않습니다.
+구성을 삭제하려면 먼저 [전자 메일을 만들고 여정에 추가](../marketing/email-channel.md#define-email-properties)에서 참조하는 모든 전자 메일 작업을 제거하거나 업데이트하십시오. [!DNL Marketo Optimizer]은(는) 현재 활성 여정에서 사용 중인 구성을 삭제하지 않습니다.
 
 ## 여러 채널 구성 {#multiple-channel-configurations}
 

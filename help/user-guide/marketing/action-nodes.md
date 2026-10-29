@@ -15,13 +15,11 @@ feature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+source-git-commit: d46d6ad64726b6a4fb07e10c081b08e7336f151a
 workflow-type: tm+mt
-source-wordcount: 1145
+source-wordcount: '1167'
 ht-degree: 0%
-
 ---
-
 # 작업 노드 수행
 
 개인 여정에서 노드 경로의 모든 사용자에게 변경 사항을 적용하려면 사용자에 대한 작업을 사용하십시오.
@@ -188,9 +186,9 @@ removed? | **[!UICONTROL Change Program Data]** | <li>Select program attribute <
 
 이 작업을 사용하여 옵트인 사용자에게 이메일을 보냅니다. 구독 취소되거나, 차단 목록에 등록되거나, 이메일이 일시 중단되거나, 마케팅이 일시 중단된 사람은 이 작업을 건너뜁니다.
 
-![작업 수행 - 전자 메일 보내기](./assets/person-action-node-send-email.png){width="450"}
+![작업 수행 - 전자 메일 보내기](./assets/person-action-node-email-source.png){width="450"}
 
-이메일을 만들거나 기존 이메일을 편집하거나 AI가 개인화한 이메일을 사용할 수 있습니다. 전자 메일 만들기 및 편집에 대한 자세한 내용은 [전자 메일 채널](./email-channel.md)을 참조하세요. 기존 전자 메일에 대한 사용자 기반 변형을 생성하려면 [사용자별 전자 메일 콘텐츠 개인화](../agents/personalize-content.md)를 참조하십시오.
+여정에 이메일 사본을 추가하는 프로그램 트리에서 게시된 이메일을 선택하거나 AI가 개인화한 이메일을 사용할 수 있습니다. 사본은 읽기 전용입니다. 전자 메일 만들기, 게시 및 복제에 대한 자세한 내용은 [_전자 메일 만들기 및 여정에 추가_](./email-channel.md)&#x200B;를 참조하십시오. 초안 전자 메일에 대한 사용자 기반 변형을 생성하려면 [_사용자별 전자 메일 콘텐츠 개인화_](../agents/personalize-content.md)&#x200B;를 참조하십시오.
 
 [전송 시간 최적화](./email-send-time-optimization.md)를 사용하여 각 프로필이 참여할 가능성이 가장 높은 시기를 예측하여 이메일 게재 시기를 개인화할 수 있습니다.
 

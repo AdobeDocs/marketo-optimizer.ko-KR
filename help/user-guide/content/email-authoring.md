@@ -19,18 +19,14 @@ topic_v2:
     internal-label: Accessibility
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
+source-git-commit: 6311ce00a5c7666c07fb1a523c954637d2e86e46
 workflow-type: tm+mt
-source-wordcount: '2325'
+source-wordcount: '2402'
 ht-degree: 2%
 ---
 # 이메일 콘텐츠 작성
 
 [!DNL Adobe Marketo Optimizer]에서 이메일 디자인 공간은 마케터가 이메일을 작성하는 시각적 캔버스를 제공합니다. 왼쪽 및 상단 패널(구조, 콘텐츠 구성 요소, 템플릿, 조각 등)의 이메일 디자인 도구는 드래그 앤 드롭으로 처음부터 빌드를 지원합니다. 템플릿에서 시작하거나, 원시 HTML을 붙여넣거나, 재사용 가능한 시각적 조각에서 메시지를 조합하도록 선택할 수도 있습니다.
-
->[!IMPORTANT]
->
->하위 도메인, 인증, IP 풀 및 전자 메일 채널 구성에 대한 관리자 설정은 [전자 메일 게재 기능](../start/email-deliverability.md) 및 [전자 메일 채널 구성](../admin/email-channel-configuration.md)을 참조하십시오.
 
 >[!PREREQUISITES]
 >
@@ -38,9 +34,10 @@ ht-degree: 2%
 >
 >* **[!UICONTROL B2B 전자 메일 보기]** - 전자 메일 메시지를 보는 데 필요합니다.
 >* **[!UICONTROL B2B 전자 메일 관리]** - 전자 메일 메시지를 만들고 편집하고 삭제하는 데 필요합니다.
->* **[!UICONTROL B2B 개인 여정 관리]** - 개인 여정에 전자 메일을 추가하는 데 필요합니다.
 
-[!DNL Marketo Optimizer]에서 모든 전자 메일은 개인 여정 내의 _[!UICONTROL 전자 메일 보내기]_ 작업과 연결됩니다. 여정 디자인부터 이메일 정의까지 전체 워크플로는 하나의 지속적인 경험에서 발생합니다. [개인 여정에 _전자 메일 보내기_ 노드를 추가](../marketing/action-nodes.md#add-an-action-node)하면 **[!UICONTROL 전자 메일 만들기]**&#x200B;를 클릭하여 프로세스를 시작하십시오. 먼저 이메일에 대한 작업 및 콘텐츠 설정을 정의합니다. **[!UICONTROL 전자 메일 본문 편집]**&#x200B;을 클릭하여 전자 메일 콘텐츠 디자인 공간을 시작합니다. 다음 옵션 중에서 전자 메일을 디자인할 방법을 선택할 수 있습니다.
+[!DNL Marketo Optimizer]에서 전자 메일은 [프로그램 또는 폴더에서 만들기](../marketing/email-channel.md#create-email-from-programs)한 다음 [여정에서 게시 및 선택](../marketing/email-channel.md#lifecycle)하는 독립적인 자산입니다. 먼저 _속성_ 및 _작업_&#x200B;을 정의합니다. 그런 다음 콘텐츠를 정의합니다.
+
+**[!UICONTROL 전자 메일 본문 편집]**&#x200B;을 클릭하여 전자 메일 본문 디자인 공간을 시작합니다. 다음 옵션 중에서 전자 메일을 디자인할 방법을 선택할 수 있습니다.
 
 * 시각적 디자인 인터페이스를 사용하여 [이메일을 처음부터 디자인하기](#design-from-scratch). 빈 캔버스에서 드래그 앤 드롭을 사용하여 구성 요소별로 이메일 레이아웃 구성 요소를 빌드합니다. 이 방법은 새 템플릿 또는 일회성 이메일을 만드는 데 가장 적합합니다.
 
@@ -83,15 +80,14 @@ HTML 및 CSS 모범 사례를 따르는 것은 이메일 클라이언트 간에 
 
 1. _[!UICONTROL 이메일 디자인]_ 페이지에서 **[!UICONTROL 처음부터 디자인]** 옵션을 선택합니다.
 
-<!-- 
 
-1. In the _[!UICONTROL Create email]_ dialog, choose the type of email content that you want to author.
+1. _[!UICONTROL 전자 메일 만들기]_ 대화 상자에서 작성하려는 전자 메일 콘텐츠의 유형을 선택합니다.
 
-   * **[!UICONTROL Use Themes]** - Choose this option to create the email in _Theme mode_. In this mode, you can use a defined brand theme to streamline the content authoring process and make sure that the design aligns with defined standards.
+   * **[!UICONTROL 테마 사용]** - _테마 모드_&#x200B;에서 전자 메일을 만들려면 이 옵션을 선택하세요. 이 모드에서는 정의된 브랜드 테마를 사용하여 콘텐츠 작성 프로세스를 간소화하고 디자인이 정의된 표준에 맞게 조정되도록 할 수 있습니다.
 
-   * **[!UICONTROL Manual Styling]** - Choose this option to create the email in _Manual mode_. In this mode, you manually set the styling for all structure and content components that you add to the blank canvas.
+   * **[!UICONTROL 수동 스타일 지정]** - _수동 모드_&#x200B;에서 전자 메일을 만들려면 이 옵션을 선택하십시오. 이 모드에서는 빈 캔버스에 추가하는 모든 구조 및 콘텐츠 구성 요소의 스타일을 수동으로 설정합니다.
 
--->
+   ![전자 메일 대화 상자 만들기](./assets/email-design-create-your-email-dialog.png){width="450"}
 
 1. 캔버스에 구조 및 콘텐츠 구성 요소를 [추가](#structure-content)합니다.
 
@@ -102,8 +98,6 @@ HTML 및 CSS 모범 사례를 따르는 것은 이메일 클라이언트 간에 
 내용이 만족스러우면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
 ## 기존 HTML 콘텐츠 가져오기 {#import-html-content}
-
-<!-- originally  from   /help/_includes/content-design-import.md but copied and revised to omit the part about Marketo Engage assets and AEM assets -->
 
 가져온 콘텐츠는 다음과 같을 수 있습니다.
 
@@ -140,17 +134,27 @@ HTML 콘텐츠가 포함된 파일을 가져오려면(_T):_
 
 시각적 이메일 편집기를 사용하여 이메일 메시지를 작성하십시오. 프리 헤더를 추가하고 열 및 분할자로 레이아웃을 구성한 다음 이미지, 단추 및 텍스트와 같은 콘텐츠 구성 요소로 해당 구조를 채웁니다. 고급 스타일을 위해 사용자 지정 CSS를 적용하고 어두운 모드에서 디자인이 렌더링되는 방식을 미리 볼 수도 있습니다.
 
-### 사전 머리글 설정 {#preheader}
+### 본문 설정 정의 {#body-settings}
 
-프리 헤더는 받은 편지함 미리 보기의 제목 줄 뒤에 표시되는 텍스트 코드 조각입니다. [!DNL Marketo Optimizer]에서 제목 줄과 함께 전자 메일 속성 화면이 아닌 전자 메일 디자인 공간의 시각적 캔버스에 프리 헤더가 구성되어 있습니다.
+본문 설정은 이메일의 사전 머리글, 문서 제목 및 문서 언어를 정의합니다. 이메일 제목 줄과 별도로 이메일 디자인 공간에서 이 메타데이터를 구성합니다.
 
-왼쪽 탐색 트리에서 **[!UICONTROL 본문]**&#x200B;을(를) 선택한 상태에서 오른쪽의 **[!UICONTROL 설정]** 패널을 엽니다.
+1. 왼쪽 탐색 트리에서 **[!UICONTROL 본문]**&#x200B;을 선택한 다음 오른쪽 패널에서 **[!UICONTROL 설정]** 탭을 선택합니다.
 
-**[!UICONTROL 사전 머리글]** 텍스트 영역을 클릭하고 사전 머리글 복사본을 입력합니다. 서식 있는 텍스트 컨트롤을 사용하여 필요에 따라 서식 및 [개인화 토큰](#personalize-content)을 적용하려면 _개인화 추가_( ![개인화 아이콘 추가](../assets/do-not-localize/icon-personalization-field.svg)) 아이콘을 클릭하십시오.
+   ![오른쪽 패널의 본문 설정](./assets/email-body-settings.png){width="800" zoomable="yes"}
 
->[!TIP]
->
->프리 헤더를 40~100자 사이로 유지합니다. 제목란을 보완하고(반복하지 않음) 수신자에게 이메일을 열 수 있는 추가 이유를 제공해야 합니다.
+1. 다음 필드를 완료합니다.
+
+   * **[!UICONTROL 사전 머리글]** - 받은 편지함 미리 보기의 제목 줄 뒤에 나타나는 텍스트 코드 조각을 입력합니다.
+
+     >[!TIP]
+     >
+     >프리 헤더를 40~100자 사이로 유지합니다. 제목란을 보완하고(반복하지 않음) 수신자에게 이메일을 열 수 있는 추가 이유를 제공해야 합니다.
+
+   * **[!UICONTROL 문서 제목]** - 전자 메일 HTML 문서의 제목을 입력합니다. 이메일 제목 줄과 별개입니다.
+
+   * **[!UICONTROL 문서 언어]** - 전자 메일 문서의 언어를 지정합니다.
+
+   필드 옆에 있는 _개인화 추가_( ![개인화 추가 아이콘](../assets/do-not-localize/icon-personalization-field.svg) ) 아이콘을 클릭하여 [개인화 토큰](#personalize-content)을 삽입할 수 있습니다.
 
 ### 다크 모드 {#dark-mode}
 
@@ -163,6 +167,8 @@ HTML 콘텐츠가 포함된 파일을 가져오려면(_T):_
 [구조 구성 요소](./structure-components.md) 및 [콘텐츠 구성 요소](./content-components.md)를 캔버스에 추가하여 전자 메일 레이아웃을 빌드합니다.
 
 왼쪽 패널의 **[!UICONTROL 구조]** 및 **[!UICONTROL 내용]** 섹션에서 항목을 드래그한 다음 오른쪽의 _[!UICONTROL 설정]_ 및 _[!UICONTROL 스타일]_ 탭에서 각 구성 요소를 구성합니다.
+
+![구조적 구성 요소와 콘텐츠 요소를 페이지로 끌어다 놓기](./assets/content-components-add.png){width="700" zoomable="yes"}
 
 ### 사용자 정의 CSS 추가 {#custom-css}
 
@@ -252,7 +258,7 @@ A visual fragment can include editable fields that you can customize. Custom fie
 [!DNL Marketo Optimizer]은(는) 개인화에 Handlebars 구문을 사용합니다. 전송 시 토큰은 각 수신자의 프로필 데이터에 있는 값으로 대체됩니다. 이메일에 개인화를 사용할 수 있는 위치는 여러 군데 있습니다.
 
 * **제목 줄** — 가장 일반적인 개인화 지점입니다.
-* **Preheader** — 시각적 캔버스 내에 설정되며 프로필 특성 토큰을 지원합니다.
+* **본문 메타데이터** — 시각적 캔버스 내에 설정되며 프로필 특성 토큰을 지원합니다.
 * **전자 메일 본문** — 이름 및 기타 프로필 특성이 인라인으로 삽입되었습니다.
 * **단추 URL** — 수신자별 매개 변수를 추가합니다.
 
@@ -293,7 +299,7 @@ A visual fragment can include editable fields that you can customize. Custom fie
 
 +++AI 지원 식 {#ai-personalization}
 
-개인화 편집기의 동료는 일반 언어 설명으로부터 Handlebars 표현식을 생성하고, 기존 표현식이 수행하는 작업을 설명하고, 잠재적 문제를 식별할 수 있습니다. 특히 조건부 논리 또는 날짜 형식 도우미의 경우 이 도구를 사용하여 표현식 작성을 가속화합니다.
+개인화 편집기의 [!DNL Coworker]은(는) 일반 언어 설명에서 Handlebars 식을 생성하고, 기존 식이 수행하는 작업을 설명하고, 잠재적인 문제를 식별할 수 있습니다. 특히 조건부 논리 또는 날짜 형식 도우미의 경우 이 도구를 사용하여 표현식 작성을 가속화합니다.
 
 +++
 
