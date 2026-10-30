@@ -1,10 +1,10 @@
 ---
 user-guide-title: Marketo Optimizer 설명서
 user-guide-description: Adobe Marketo Optimizer에 대해 알아보고 이를 사용하여 B2B 리드 및 계정을 위한 개인화된 AI 기반 컨텐츠와 함께 조정된 마케팅 및 판매 참여를 실행하는 방법에 대해 알아봅니다.
-source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
+source-git-commit: d46d6ad64726b6a4fb07e10c081b08e7336f151a
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 42%
+source-wordcount: '263'
+ht-degree: 41%
 ---
 
 # Marketo Optimizer 사용 안내서 {#user}
@@ -49,7 +49,7 @@ ht-degree: 42%
   + 이메일 채널 {#email-channel}
     + [개요](./marketing/email-channel.md)
     + [이메일 전송 시간 최적화](./marketing/email-send-time-optimization.md)
-    + [콘텐츠 작성](./content/email-authoring.md)
+    + [이메일 콘텐츠 작성](./content/email-authoring.md)
     + [다크 모드 디자인](./content/email-dark-mode.md)
   + [WhatsApp 채널](./content/whatsapp-authoring.md)
   + 웨비나 채널 {#webinar-channel}

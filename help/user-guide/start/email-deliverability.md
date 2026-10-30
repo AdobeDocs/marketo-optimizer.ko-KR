@@ -25,9 +25,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
+source-git-commit: 6311ce00a5c7666c07fb1a523c954637d2e86e46
 workflow-type: tm+mt
-source-wordcount: '2694'
+source-wordcount: '2697'
 ht-degree: 0%
 ---
 # 이메일 전달성
@@ -53,7 +53,7 @@ ht-degree: 0%
 > 전자 메일 채널에 대한 자세한 내용은 다음 항목을 참조하십시오.
 >
 >* 전자 메일 채널 구성 - [전자 메일 채널 구성](../admin/email-channel-configuration.md)
->* 전자 메일 만들기 - [여정에 전자 메일 추가](../marketing/email-channel.md)
+>* 전자 메일 만들기 - [전자 메일을 만들고 여정에 추가](../marketing/email-channel.md)
 >* 전자 메일 콘텐츠 디자인 - [전자 메일 콘텐츠 작성](../content/email-authoring.md)
 
 ## 현재 제한 사항 {#limitations}

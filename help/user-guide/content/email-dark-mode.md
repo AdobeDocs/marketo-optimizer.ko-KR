@@ -4,15 +4,15 @@ description: Marketo Optimizer의 다크 모드 이메일 디자인에 대해 �
 TQID: 'https://experienceleague.adobe.com/IFAOy7HJQ93uT4Mz70dC-RPHPaWhUhE9T0d5dEgJYgk'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
+    internal-label: Marketo Optimizer
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+    internal-label: Accessibility
+source-git-commit: d46d6ad64726b6a4fb07e10c081b08e7336f151a
 workflow-type: tm+mt
-source-wordcount: 1476
+source-wordcount: '1476'
 ht-degree: 7%
-
 ---
-
 # 이메일 콘텐츠를 위한 다크 모드 {#dark-mode}
 
 >[!CONTEXTUALHELP]
@@ -158,7 +158,7 @@ _어두운 모드_&#x200B;를 사용하면 지원하는 전자 메일 클라이�
 
 어두운 모드는 색상, 배경 및 이미지를 변경할 수 있으며 디자인 선택 사항을 오버라이드할 수도 있습니다. 시각적 일관성, 접근성 및 브랜드 무결성을 보장하려면 다음 모범 사례를 따르십시오.
 
-| 연습 |            |
+| 연습 | |
 | -------- | ---------- |
 | 이미지 및 로고 최적화 | 체크리스트:<ul><li>어두운 모드에서 흰색 상자가 보이지 않도록 로고와 아이콘을 투명 배경이 있는 PNG 파일로 저장합니다. <li>흰색 또는 밝은 배경이 하드코딩된 이미지를 사용하지 마십시오. <li>투명도가 옵션이 아닌 경우 디자인에서 단색 배경에 이미지를 배치하여 어색한 색상 반전을 방지합니다. |
 | 배경 살펴보기 | 체크리스트:<ul><li>밝은 모드와 어두운 모드 모두에서 가독성을 위해 텍스트와 배경색 간의 충분한 대비를 보장합니다. <li>중요한 콘텐츠에 배경색에만 의존하지 마십시오. 일부 클라이언트는 어두운 모드에서 배경색을 재정의하므로 키 정보가 계속 표시되는지 확인합니다. |
