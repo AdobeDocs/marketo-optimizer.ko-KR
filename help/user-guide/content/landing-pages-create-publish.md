@@ -17,9 +17,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: b6253400e2c9fc5b7f277add102367743981ce8a
+source-git-commit: 407092d59071fb4fdf49de4ed91455637979643b
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '1571'
 ht-degree: 11%
 ---
 # 랜딩 페이지 만들기 및 게시
@@ -57,11 +57,17 @@ ht-degree: 11%
 
 랜딩 페이지를 만들려면(_T):_
 
-1. 왼쪽 탐색으로 이동하여 **[!UICONTROL 콘텐츠 관리]** > **[!UICONTROL 랜딩 페이지]**&#x200B;를 선택합니다.
+1. 왼쪽 탐색에서 **[!UICONTROL 마케팅 관리]**&#x200B;를 확장하고 **[!UICONTROL 프로그램]**&#x200B;을 선택합니다.
 
-1. 랜딩 페이지 목록에서 **[!UICONTROL 랜딩 페이지 만들기]**&#x200B;를 클릭합니다.
+1. _[!UICONTROL 프로그램]_ 트리 구조에서 랜딩 페이지를 만들 프로그램 또는 프로그램 내의 폴더를 찾습니다.
 
-1. **[!UICONTROL 제목]**(필수) 및 **[!UICONTROL 설명]**(선택 사항)을 입력하십시오.
+   필요한 경우 먼저 [프로그램을 만듭니다](../marketing/programs.md#create-program).
+
+1. _자세히_ 아이콘(**...**)을 클릭합니다. 프로그램 또는 폴더 이름 옆에 **[!UICONTROL 랜딩 페이지 만들기]**&#x200B;를 선택합니다.
+
+   ![프로그램 트리에서 새 랜딩 페이지를 만듭니다](../marketing/assets/email-create-from-programs-tree.png){width="400"}
+
+1. _[!UICONTROL 랜딩 페이지 만들기]_ 대화 상자에서 **[!UICONTROL 제목]**(필수) 및 **[!UICONTROL 설명]**(선택 사항)을 입력하십시오.
 
    제목 및 설명 기준:
 
@@ -70,7 +76,7 @@ ht-degree: 11%
    * Alpha, 숫자 및 특수 문자가 허용됩니다.
    * 예약된 문자가 **_허용되지 않음_**: `\ / : * ? " < > |`
 
-   ![랜딩 페이지 만들기](assets/landing-page-create.png){width="600"}
+   ![랜딩 페이지 만들기](assets/landing-page-create.png){width="425"}
 
 1. **[!UICONTROL 사전 설정]**&#x200B;을 선택하세요.
 
@@ -82,11 +88,13 @@ ht-degree: 11%
 
    ![새 랜딩 페이지 - 기본 페이지 속성](assets/landing-page-primary-new-properties.png){width="700" zoomable="yes"}
 
-1. 하위 페이지(예: 감사 또는 오류 페이지)를 추가하려면 **+** 아이콘을 클릭합니다.
+<!--
+1. To add a subpage (for example, a thank-you or error page), click the **+** icon.
 
-   랜딩 페이지당 최대 2개의 하위 페이지를 추가할 수 있습니다.
+   You can add up to two subpages per landing page.
+-->
 
-기본 페이지와 하위 페이지를 구성하고 디자인한 후, 게시하기 전에 [랜딩 페이지를 테스트](#test-landing-page)합니다.
+페이지를 구성하고 디자인한 후 게시하기 전에 [랜딩 페이지를 테스트](#test-landing-page)합니다.
 
 >[!CAUTION]
 >
@@ -147,7 +155,7 @@ ht-degree: 11%
 
 ### 처음부터 디자인 {#design-from-scratch}
 
-시각적 콘텐츠 디자인 공간을 사용하여 랜딩 페이지의 구조와 콘텐츠를 정의합니다. 간단한 드래그 앤 드롭 작업으로 구조 구성 요소를 추가 및 이동하여 페이지 콘텐츠의 레이아웃 및 구성을 초 이내에 디자인할 수 있습니다.
+시각적 콘텐츠 디자인 공간을 사용하여 랜딩 페이지의 구조와 콘텐츠를 정의합니다. 간단한 드래그 앤 드롭 작업으로 구조 구성 요소를 추가 및 이동하여 페이지 콘텐츠의 레이아웃 및 구성을 신속하게 디자인할 수 있습니다.
 
 1. 디자인 홈 페이지에서 **[!UICONTROL 처음부터 디자인]** 옵션을 선택합니다.
 
@@ -235,11 +243,11 @@ HTML 콘텐츠가 포함된 파일을 가져오려면(_T):_
 
    +++테스트 프로필 추가
 
-   **[!UICONTROL ID 네임스페이스]**&#x200B;의 경우 _Select_ 아이콘(![Select 아이콘](../assets/do-not-localize/icon-select-data.svg) )을 클릭하고 프로필을 테스트하는 데 사용할 `Email` 네임스페이스를 선택하십시오.
+   **[!UICONTROL ID 네임스페이스]**&#x200B;의 경우 _Select_( ![Select 아이콘](../assets/do-not-localize/icon-select-data.svg) ) 아이콘을 클릭하고 프로필을 테스트할 `Email` 네임스페이스를 선택하십시오.
 
    ![테스트 프로필 설정 전자 메일 ID 네임스페이스 관리](assets/manage-test-profiles.png){width="700" zoomable="yes"}
 
-   **[!UICONTROL ID 값]** 필드에 테스트 프로필을 식별할 전자 메일 주소를 입력하고 **[!UICONTROL 프로필 추가]**&#x200B;를 클릭합니다. 이 작업을 반복하여 여러 프로필을 추가할 수 있습니다.
+   **[!UICONTROL ID 값]** 필드에 테스트 프로필을 식별할 전자 메일 주소를 입력하고 **[!UICONTROL 프로필 추가]**&#x200B;를 클릭합니다. 여러 프로필을 추가하려면 이 작업을 반복하면 됩니다.
 
    ![테스트 프로필 관리 프로필 추가](assets/manage-test-profiles-add.png){width="700" zoomable="yes"}
 

@@ -18,7 +18,7 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6311ce00a5c7666c07fb1a523c954637d2e86e46
+source-git-commit: 8c2e4b17decc42fe5efe36f5bd50ebceacb5d8a1
 workflow-type: tm+mt
 source-wordcount: '2734'
 ht-degree: 3%
@@ -50,7 +50,7 @@ ht-degree: 3%
 | 속성, 작업 및 컨텐츠 편집 | 예 | 아니요 | 아니요 |
 | 이메일 개인화 | 예 | 아니요 | 아니요 |
 | 이메일 분석 | 예 | 아니요 | 아니요 |
-| 게시 | 예, 차단 경고가 해결되면 | 이미 게시됨 | 자동으로 게시됨 |
+| 게시 | 예, 차단 경고가 해결되었을 때 | 이미 게시됨 | 자동으로 게시됨 |
 | 복제 | 예 | 예 | 아니요 |
 | 이름 바꾸기 | 예 | 아니요 | 아니요. 복사본 이름을 선택하면 이름을 지정합니다. |
 | 삭제 | 예 | 아니요 | 아니요. 대신 _전자 메일 보내기_ 노드를 삭제하십시오. |
