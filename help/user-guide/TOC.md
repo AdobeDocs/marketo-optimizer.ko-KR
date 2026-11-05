@@ -1,15 +1,16 @@
 ---
 user-guide-title: Marketo Optimizer 설명서
 user-guide-description: Adobe Marketo Optimizer에 대해 알아보고 이를 사용하여 B2B 리드 및 계정을 위한 개인화된 AI 기반 컨텐츠와 함께 조정된 마케팅 및 판매 참여를 실행하는 방법에 대해 알아봅니다.
-source-git-commit: d46d6ad64726b6a4fb07e10c081b08e7336f151a
+source-git-commit: 5da2e826a047130caea0d173df474ad5fc97d454
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '265'
 ht-degree: 41%
 ---
 
 # Marketo Optimizer 사용 안내서 {#user}
 
 + [Adobe Marketo Optimizer 설명서](guide-overview.md)
++ {hide-from-toc}[Lighthouse 프로그램](./lighthouse-program.md)
 + 데이터 기반 {#data-foundation}
   + [데이터 아키텍처](./data-architecture.md)
   + [Marketo Engage과의 상호 운용성](./marketo-interoperability.md)
