@@ -104,7 +104,7 @@ ht-degree: 1%
 >id="ajo-b2b-prime_lp_form_preset"
 >title="사전 설정 선택"
 >abstract="사용할 연결이 포함된 사전 정의 사전 설정과 양식에 맞는 사전 정의 데이터 세트를 선택합니다."
->additional-url="https://experienceleague.adobe.com/en/docs/marketo-optimizer/user/admin/channels/configuration-presets-forms#create-preset" text="양식 사전 설정 만들기"
+>additional-url="https://experienceleague.adobe.com/ko/docs/marketo-optimizer/user/admin/channels/configuration-presets-forms#create-preset" text="양식 사전 설정 만들기"
 
 _[!UICONTROL 프로그램]_ 트리 구조에서 프로그램 또는 프로그램 내의 폴더에 양식을 만듭니다.
 
