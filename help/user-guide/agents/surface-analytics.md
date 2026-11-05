@@ -17,7 +17,7 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 1dcc3bcdc59114c7fc1e16178db8921ae173b955
+source-git-commit: 8c2e4b17decc42fe5efe36f5bd50ebceacb5d8a1
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Surface Analytics는 한 번의 프롬프트에서 [!DNL Marketo Engage]과(와)
 ## 제한 사항 {#limitations}
 
 | 제한 사항 | 세부 정보 |
-|---|---|
+| --- | --- |
 | 레코드 편집 또는 만들기 | 지원되지 않습니다. Surface Analytics는 기존 데이터에 대한 읽기 및 보고만 수행합니다. |
 | 사람이 인식할 수 있는 결과 이름 | 항상 사용 가능한 것은 아닙니다. 일부 보고서에는 이름 대신 여정 또는 이메일 ID와 같은 내부 ID가 표시됩니다. |
 | 보고서 카드 복제 | 하나의 질문이 동일한 결과에 대해 두 개 이상의 보고서 카드를 반환하는 경우가 있습니다. |

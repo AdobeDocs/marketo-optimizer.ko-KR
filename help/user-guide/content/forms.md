@@ -17,10 +17,10 @@ topic_v2:
     internal-label: Data collection
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
+source-git-commit: 407092d59071fb4fdf49de4ed91455637979643b
 workflow-type: tm+mt
-source-wordcount: '2473'
-ht-degree: 2%
+source-wordcount: '2528'
+ht-degree: 1%
 ---
 # 양식
 
@@ -41,6 +41,8 @@ ht-degree: 2%
 ## 양식 액세스 및 관리 {#view-forms}
 
 [!DNL Marketo Optimizer]에서 양식에 액세스하려면 왼쪽 탐색으로 이동하여 **[!UICONTROL 콘텐츠 관리]** > **[!UICONTROL Forms]**&#x200B;을(를) 클릭하십시오. 이 작업을 수행하면 인스턴스에서 만든 모든 양식을 표시하는 목록 페이지가 열립니다.
+
+이 목록을 사용하여 기존 양식에 액세스하고 관리합니다. [양식을 만들려면](#new-form) _[!UICONTROL 프로그램]_ 트리 구조를 사용하십시오.
 
 ![양식 라이브러리에 액세스](./assets/forms-list.png){width="800" zoomable="yes"}
 
@@ -78,7 +80,7 @@ ht-degree: 2%
 
 * 필요한 양식을 결정합니다.
 
-  4가지 표준 양식만 사용하는 것이 가능할 수 있다. 하나는 다운로드 가능한 콘텐츠에 액세스하기 위한 것이고, 하나는 프리미엄 웹 페이지에 액세스하기 위한 것이며, 하나는 비디오를 보기 위한 것이며, 다른 하나는 웨비나와 같은 작업에 등록하기 위한 것입니다. 양식의 필드를 변경해야 하는 경우 모든 마케팅 프로그램에 걸쳐 있는 여러 양식을 변경하는 대신 전역적으로 사용되는 4개의 표준 양식을 쉽게 업데이트할 수 있습니다.
+  4개의 표준 양식만 사용해야 할 수도 있습니다. 하나는 다운로드 가능한 콘텐츠에 액세스하기 위한 것이고, 하나는 프리미엄 웹 페이지에 액세스하기 위한 것이며, 하나는 비디오를 보기 위한 것이며, 다른 하나는 웨비나와 같은 작업에 등록하기 위한 것입니다. 양식의 필드를 변경해야 하는 경우 모든 마케팅 프로그램에 걸쳐 있는 여러 양식을 변경하는 대신 전역적으로 사용되는 4개의 표준 양식을 쉽게 업데이트할 수 있습니다.
 
   <!-- Global forms also make progressive profiling much easier to implement. -->
 
@@ -86,7 +88,7 @@ ht-degree: 2%
 
   전환에 더 적합한 것으로 입증된 더 짧은 양식을 사용하는 것이 좋습니다. 각각의 양식을 통해 생각할 때, 그 목적에 합리적이고 필요한 분야가 무엇인지 결정하라.
 
-  이름 및 이메일과 같은 기본 정보가 미리 채워지도록 양식 필드를 미리 채울지 여부를 고려합니다. 하지만 직책과 조직의 크기 같은 다른 정보는 그렇지 않습니다. 이렇게 하면 방문자가 두 개의 필드만 채우고 양식을 제출하면 됩니다. Facebook 또는 Twitter의 데이터로 소셜 양식 채우기를 사용할 수도 있습니다.
+  이름 및 이메일과 같은 기본 정보가 미리 채워지도록 양식 필드를 미리 채울지 여부를 고려합니다. 하지만 직책과 조직의 크기 같은 다른 정보는 그렇지 않습니다. 이렇게 하면 방문자가 두 개의 필드만 채우고 양식을 제출하면 됩니다. 소셜 미디어 플랫폼의 데이터로 소셜 양식 채우기를 사용할 수도 있습니다.
 
 * 방문자가 양식을 제출한 후 표시되는 후속 페이지를 계획합니다(_감사합니다_ 페이지).
 
@@ -94,7 +96,7 @@ ht-degree: 2%
 
 * 필요한 정보가 이미 있는 경우 양식을 완전히 무시할지 여부를 고려하십시오.
 
-  랜딩 페이지를 방문한 알려진 사람에 대해 양식 무시를 허용할 때 단순히 콘텐츠에 직접 액세스할 수 있습니다. 양식을 무시하면 보다 간소화된 방문자 경험이 제공됩니다.
+  랜딩 페이지를 방문한 알려진 사람에 대해 양식 우회를 허용할 때 해당 사람은 콘텐츠에 직접 액세스할 수 있습니다. 양식을 무시하면 보다 간소화된 방문자 경험이 제공됩니다.
 
 ### 새 양식 추가 {#new-form}
 
@@ -102,9 +104,19 @@ ht-degree: 2%
 >id="ajo-b2b-prime_lp_form_preset"
 >title="사전 설정 선택"
 >abstract="사용할 연결이 포함된 사전 정의 사전 설정과 양식에 맞는 사전 정의 데이터 세트를 선택합니다."
->additional-url="https://experienceleague.adobe.com/ko/docs/journey-optimizer-b2b/prime/admin/channels/configuration-presets-forms#create-preset" text="양식 사전 설정 만들기"
+>additional-url="https://experienceleague.adobe.com/ko/docs/marketo-optimizer/user/admin/channels/configuration-presets-forms#create-preset" text="양식 사전 설정 만들기"
 
-_[!UICONTROL Forms]_ 목록 페이지의 오른쪽 상단에 있는 **[!UICONTROL 양식 만들기]**&#x200B;를 클릭하여 [!DNL Marketo Optimizer]에서 양식을 만들 수 있습니다.
+_[!UICONTROL 프로그램]_ 트리 구조에서 프로그램 또는 프로그램 내의 폴더에 양식을 만듭니다.
+
+1. 왼쪽 탐색에서 **[!UICONTROL 마케팅 관리]**&#x200B;를 확장하고 **[!UICONTROL 프로그램]**&#x200B;을 선택합니다.
+
+1. 양식을 만들려는 프로그램 또는 프로그램 내의 폴더를 찾습니다.
+
+   필요한 경우 먼저 [프로그램을 만듭니다](../marketing/programs.md#create-program).
+
+1. _자세히_ 아이콘(**...**)을 클릭합니다. 프로그램 또는 폴더 이름 옆에 있는 **[!UICONTROL 양식 만들기]**&#x200B;를 선택합니다.
+
+   ![프로그램 트리에서 새 양식을 만듭니다](../marketing/assets/email-create-from-programs-tree.png){width="425"}
 
 1. _[!UICONTROL 양식 만들기]_ 대화 상자에서 유용한 **[!UICONTROL 이름]**(필수)과 **[!UICONTROL 설명]**(선택 사항)을 입력하십시오.
 
@@ -123,21 +135,19 @@ _[!UICONTROL Forms]_ 목록 페이지의 오른쪽 상단에 있는 **[!UICONTRO
 
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
-   기본 기본 양식 정의가 포함된 양식 세부 정보 페이지가 열립니다.
+   양식 세부 정보 페이지가 열립니다.
 
    ![기본 양식 콘텐츠](assets/form-new-default-content.png){width="700" zoomable="yes"}
 
-### 기본 양식 디자인 변경 {#design}
+1. **[!UICONTROL 양식 편집]**&#x200B;을 클릭하고 필요에 따라 시각적 디자인 도구를 사용하여 양식 콘텐츠를 정의합니다.
 
-필요에 따라 시각적 디자인 도구를 사용하여 양식 콘텐츠를 변경합니다.
+   * [필드 추가](./form-design.md#add-field)
+   * [필드 스타일 변경](./form-design.md#field-styling)
+   * [필드 순서 바꾸기](./form-design.md#field-reorder)
+   * [제출 단추 텍스트 및 스타일 변경](./form-design.md#submit-button)
+   * [양식 스타일 변경](./form-design.md#form-styling)
 
-* [필드 추가](./form-design.md#add-field)
-* [필드 스타일 변경](./form-design.md#field-styling)
-* [필드 순서 바꾸기](./form-design.md#field-reorder)
-* [제출 단추 텍스트 및 스타일 변경](./form-design.md#submit-button)
-* [양식 스타일 변경](./form-design.md#form-styling)
-
-양식 콘텐츠 디자인 변경 내용을 저장하고 양식 세부 정보로 이동하려면 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭하십시오.
+   양식 콘텐츠 디자인 변경 내용을 저장하고 양식 세부 정보로 돌아가려면 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭하십시오.
 
 ### 감사 인사 페이지 설정 {#thank-you-page}
 
@@ -204,7 +214,7 @@ _랜딩 페이지_ 또는 _랜딩 페이지 템플릿_ 범주에 따라 참조�
 
 ## 양식 복제 {#duplicate-forms}
 
-기존 양식을 양식 디자인의 시작점으로 사용하여 새 양식을 빠르고 쉽게 만들 수 있는 방법으로 양식을 복제하십시오.
+양식을 복제하여 기존 양식을 양식 디자인의 시작점으로 사용하여 새 양식을 만듭니다.
 
 다음 방법 중 하나를 사용하여 양식을 복제할 수 있습니다.
 
@@ -217,7 +227,7 @@ _랜딩 페이지_ 또는 _랜딩 페이지 템플릿_ 범주에 따라 참조�
 
 ![중복 양식의 이름 및 설명](assets/form-duplicate-dialog.png){width="400"}
 
-중복 양식을 편집하여 필요에 따라 이름을 변경하고 양식을 의도한 용도로 변경합니다.
+필요에 따라 이름을 변경하고 양식을 의도한 용도로 변경하려면 중복 양식을 편집하십시오.
 
 ## 양식 편집 {#edit-forms}
 

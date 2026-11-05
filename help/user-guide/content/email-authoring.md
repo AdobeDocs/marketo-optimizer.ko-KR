@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Accessibility
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6311ce00a5c7666c07fb1a523c954637d2e86e46
+source-git-commit: 8c2e4b17decc42fe5efe36f5bd50ebceacb5d8a1
 workflow-type: tm+mt
-source-wordcount: '2402'
+source-wordcount: '2583'
 ht-degree: 2%
 ---
 # 이메일 콘텐츠 작성
@@ -78,8 +78,7 @@ HTML 및 CSS 모범 사례를 따르는 것은 이메일 클라이언트 간에 
 
 시각적 콘텐츠 디자인 공간을 사용하여 이메일의 구조와 콘텐츠를 정의합니다. 간단한 드래그 앤 드롭 작업으로 구조 구성 요소를 추가 및 이동하여 이메일 콘텐츠의 레이아웃 및 구성을 초 이내에 디자인할 수 있습니다.
 
-1. _[!UICONTROL 이메일 디자인]_ 페이지에서 **[!UICONTROL 처음부터 디자인]** 옵션을 선택합니다.
-
+1. _[!UICONTROL 이메일 만들기]_ 페이지에서 **[!UICONTROL 처음부터 디자인]** 옵션을 선택합니다.
 
 1. _[!UICONTROL 전자 메일 만들기]_ 대화 상자에서 작성하려는 전자 메일 콘텐츠의 유형을 선택합니다.
 
@@ -126,9 +125,40 @@ HTML 콘텐츠가 포함된 파일을 가져오려면(_T):_
 
 전자 메일 디자인 공간을 열 때 **[!UICONTROL 디자인 템플릿 선택]** 섹션을 사용하여 기본 제공 샘플 템플릿 또는 저장된 사용자 지정 템플릿에서 시작합니다. 전체 워크플로를 보려면 [전자 메일에 템플릿 사용](./templates.md#use-in-journey)을 참조하세요.
 
+다음 중에서 선택할 수 있습니다.
+
+* **샘플 템플릿** - Adobe에서 제공하는 기본 제공 전자 메일 템플릿입니다.
+* **저장된 템플릿** - 처음부터 만들거나 기존 전자 메일 콘텐츠에서 저장한 사용자 지정 템플릿입니다.
+
+>[!BEGINTABS]
+
+>[!TAB 저장된 템플릿]
+
+_[!UICONTROL 전자 메일 만들기]_ 페이지에서 기본적으로 _[!UICONTROL 샘플 템플릿]_ 탭이 선택됩니다. 사용자 지정 템플릿을 사용하려면 **[!UICONTROL 저장된 템플릿]** 탭을 선택하십시오.
+
 >[!NOTE]
 >
 >저장된 템플릿에는 하나 이상의 구성 요소에 적용되는 거버넌스(콘텐츠 잠금) 설정이 있을 수 있습니다. [관리되는 템플릿에서 전자 메일을 작성](./template-content-governance.md)할 때 비주얼 디자인 스페이스에서 잠긴 구성 요소에 대한 지침을 제공합니다.
+
+현재 샌드박스에서 만든 모든 이메일 템플릿이 목록에 표시됩니다. **[!UICONTROL 이름]**, **[!UICONTROL 마지막 수정 날짜]** 및 **[!UICONTROL 마지막 생성 날짜]**&#x200B;별로 정렬할 수 있습니다.
+
+![저장된 템플릿 선택](./assets/templates-design-saved-sort-by.png){width="800" zoomable="yes"}
+
+목록에서 미리보기를 표시할 템플릿을 선택합니다. 미리보기 모드에서 오른쪽 및 왼쪽 화살표를 사용하여 선택한 범주(샘플 또는 저장됨)의 템플릿 사이를 이동합니다.
+
+![저장된 템플릿 미리 보기](./assets/templates-design-saved-preview.png){width="800" zoomable="yes"}
+
+미리 보기가 사용하려는 것과 일치하면 미리 보기 창의 오른쪽 상단에 있는 **[!UICONTROL 이 서식 파일 사용]**&#x200B;을 클릭합니다.
+
+이 작업은 콘텐츠를 필요에 따라 편집할 수 있는 시각적 이메일 디자인 공간으로 복사합니다.
+
+>[!TAB 샘플 템플릿]
+
+[!DNL Adobe Marketo Optimizer]은(는) 전자 메일 및 전자 메일 템플릿을 만드는 데 사용할 수 있는 기본 제공 템플릿을 제공합니다.
+
+![Adobe에서 제공한 템플릿 선택](./assets/templates-design-samples.png){width="800" zoomable="yes"}
+
+>[!ENDTABS]
 
 ## 구조 및 콘텐츠 추가 {#structure-content}
 
