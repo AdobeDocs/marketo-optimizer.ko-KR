@@ -31,7 +31,7 @@ ht-degree: 2%
 
 비디오를 통해 홈페이지 및 마케팅 작업 공간 둘러보기 다음 섹션에서는 서면 지침을 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3505360/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3505366/?captions=kor&quality=12&learn=on)
 
 ## AI 대화 시작
 
