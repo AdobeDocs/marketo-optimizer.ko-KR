@@ -7,9 +7,9 @@ product_v2:
 feature_v2:
   - id: 3c1de303-7a7c-59a6-abca-8c534730e19c
     internal-label: Reporting
-source-git-commit: 6e919a66af259ea1f5facf7f5c3e811d76101e85
+source-git-commit: 84abcbf4ddf114898768766d6e91ec855e3f979f
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '394'
 ht-degree: 0%
 ---
 
@@ -24,7 +24,9 @@ ht-degree: 0%
 1. 왼쪽 탐색에서 **[!UICONTROL 보고서]**&#x200B;를 선택합니다.
 1. _목록_ 아이콘( ![목록 아이콘](../assets/do-not-localize/icon-table-of-contents.svg))을 클릭하고 _[!UICONTROL 목차]_ 패널에서 **[!UICONTROL 전자 메일 참여]**&#x200B;를 선택합니다.
 
-![여정 이름 및 사용자 필터, 최근 30일 날짜 범위 및 전자 메일 활동 지표 표를 포함한 전자 메일 참여 보고서.](./assets/reports-email-engagement.png){width="700" zoomable="yes"}
+![여정 이름(이벤트) 및 사용자(이벤트) 필터, 최근 30일 날짜 범위 및 전자 메일 활동 지표 표를 사용하는 전자 메일 참여 보고서.](./assets/reports-email-engagement.png){width="700" zoomable="yes"}
+
+보고서 상단의 **[!UICONTROL 여정 이름(이벤트)]** 및 **[!UICONTROL 사용자(이벤트)]** 필터를 사용하여 전자 메일 데이터의 범위를 좁힐 수 있습니다. 필터 목록을 열고 포함할 값을 선택합니다. [필터](#filters)를 참조하세요.
 
 다른 보고서 섹션에서 사용할 수 있는 것과 동일한 날짜 범위 선택기를 사용하여 [날짜 범위를 변경](./reports-overview.md#change-the-date-range)할 수 있습니다.
 
@@ -56,7 +58,11 @@ ht-degree: 0%
 
 ## 필터 {#filters}
 
-필터를 사용하여 보고서의 범위를 특정 여정 또는 담당자로 좁힐 수 있습니다. 모든 필터를 지우고 기본 보기로 돌아가려면 **[!UICONTROL 모두 재설정]**&#x200B;을 선택하세요.
+필터를 사용하여 여정 또는 담당자별로 보고서 범위를 좁힐 수 있습니다.
 
 * **[!UICONTROL 여정 이름(이벤트)]** - 전자 메일을 보낸 여정으로 필터링합니다. 기본값은 [!UICONTROL 필터 없음]입니다.
-* **[!UICONTROL 담당자(이벤트)]** - 전자 메일과 연결된 담당자로 필터링합니다. 기본값은 [!UICONTROL 필터 없음]입니다.
+* **[!UICONTROL 성향(이벤트)]** - 전자 메일과 연결된 [파생 성향](../audiences/personas.md#filter-by-derived-persona)으로 필터링합니다. 기본값은 [!UICONTROL 필터 없음]입니다.
+
+![네 개의 여정이 선택되어 있고 담당자(이벤트) 필터 목록이 열려 있으며 사용 가능한 담당자를 표시하는 전자 메일 참여 보고서 필터.](./assets/reports-email-engagement-filters.png){width="500" zoomable="yes"}
+
+모든 필터를 지우고 기본 보기로 돌아가려면 **[!UICONTROL 모두 재설정]**&#x200B;을 선택하세요.

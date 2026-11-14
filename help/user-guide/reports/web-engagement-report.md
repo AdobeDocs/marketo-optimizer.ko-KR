@@ -1,15 +1,15 @@
 ---
 title: 웹 참여 보고서
-description: 인스턴스에서 가장 많이 본 상위 10개 페이지 및 방문자 참여를 보여 주는 Adobe Marketo Optimizer의 웹 참여 보고서에 대해 알아봅니다.
+description: 인스턴스에서 가장 많이 본 상위 10개 페이지와 방문자 참여를 보여 주는 Adobe Marketo Optimizer의 웹 참여 보고서에 대해 알아봅니다.
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
     internal-label: Marketo Optimizer
 feature_v2:
   - id: 3c1de303-7a7c-59a6-abca-8c534730e19c
     internal-label: Reporting
-source-git-commit: 64d70f192f1ef972590aef2811e2e91908691196
+source-git-commit: 84abcbf4ddf114898768766d6e91ec855e3f979f
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '281'
 ht-degree: 1%
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 <!-- SPHR-39571: Audience, Company Name, Company Industry, and Region filters, plus the report title/subtitle rename, are planned under SPHR-32471 (not yet shipped) and should be documented separately once delivered  -->
 
-[!UICONTROL Web Engagement] 보고서를 사용하여 인스턴스 전체에서 상위 대화형 웨비나에 대한 참여를 검토하십시오.
+[!UICONTROL 웹 참여] 보고서를 사용하여 인스턴스에서 가장 인기 있는 대화형 웨비나에 대한 참여를 검토하십시오.
 
 보고서를 보려면(_T):_
 
@@ -44,9 +44,13 @@ ht-degree: 1%
 
 ## 필터 {#filters}
 
-다음 필터를 사용하여 보고서의 범위를 특정 성향으로 좁힐 수 있습니다.
+보고서 상단의 **[!UICONTROL 사용자(이벤트)]** 필터를 사용하여 페이지 보기 데이터의 범위를 좁힙니다. 필터 목록을 열고 포함할 값을 선택합니다.
 
-* **[!UICONTROL 성향]** - 페이지 보기와 연결된 성향을 기준으로 필터링합니다.
+* **[!UICONTROL 사용자(이벤트)]** - 페이지 보기와 연결된 [파생 사용자](../audiences/personas.md#filter-by-derived-persona)로 필터링합니다. 기본값은 [!UICONTROL 필터 없음]입니다.
+
+![사용자(이벤트) 필터 목록이 열려 있는 웹 참여 보고서에 사용 가능한 사용자 및 모두 재설정 컨트롤이 표시됩니다.](./assets/reports-web-engagement-filters.png){width="500" zoomable="yes"}
+
+필터를 지우고 기본 보기로 돌아가려면 **[!UICONTROL 모두 재설정]**&#x200B;을 선택하세요.
 
 >[!NOTE]
 >

@@ -1,15 +1,15 @@
 ---
 title: 참여 보고서
-description: 두 보고서 타일에 걸쳐 사람에 의한 참여 및 시간 경과에 따른 참여 트렌드를 추적하는 Adobe Marketo Optimizer의 참여 보고서에 대해 알아봅니다.
+description: 두 개의 보고서 타일에서 시간 경과에 따른 참여 및 참여 트렌드를 추적하는 Adobe Marketo Optimizer의 참여 보고서에 대해 알아봅니다.
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
     internal-label: Marketo Optimizer
 feature_v2:
   - id: 3c1de303-7a7c-59a6-abca-8c534730e19c
     internal-label: Reporting
-source-git-commit: a7dbbd4f9f9fbd38090bd262eb0fe3f732481541
+source-git-commit: 84abcbf4ddf114898768766d6e91ec855e3f979f
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '267'
 ht-degree: 1%
 ---
 
@@ -29,12 +29,20 @@ ht-degree: 1%
 * **[!UICONTROL 사용자별 참여]** - 인스턴스에 있는 사용자 간의 참여를 표시합니다.
 * **[!UICONTROL 시간 경과에 따른 사용자 참여]** - 시간 경과에 따라 사용자 참여가 변경되는 방식을 표시합니다.
 
->[!NOTE]
->
->현재 이 보고서에서 필터를 사용할 수 없습니다. 필터링 옵션은 향후 릴리스에 포함될 예정입니다.
-
-![시간에 따른 도넛 참여 차트 및 선 참여 차트와 함께 참여 보고서](./assets/reports-engagement.png){width="700" zoomable="yes"}
+![참여 유형 이름(이벤트), 여정 이름(이벤트) 및 담당자(이벤트)가 있는 참여 보고서는 시간 경과에 따른 사용자 및 개인 참여에 따른 참여 수준을 필터링합니다](./assets/reports-engagement.png){width="700" zoomable="yes"}
 
 각 보고서 타일에 대해 [날짜 범위를 변경](./reports-overview.md#change-the-date-range)할 수 있습니다.
 
 모든 보고서 데이터의 내보내기를 다운로드하거나 예약하려면 보고서 맨 위에서 **[!UICONTROL 공유]**&#x200B;를 선택하십시오. 보고서 개요에서 [_보고서 내보내기_](./reports-overview.md#export-a-report)&#x200B;를 참조하십시오.
+
+## 필터 {#filters}
+
+보고서 상단의 필터를 사용하여 참여 데이터의 범위를 좁힐 수 있습니다. 필터 목록을 열고 포함할 값을 선택합니다.
+
+* **[!UICONTROL 참여 유형 이름(이벤트)]** - 전자 메일과 같은 참여 유형별로 필터링합니다. 기본값은 [!UICONTROL 필터 없음]입니다.
+* **[!UICONTROL 여정 이름(이벤트)]** - 참여와 연결된 여정으로 필터링합니다. 기본값은 [!UICONTROL 필터 없음]입니다.
+* **[!UICONTROL 성향(이벤트)]** - 참여와 연결된 [파생 성향](../audiences/personas.md#filter-by-derived-persona)으로 필터링합니다. 기본값은 [!UICONTROL 필터 없음]입니다.
+
+![전자 메일, 여정, CXO/EVP가 선택되어 있고 사용자(이벤트) 필터 목록이 열려 있는 참여 보고서 필터](./assets/reports-engagement-filters.png){width="500" zoomable="yes"}
+
+모든 필터를 지우고 기본 보기로 돌아가려면 **[!UICONTROL 모두 재설정]**&#x200B;을 선택하세요.
