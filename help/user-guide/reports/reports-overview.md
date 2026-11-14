@@ -7,17 +7,17 @@ product_v2:
 feature_v2:
   - id: 3c1de303-7a7c-59a6-abca-8c534730e19c
     internal-label: Reporting
-source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
+source-git-commit: e4b0bd62a974e32297b11177d13a783c631597fb
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '519'
 ht-degree: 2%
 ---
 
 # 보고서
 
-[!UICONTROL 보고서] 탭에서는 여정 참여, 전자 메일 성능 및 웹 활동을 포함하여 [!DNL Adobe Marketo Optimizer]의 성능 통찰력을 제공합니다. 왼쪽 탐색에서 **[!UICONTROL 보고서]**&#x200B;를 선택하여 엽니다.
+_[!UICONTROL 보고서]_ 페이지에서는 여정 참여, 전자 메일 성능 및 웹 활동을 포함하여 [!DNL Adobe Marketo Optimizer]의 성능 통찰력을 제공합니다. 왼쪽 탐색에서 **[!UICONTROL 보고서]**&#x200B;를 선택하여 엽니다.
 
-각 보고서는 [!DNL Adobe Customer Journey Analytics]에 작성되고 [!DNL Marketo Optimizer]에 직접 포함됩니다. _목록_ 아이콘( ![목록 아이콘](../assets/do-not-localize/icon-table-of-contents.svg) )을 클릭하여 왼쪽의 **[!UICONTROL 목차]** 패널을 사용하여 섹션 사이를 이동합니다.
+각 보고서는 [!DNL Adobe Customer Journey Analytics] 기능을 사용하여 작성되며 [!DNL Marketo Optimizer]에 직접 포함됩니다. _목록_ 아이콘( ![목록 아이콘](../assets/do-not-localize/icon-table-of-contents.svg) )을 클릭하여 왼쪽의 **[!UICONTROL 목차]** 패널을 사용하여 섹션 사이를 이동합니다.
 
 ![개인 여정 개요, 참여, 전자 메일 참여 및 웹 참여 섹션을 나열하는 보고서 페이지](./assets/reports-table-of-contents.png){width="800" zoomable="yes"}
 
@@ -41,7 +41,7 @@ ht-degree: 2%
 일부 보고서는 섹션 전체 보기 대신 단일 레코드에 중점을 두며 애플리케이션의 다른 영역에서 액세스됩니다.
 
 * 이메일 전송 시간 최적화 성능을 위해 [!UICONTROL 동료] 채팅 인터페이스에서 보고서를 엽니다. 단계는 [이메일 전송 시간 최적화](../marketing/email-send-time-optimization.md#reporting)를 참조하십시오.
-* 단일 여정을 통해 진행 중인 개인의 경우 해당 여정 내에서 [개인 여정 개별 보고서](./person-journey-individual-report.md)를 여십시오.
+* 개인 여정 성과를 보려면 라이브 또는 완료된 여정 내에서 [개인 여정 개별 보고서](./person-journey-individual-report.md)를 여십시오. 보고서를 연 후 포함할 여러 여정을 선택할 수 있습니다.
 
 ## 보고서 내보내기 {#export-a-report}
 
