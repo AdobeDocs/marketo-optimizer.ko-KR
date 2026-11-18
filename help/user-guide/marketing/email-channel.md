@@ -21,7 +21,7 @@ topic_v2:
 source-git-commit: 8c2e4b17decc42fe5efe36f5bd50ebceacb5d8a1
 workflow-type: tm+mt
 source-wordcount: '2734'
-ht-degree: 3%
+ht-degree: 4%
 ---
 # 이메일 만들기 및 여정 추가
 
@@ -198,7 +198,7 @@ ht-degree: 3%
 
 1. (선택 사항) 게시 프로세스 중에 이메일 HTML의 크기를 줄이려면 **[!UICONTROL HTML 크기 최적화]** 확인란을 선택합니다.
 
-   이렇게 하면 Gmail과 같은 클라이언트에서 이메일 클리핑을 방지할 수 있습니다. Gmail은 100KB를 초과하는 메시지를 자릅니다. 자세한 내용은 [_이메일 HTML 크기 최적화_](#optimize-html-size)&#x200B;를 참조하십시오.
+   이렇게 하면 Gmail과 같은 이메일 클라이언트에서 이메일 내용이 잘리는 현상을 방지할 수 있습니다. Gmail은 100KB를 초과하는 메시지를 자릅니다. 자세한 내용은 [_이메일 HTML 크기 최적화_](#optimize-html-size)&#x200B;를 참조하십시오.
 
 1. **[!UICONTROL 전자 메일 본문 편집]**&#x200B;을 클릭하여 시각적 디자인 도구에 액세스하고 [콘텐츠 빌드](../content/email-authoring.md)를 시작합니다.
 
@@ -356,7 +356,7 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="ajo-b2b-prime_email_minification"
 >title="HTML 크기 축소"
->abstract="이 옵션을 활성화하면 게시 시 불필요한 공백, 들여쓰기 및 불필요한 주석을 제거하여 이메일 HTML을 압축할 수 있습니다. 이렇게 하면 Gmail과 같은 클라이언트에서 이메일 클리핑을 방지할 수 있습니다. Gmail은 100KB를 초과하는 메시지를 자릅니다."
+>abstract="이 옵션을 활성화하면 게시 시 불필요한 공백, 들여쓰기 및 불필요한 주석을 제거하여 이메일 HTML을 압축할 수 있습니다. 이렇게 하면 Gmail과 같은 이메일 클라이언트에서 이메일 내용이 잘리는 현상을 방지할 수 있습니다. Gmail은 100KB를 초과하는 메시지를 자릅니다."
 
 [!DNL Marketo Optimizer]을(를) 사용하면 불필요한 공백, 들여쓰기 및 불필요한 설명을 제거하여 게시 프로세스 중에 전자 메일 HTML 버전을 압축할 수 있습니다. HTML 크기를 작게 유지하면 다음과 같은 이점이 있습니다.
 
