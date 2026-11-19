@@ -1,6 +1,6 @@
 ---
 title: 이메일 템플릿 만들기
-description: Marketo Optimizer에서 이메일 템플릿을 만드는 방법 — 새로 만들기, 여정의 이메일을 템플릿으로 저장 또는 디자인 이미지를 이메일 템플릿으로 변환하는 방법에 대해 알아봅니다.
+description: Marketo Optimizer에서 이메일 템플릿을 만들거나, 콘텐츠 모듈을 사용자 정의하거나, 이메일을 템플릿으로 저장하거나, 디자인 이미지를 이메일 템플릿으로 변환하는 방법에 대해 알아봅니다.
 TQID: 'https://experienceleague.adobe.com/Hag-o6Hu-82rqnWHnDBgPD-dKApy5JGsPMD5cGFOCfA'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
@@ -15,30 +15,32 @@ topic_v2:
     internal-label: Accessibility
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: b6253400e2c9fc5b7f277add102367743981ce8a
+source-git-commit: e48e778c3a62154297e2c4464f49c3010917d984
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '937'
 ht-degree: 1%
 ---
 
 # 이메일 템플릿 만들기
 
-다음 세 가지 방법으로 [!DNL Adobe Marketo Optimizer]에서 전자 메일 템플릿을 만들 수 있습니다.
+시각적 디자인 공간을 사용하여 [!DNL Adobe Marketo Optimizer]에서 전자 메일 서식 파일을 만듭니다. 이메일 템플릿은 준비된 콘텐츠 모듈과 개별 구조 및 콘텐츠 구성 요소를 지원합니다.
+
+>[!NOTE]
+>
+>이메일 템플릿만 현재 지원됩니다. 랜딩 페이지 템플릿은 현재 사용할 수 없습니다.
+
+이메일 템플릿의 경우 다음 세 가지 방법으로 시작할 수 있습니다.
 
 * **새 템플릿 만들기** — 시각적 전자 메일 디자인 공간을 사용하여 템플릿 라이브러리에 템플릿을 만듭니다.
 * **여정 전자 메일에서 저장** — 여정에서 작성한 전자 메일을 재사용 가능한 템플릿으로 저장합니다.
 * **이미지 변환** — 디자인 이미지를 업로드하고 생성 AI를 사용하여 편집 가능한 이메일 템플릿으로 변환합니다.
 
-## 새 템플릿 작성 {#build-new}
+## 새 이메일 템플릿 작성 {#build-new}
 
 1. 왼쪽 탐색에서 **[!UICONTROL 콘텐츠 관리]**&#x200B;를 확장하고 **[!UICONTROL 템플릿]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 템플릿 만들기]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 템플릿 이름]** 및 선택적 **[!UICONTROL 설명]**&#x200B;을 입력하십시오.
-1. 템플릿에 대한 **[!UICONTROL 채널]**(유형)을 설정합니다.
-
-   >[!NOTE]
-   >
-   >이 Beta 릴리스에서는 이메일 템플릿만 지원됩니다.
+1. **[!UICONTROL 채널]**&#x200B;을(를) 전자 메일로 설정합니다.
 
    <!-- 1. Optionally add **[!UICONTROL Tags]** to categorize the template. -->
 
@@ -46,11 +48,23 @@ ht-degree: 1%
 
 1. 콘텐츠 디자인 공간에 액세스하려면 **[!UICONTROL 전자 메일 본문 편집]**&#x200B;을 클릭하세요.
 
-   콘텐츠 디자인에 대한 자세한 내용은 [전자 메일 작성](email-authoring.md)을 참조하십시오.
+   콘텐츠 디자인에 대한 자세한 내용을 보려면 [모듈을 추가](#add-modules)하거나 [전자 메일 작성](email-authoring.md)을 사용하세요.
 
 1. 필요한 경우 **[!UICONTROL Governance]**&#x200B;를 사용하도록 설정하고 [콘텐츠 잠금](template-content-governance.md)을 구성하여 템플릿 작성자가 템플릿을 적용할 때 편집할 수 있는 부분을 제한합니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
+## 모듈 추가 {#add-modules}
+
+이메일 템플릿에서 모듈을 사용하여 준비된 섹션에서 시작하고 콘텐츠와 스타일을 맞춤화하십시오.
+
+{{$include /help/_includes/content-design-modules.md}}
+
+### 구조 및 콘텐츠 추가
+
+섹션을 처음부터 빌드하거나 모듈을 확장하려면 구조 및 콘텐츠 구성 요소를 추가합니다.
+
+{{$include /help/_includes/content-design-components-prime.md}}
 
 ## 이메일을 템플릿으로 저장 {#save-as-template}
 
