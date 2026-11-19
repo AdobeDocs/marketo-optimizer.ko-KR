@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Accessibility
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 8c2e4b17decc42fe5efe36f5bd50ebceacb5d8a1
+source-git-commit: e48e778c3a62154297e2c4464f49c3010917d984
 workflow-type: tm+mt
-source-wordcount: '2583'
+source-wordcount: '2590'
 ht-degree: 2%
 ---
 # 이메일 콘텐츠 작성
@@ -52,7 +52,7 @@ ht-degree: 2%
 ## 이메일 디자인 도구 {#email-design-tools}
 
 * **상단 도구 모음:** 저장, 뒤로, 코드 편집기로 전환, 미리 보기 컨트롤.
-* **왼쪽 패널:** 구조(열 레이아웃), 콘텐츠(텍스트, 단추, 이미지, 분할자, 소셜, HTML), 조각, 템플릿, 탐색 트리(전자 메일의 DOM 스타일 계층 구조).
+* **왼쪽 패널:** 모듈(준비된 섹션), 구조(열 레이아웃), 콘텐츠(텍스트, 단추, 이미지, 분할자, 소셜, HTML), 조각, 템플릿, 탐색 트리(전자 메일의 DOM 스타일 계층 구조).
 * **센터 캔버스:** 데스크톱 및 모바일 미리 보기가 있는 WYSIWYG 편집기.
 * **오른쪽 패널:** 콘텐츠 속성, 배경, 테두리, 패딩 및 개인 맞춤화를 포함하여 현재 선택한 구성 요소에 대한 설정 및 스타일입니다.
 
@@ -88,7 +88,7 @@ HTML 및 CSS 모범 사례를 따르는 것은 이메일 클라이언트 간에 
 
    ![전자 메일 대화 상자 만들기](./assets/email-design-create-your-email-dialog.png){width="450"}
 
-1. 캔버스에 구조 및 콘텐츠 구성 요소를 [추가](#structure-content)합니다.
+1. 캔버스에 [모듈 추가](#add-modules) 또는 [구조 및 콘텐츠 구성 요소 추가](#structure-content).
 
 1. [링크 검토 및 업데이트](#preview-and-edit-linked-urls).
 
@@ -159,6 +159,10 @@ _[!UICONTROL 전자 메일 만들기]_ 페이지에서 기본적으로 _[!UICONT
 ![Adobe에서 제공한 템플릿 선택](./assets/templates-design-samples.png){width="800" zoomable="yes"}
 
 >[!ENDTABS]
+
+## 모듈 추가 {#add-modules}
+
+{{$include /help/_includes/content-design-modules.md}}
 
 ## 구조 및 콘텐츠 추가 {#structure-content}
 

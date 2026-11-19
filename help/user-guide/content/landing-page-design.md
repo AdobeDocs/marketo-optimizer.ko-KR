@@ -18,14 +18,18 @@ topic_v2:
     internal-label: Troubleshooting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: cd171c6ec89301ed315d8b882ac0fccac745809f
+source-git-commit: e48e778c3a62154297e2c4464f49c3010917d984
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '557'
 ht-degree: 2%
 ---
 # 랜딩 페이지 디자인
 
-[랜딩 페이지를 만들고](./landing-pages-create-publish.md#create-landing-page) 나면 시각적 디자인 공간을 사용하여 페이지의 구조적 구성 요소와 콘텐츠 구성 요소를 작성합니다.
+[랜딩 페이지를 만든](./landing-pages-create-publish.md#create-landing-page) 후 시각적 디자인 공간을 사용하여 페이지의 레이아웃과 콘텐츠를 정의합니다.
+
+## 모듈 추가
+
+{{$include /help/_includes/content-design-modules.md}}
 
 ## 구조 및 콘텐츠 추가 {#structure-content-landing-page}
 

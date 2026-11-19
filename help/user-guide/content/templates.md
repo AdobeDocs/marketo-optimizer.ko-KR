@@ -10,19 +10,21 @@ feature_v2:
     internal-label: Journeys
   - id: 8881ff95-1653-5fea-82af-ce1549c0d99d
     internal-label: Content Management
-source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
+source-git-commit: e48e778c3a62154297e2c4464f49c3010917d984
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 1%
+source-wordcount: '525'
+ht-degree: 2%
 ---
 
 # 이메일 템플릿
 
-[!DNL Adobe Marketo Optimizer]의 이메일 템플릿을 사용하면 콘텐츠 전문가가 재사용 가능한 이메일 레이아웃을 독립적으로 작성할 수 있으므로 마케팅 팀이 매번 디자인을 다시 작성하지 않고도 계정 여정 전반에 적용할 수 있습니다.
+[!DNL Adobe Marketo Optimizer]의 이메일 템플릿을 사용하면 콘텐츠 전문가가 재사용 가능한 이메일 레이아웃을 독립적으로 작성할 수 있으므로 마케팅 팀은 매번 디자인을 다시 작성하지 않고도 디자인을 재사용할 수 있습니다.
 
 >[!NOTE]
 >
->이 Beta 릴리스에서는 이메일 템플릿만 지원됩니다.
+>이메일 템플릿만 현재 지원됩니다. 랜딩 페이지 템플릿은 현재 사용할 수 없습니다.
+
+[전자 메일 템플릿을 만드는 중](./templates-create.md)에 [콘텐츠 모듈](./content-modules.md)을 사용하여 준비된 섹션에서 레이아웃을 조합합니다.
 
 템플릿이 새 이메일에 적용되면 해당 시점에 콘텐츠가 복사됩니다. 템플릿을 편집해도 이전에 템플릿에서 만든 이메일에는 영향을 주지 않습니다.
 
@@ -57,7 +59,7 @@ ht-degree: 1%
 **템플릿을 폴더로 이동하려면**
 
 1. 템플릿 옆에 있는 **[!UICONTROL 자세히]** 아이콘( ... )을 클릭합니다.
-1. **[!UICONTROL 폴더로 이동]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 폴더로 이동]**&#x200B;을 선택하세요.
 1. 대상 폴더를 선택하고 **[!UICONTROL 이동]**&#x200B;을 클릭합니다.
 
 ## 템플릿 세부 정보 보기 {#view-details}

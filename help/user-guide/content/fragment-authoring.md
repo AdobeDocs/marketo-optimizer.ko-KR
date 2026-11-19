@@ -1,6 +1,6 @@
 ---
 title: 조각 작성
-description: 시각적 디자인 도구를 통해 재사용 가능한 콘텐츠 조각을 작성 - Marketo Optimizer에서 이메일 및 템플릿에 대한 구조, 에셋, 개인화, 조건부 콘텐츠 및 연결된 URL 추적을 추가합니다.
+description: 시각적 디자인 도구를 통해 재사용 가능한 콘텐츠 조각을 작성 - Marketo Optimizer의 이메일 및 템플릿에 대한 구조, 에셋, 개인화, 조건부 콘텐츠 및 연결된 URL 추적을 추가합니다.
 TQID: 'https://experienceleague.adobe.com/KbnYkUMVfjBv5ST55WwAqYiMDkynwSw4BKIP0bsE-DI'
 product_v2:
   - id: a8deb403-4b0c-4f5a-95c6-5e5bedc292ed
@@ -8,16 +8,18 @@ product_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 43b1b5ba8415d7a7f3291c12c3db4cc333b673c4
+source-git-commit: e48e778c3a62154297e2c4464f49c3010917d984
 workflow-type: tm+mt
-source-wordcount: 204
-ht-degree: 4%
-
+source-wordcount: '204'
+ht-degree: 3%
 ---
-
 # 조각 작성
 
-[조각을 만들고](./fragments.md#create-fragments) 나면 시각적 디자인 공간을 사용하여 조각의 구조 및 콘텐츠 구성 요소를 작성합니다.
+[조각을 만들고](./fragments.md#create-fragments) 나면 시각적 디자인 공간을 사용하여 조각의 레이아웃과 콘텐츠를 정의합니다.
+
+## 모듈 추가
+
+{{$include /help/_includes/content-design-modules.md}}
 
 ## 구조 및 콘텐츠 추가 {#design-fragment}
 
