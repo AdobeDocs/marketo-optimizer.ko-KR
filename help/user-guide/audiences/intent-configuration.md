@@ -11,9 +11,9 @@ feature_v2:
 topic_v2:
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
     internal-label: Taxonomy
-source-git-commit: f65df8d5e83eca29ffaaabf51e7c80ed223d175a
+source-git-commit: b41193169434abe23589cde8e73bf6c9016ec04d
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1404'
 ht-degree: 1%
 ---
 
@@ -141,7 +141,9 @@ AI 제안 열은 시작점이며, 교육된 권장 사항이 아닙니다.
 
 1. **빈도**: 잠재 고객이 해당 콘텐츠와 상호 작용한 횟수로, 개인의 참여 간 평균에 반영됩니다.
 
-공식적으로 참여당 `activity weight × content relevance`의 평균은 **일별 점수**&#x200B;로 계산되었으며, **7일 지수 감소**&#x200B;가 적용되어 최근 활동이 우세해진 다음 최소-최대값이 현재 모집단에서 0에서 1로 정규화되고 그룹화되었습니다.
+[!DNL Marketo Optimizer]의 경우 의도 점수의 초기 부트스트래핑은 2년간의 리드 활동을 되돌아봅니다.
+
+공식적으로, 참여당: 활동 가중치 × 콘텐츠 관련성은 최근 활동이 지배적으로 적용된 7일 기하급수적 감소로 일일 점수로 평균화되었습니다. 가치 감소 메커니즘은 7일마다 실행됩니다. 잠재 고객이 새 활동에 참여하지 않으면 의도 점수가 하락합니다. 그러면 현재 모집단에서 최소-최대값이 0에서 1로 표준화되고 버킷화됩니다.
 
 | 최종 점수 | 의도 수준 |
 | --- | --- |
