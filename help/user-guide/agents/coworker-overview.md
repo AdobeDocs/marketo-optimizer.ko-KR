@@ -45,7 +45,7 @@ ht-degree: 2%
 
 자세한 내용은 다음 문서를 참조하십시오.
 
-* [[!DNL Adobe CX Enterprise Coworker] 채팅 개요](https://experienceleague.adobe.com/en/docs/coworker/content/chat/overview)
+* [[!DNL Adobe CX Enterprise Coworker] 채팅 개요](https://experienceleague.adobe.com/ko/docs/coworker/content/chat/overview)
 * [&#x200B; [!DNL Marketo Optimizer]의 채팅 인터페이스](./chat-interface.md)
 * [&#x200B; [!DNL Marketo Optimizer]의 [!DNL Coworker]개 스킬](./skills.md)
 
